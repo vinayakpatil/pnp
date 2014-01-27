@@ -1,0 +1,14 @@
+/* Generic */
+body{
+    margin-top: emCalc(70);
+}
+
+/* Header */
+.logo{
+    text-indent: -10000px;
+    background: transparent url('../imgs/logo.png') no-repeat;
+    line-height: emCalc(141);
+    position:relative;
+    top: emCalc(-45);
+    left: emCalc(-20);
+}
