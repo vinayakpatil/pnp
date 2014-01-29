@@ -17,7 +17,7 @@
                     <input type="text" placeholder="Enter keyword or product code">
                 </div>
                 <div class="large-2 columns">
-                    <a href="#" class="button postfix"><i class="fi-page-search"></i></a>
+                    <a href="#" class="button secondary radius postfix"><i class="fi-page-search"></i></a>
                 </div>
             </div>
         </form>
@@ -28,9 +28,14 @@
                 </li>
                 <li><a href="#">Register</a>
                 </li>
-                <li><a href="#">My Account</a>
+                <li><a href="#" data-dropdown="drop" class="dropdown" >My Account</a><br>
+                    <ul id="drop" data-dropdown-content class="f-dropdown">
+                      <li><a href="#">This is a link</a></li>
+                      <li><a href="#">This is another</a></li>
+                      <li><a href="#">Yet another</a></li>
+                    </ul>
                 </li>
-                <li><a href="#">temp</a>
+                <li><a href="#"><span class="notifications">2</span></a>
                 </li>
             </ul>
         </nav>
@@ -38,12 +43,11 @@
 
     <header class="row">
         <nav class="top-bar large-12 columns">
-            <!-- <ul class="title-area">
+            <ul class="title-area">
                 <li class="name">
-                    <h1><a href="#">PNP</a>
-                    </h1>
+                    <a href="index.html"><h3>Peacocks and Paisleys</h3></a>
                 </li>
-            </ul> -->
+            </ul>
 
             <section class="top-bar-section">
                 <!-- Right Nav Section -->
@@ -70,6 +74,8 @@
                     </li>
                     <li><a href="#">Exceptional</a>
                     </li>
+                    <li><a href="#">Sale</a>
+                    </li>
 
                 </ul>
 
@@ -83,34 +89,54 @@
     </header>
 
     <section class="row">
-        <div class="large-12 columns banner-container">
+        <!-- <div class="large-12 columns banner-container">
             <img src="imgs/banner.jpg" alt="Banner image"/>
             <div class="overlay">
                 <h3>Welcome to the world of</h3>
                 <h2>Peacocks & Paisleys</h2>
             </div>
-        </div>
+        </div> -->
+        <ul data-orbit>
+            <li>
+                <img src="imgs/banner.jpg" alt="slide 1" />
+                <div class="orbit-caption">
+                    Caption One.
+                </div>
+            </li>
+            <li>
+                <img src="imgs/banner.jpg" alt="slide 2" />
+                <div class="orbit-caption">
+                    Caption Two.
+                </div>
+            </li>
+            <li>
+                <img src="imgs/banner.jpg" alt="slide 3" />
+                <div class="orbit-caption">
+                    Caption Three.
+                </div>
+            </li>
+        </ul>
     </section>
 
     <section class="row">
-        <ul class="large-block-grid-3">
+        <ul class="large-block-grid-3 thumbs-container">
             <li>
                 <a href="#" class="th">
-                    <img src="imgs/thumb_1.jpg"  alt="Thumbnail"/>
+                    <img src="imgs/thumb_1.jpg" alt="Thumbnail" />
                     <h3>Luce Casmere</h3>
                     <h4 class="subheader">Loreum lipsum</h4>
                 </a>
             </li>
             <li>
                 <a href="#" class="th">
-                    <img src="imgs/thumb_2.jpg" alt="Thumbnail"/>
+                    <img src="imgs/thumb_2.jpg" alt="Thumbnail" />
                     <h3>Luce Casmere</h3>
                     <h4 class="subheader">Loreum lipsum</h4>
                 </a>
             </li>
             <li>
                 <a href="#" class="th">
-                    <img src="imgs/thumb_3.jpg" alt="Thumbnail"/>
+                    <img src="imgs/thumb_3.jpg" alt="Thumbnail" />
                     <h3>Luce Casmere</h3>
                     <h4 class="subheader">Loreum lipsum</h4>
                 </a>
@@ -122,52 +148,67 @@
         <div class="large-3 columns">
             <h4>Peacocks & Paisleys</h4>
             <ul class="side-nav">
-                <li><a href="#">Who we are</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Terms</a></li>
+                <li><a href="#">Who we are</a>
+                </li>
+                <li><a href="#">Contact Us</a>
+                </li>
+                <li><a href="#">Blog</a>
+                </li>
+                <li><a href="#">Terms</a>
+                </li>
                 <li><a href="#">Privacy Policy/a></li>
             </ul>
         </div>
         <div class="large-2 columns">
             <h4>Customer Care</h4>
             <ul class="side-nav">
-                <li><a href="#">Shipping</a></li>
-                <li><a href="#">Return and Exchange</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Shipping</a>
+                </li>
+                <li><a href="#">Return and Exchange</a>
+                </li>
+                <li><a href="#">FAQs</a>
+                </li>
             </ul>
         </div>
         <div class="large-2 columns">
             <h4>Payment options</h4>
             <ul class="sub-nav">
-                <li><a href="#"><i class="fi-credit-card"></i></a></li>
-                <li><a href="#"><i class="fi-paypal"></i></a></li>
-                <li><a href="#"><i class="fi-shopping-bag"></i></a></li>
+                <li><a href="#"><i class="fi-credit-card"></i></a>
+                </li>
+                <li><a href="#"><i class="fi-paypal"></i></a>
+                </li>
+                <li><a href="#"><i class="fi-shopping-bag"></i></a>
+                </li>
             </ul>
             <h5>Secured by</h5>
-            <a href="#"><img src="imgs/geotrust.jpg" alt="Geotrust logo"></a>
+            <a href="#">
+                <img src="imgs/geotrust.jpg" alt="Geotrust logo">
+            </a>
         </div>
         <div class="large-3 columns">
             <h4>Be first to receive exclusive offers</h4>
             <h3>SIGN UP NOW</h3>
             <form>
-                <input type="text" placeholder="Enter email address"/>
-                <input type="submit" value="Subscribe" class="button primary"/>
+                <input type="text" placeholder="Enter email address" />
+                <input type="submit" value="Subscribe" class="button primary" />
             </form>
         </div>
         <div class="large-2 columns">
             <h4>Follow us</h4>
             <ul class="sub-nav">
-                <li><a href="#"><i class="fi-social-facebook"></i></a></li>
-                <li><a href="#"><i class="fi-social-twitter"></i></a></li>
-                <li><a href="#"><i class="fi-social-instagram"></i></a></li>
+                <li><a href="#"><i class="fi-social-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fi-social-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fi-social-instagram"></i></a>
+                </li>
             </ul>
         </div>
     </footer>
 
     <footer class="row">
         <p class="large-8 columns large-centered">
-            Copyright © 2014 Peacocks & Paisleys, All rights reserved. Site by Chiefsons 
+            Copyright © 2014 Peacocks & Paisleys, All rights reserved. Site by Chiefsons
         </p>
     </footer>
     <script src="bower_components/jquery/jquery.js"></script>
