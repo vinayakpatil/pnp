@@ -174,10 +174,10 @@ $primary-color: #46166b;
 // $include-html-nav-classes: $include-html-classes;
 
 // We use this to set the background color for the breadcrumb container.
-// $crumb-bg: scale-color($secondary-color, $lightness: 55%);
+$crumb-bg: rgba(255, 255, 255, 0);
 
 // We use these to set the padding around the breadcrumbs.
-// $crumb-padding: rem-calc(9 14 9);
+$crumb-padding: rem-calc(14 14 9 0);
 // $crumb-side-padding: rem-calc(12);
 
 // We use these to control border styles.
@@ -188,28 +188,28 @@ $primary-color: #46166b;
 // $crumb-radius: $global-radius;
 
 // We use these to set various text styles for breadcrumbs.
-// $crumb-font-size: rem-calc(11);
+$crumb-font-size: rem-calc(13);
 // $crumb-font-color: $primary-color;
-// $crumb-font-color-current: #333;
+$crumb-font-color-current: #010101;
 // $crumb-font-color-unavailable: #999;
-// $crumb-font-transform: uppercase;
+$crumb-font-transform: none;
 // $crumb-link-decor: underline;
 
 // We use these to control the slash between breadcrumbs
 // $crumb-slash-color: #aaa;
-// $crumb-slash: "/";
+$crumb-slash: ">";
 
 //
 // BUTTONS
-//
+//`
 
 // $include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
-// $button-tny: rem-calc(10);
-// $button-sml: rem-calc(14);
-// $button-med: rem-calc(16);
-// $button-lrg: rem-calc(18);
+$button-tny: rem-calc(2);
+$button-sml: rem-calc(4);
+$button-med: rem-calc(6);
+$button-lrg: rem-calc(8);
 
 // We use this to control the display property.
 // $button-display: inline-block;
@@ -586,10 +586,10 @@ $primary-color: #46166b;
 
 // We use these to control the caption styles
 // $orbit-container-bg: none;
-// $orbit-caption-bg: rgba(51,51,51, 0.8);
+$orbit-caption-bg: rgba(46,38,16, 0.77);
 // $orbit-caption-font-color: #fff;
-// $orbit-caption-font-size: rem-calc(14);
-// $orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
+$orbit-caption-font-size: rem-calc(21);
+$orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
 // $orbit-caption-padding: rem-calc(10 14);
 // $orbit-caption-height: auto;
 
@@ -970,11 +970,11 @@ $sub-nav-item-divider: "|";
 // $include-html-media-classes: $include-html-classes;
 
 // We use these to control border styles
-// $thumb-border-style: solid;
+$thumb-border-style: none;
 // $thumb-border-width: 4px;
 // $thumb-border-color: #fff;
-// $thumb-box-shadow: 0 0 0 1px rgba(#000,.2);
-// $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
+$thumb-box-shadow: none;
+$thumb-box-shadow-hover: none;
 
 // Radius and transition speed for thumbs
 // $thumb-radius: $global-radius;
@@ -1035,13 +1035,13 @@ $topbar-dropdown-bg: rgba(255, 255, 255, 0.1);
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: #46166b;
-$topbar-link-color-hover: lighten($topbar-link-color, 20%);
-$topbar-link-color-active: #46166b;
+$topbar-link-color-hover: #fff;
+$topbar-link-color-active: #fff;
 // $topbar-link-weight: normal;
 $topbar-link-font-size: rem-calc(16);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-$topbar-link-bg-hover: none;
-$topbar-link-bg-active: none;
+$topbar-link-bg-hover: #47266a;
+$topbar-link-bg-active: #47266a;
 $topbar-link-bg-active-hover: none;
 // $topbar-link-font-family: $body-font-family;
 
@@ -1094,7 +1094,7 @@ $header-line-height: 1.125;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
+$h1-font-size: rem-calc(48);
 // $h2-font-size: rem-calc(37);
 // $h3-font-size: rem-calc(27);
 $h4-font-size: rem-calc(22);
