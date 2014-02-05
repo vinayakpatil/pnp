@@ -87,7 +87,7 @@ body{
 		@include border-radius(5px);
 	}
 
-	.top-bar-section li.active:not(.has-form) a:not(.button){
+	.top-bar-section li.active:not(.has-form) > a:not(.button){
 		background:#47266a;
 	}
 
@@ -327,6 +327,27 @@ form{
 				vertical-align: middle;
 				font-size: emCalc(15);
 				color: #fff;
+			}
+		}
+	}
+}
+
+
+
+/* FLyout */
+.flyout{
+	h6{
+		color: $primary-color;
+	}
+	.f-dropdown .side-nav{
+		li{
+			clear: left;
+			a{
+				color: $body-font-color;
+				&:hover{
+					background: transparent;
+					color: inherit;
+				}
 			}
 		}
 	}

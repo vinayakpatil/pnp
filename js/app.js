@@ -1,6 +1,7 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation({
+    active_class: 'open',
 	orbit: {
 		bullets: false,
 		slide_number: false,
@@ -34,5 +35,17 @@ $(function() {
         topPos: '330px', //position from the top/ use if tabLocation is left or right
         leftPos: '20px', //position from left/ use if tabLocation is bottom or top
         fixedPosition: true //options: true makes it stick(fixed position) on scroll
+    });
+
+    // Flyout menu
+    $('.flyout').hover(function(e){
+        $(this).toggleClass('active');
+    },function(e){
+        $(this).toggleClass('active');
+    });
+
+    // Hack to force navigation. Need to clean this up
+    $('.flyout>a').on('click', function(e){
+        window.location = $(this).attr('href');
     });
 });

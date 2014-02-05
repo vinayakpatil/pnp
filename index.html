@@ -28,14 +28,21 @@
                 </li>
                 <li><a href="#">Register</a>
                 </li>
-                <li><a href="#" data-dropdown="drop" class="dropdown" >My Account</a><br>
+                <li><a href="#" data-dropdown="drop" class="dropdown">My Account</a>
+                    <br>
                     <ul id="drop" data-dropdown-content class="f-dropdown">
-                      <li><a href="#">This is a link</a></li>
-                      <li><a href="#">This is another</a></li>
-                      <li><a href="#">Yet another</a></li>
+                        <li><a href="#">This is a link</a>
+                        </li>
+                        <li><a href="#">This is another</a>
+                        </li>
+                        <li><a href="#">Yet another</a>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="#"><span class="notifications">2</span></a>
+                <li>
+                    <a href="#">
+                        <span class="notifications">2</span>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -45,7 +52,9 @@
         <nav class="top-bar large-12 columns">
             <ul class="title-area">
                 <li class="name">
-                    <a href="index.html"><h3>Peacocks and Paisleys</h3></a>
+                    <a href="index.html">
+                        <h3>Peacocks and Paisleys</h3>
+                    </a>
                 </li>
             </ul>
 
@@ -54,7 +63,57 @@
                 <ul class="right">
                     <li><a href="#">What's New</a>
                     </li>
-                    <li><a href="furniture.html">Furniture</a>
+                    <li class="flyout"><a href="furniture.html" data-dropdown="furnitureCategories" data-options="is_hover:true">Furniture</a>
+                        <div id="furnitureCategories" data-dropdown-content class="f-dropdown content large">
+                            <div class="row">
+                                <div class="large-4 columns">
+                                    <h6>Category section1</h6>
+                                    <ul class="side-nav">
+                                        <li><a href="#">Who we are</a>
+                                        </li>
+                                        <li><a href="#">Contact Us</a>
+                                        </li>
+                                        <li><a href="#">Blog</a>
+                                        </li>
+                                        <li><a href="#">Terms</a>
+                                        </li>
+                                        <li><a href="#">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="large-4 columns">
+                                    <h6>Category section2</h6>
+                                    <ul class="side-nav">
+                                        <li><a href="#">Who we are</a>
+                                        </li>
+                                        <li><a href="#">Contact Us</a>
+                                        </li>
+                                        <li><a href="#">Blog</a>
+                                        </li>
+                                        <li><a href="#">Terms</a>
+                                        </li>
+                                        <li><a href="#">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="large-4 columns">
+                                    <h6>Category section3</h6>
+                                    <ul class="side-nav">
+                                        <li><a href="#">Who we are</a>
+                                        </li>
+                                        <li><a href="#">Contact Us</a>
+                                        </li>
+                                        <li><a href="#">Blog</a>
+                                        </li>
+                                        <li><a href="#">Terms</a>
+                                        </li>
+                                        <li><a href="#">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li><a href="#">Lighting</a>
                     </li>
@@ -152,7 +211,8 @@
                 </li>
                 <li><a href="#">Terms</a>
                 </li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Privacy Policy</a>
+                </li>
             </ul>
         </div>
         <div class="large-2 columns">
@@ -217,19 +277,25 @@
         <form action="#">
             <div class="row">
                 <div class="large-12 columns">
-                    <label>Name <span class="required">*</span></label>
+                    <label>Name
+                        <span class="required">*</span>
+                    </label>
                     <input type="text">
                 </div>
             </div>
             <div class="row">
                 <div class="large-12 columns">
-                    <label>Email <span class="required">*</span></label>
+                    <label>Email
+                        <span class="required">*</span>
+                    </label>
                     <input type="email">
                 </div>
             </div>
             <div class="row">
                 <div class="large-12 columns">
-                    <label>Category <span class="required">*</span></label>
+                    <label>Category
+                        <span class="required">*</span>
+                    </label>
                     <select>
                         <option>Select category</option>
                         <option value="">Category1</option>
@@ -240,7 +306,9 @@
             </div>
             <div class="row">
                 <div class="large-12 columns">
-                    <label>Message <span class="required">*</span></label>
+                    <label>Message
+                        <span class="required">*</span>
+                    </label>
                     <textarea>
 
                     </textarea>
@@ -248,7 +316,7 @@
             </div>
             <div class="row">
                 <div class="large-12 columns agreement">
-                    <input type="checkbox"> Click to automatically attach a screenshot of this page
+                    <input type="checkbox">Click to automatically attach a screenshot of this page
                 </div>
             </div>
             <div class="row">
