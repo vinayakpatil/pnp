@@ -17,12 +17,15 @@ body{
     left: emCalc(-20);
 }
 
-.top-side-nav-container, .search-container{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: emCalc(14);
-    position:relative;
-    top:emCalc(65);
-    padding-top: rem-calc(8);
+.top-nav-container{
+    margin-bottom: 10px;
+    .top-side-nav-container, .search-container{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: emCalc(14);
+        position:relative;
+        top:emCalc(65);
+        padding-top: rem-calc(8);
+    }
 }
 
 .search-container {
@@ -95,8 +98,18 @@ body{
         margin-right: 2px;
     }
 
+    .top-bar-section .right{
+        li:not(.has-form) a:not(.button){
+            padding: 0;
+            line-height: 1.5;
+            &:hover{
+                background: none;
+            }
+        }
+    }
+
     .title-area{
-        margin-top: emCalc(-7);
+        margin: -7px 7px 0 0;
         h3{
             display: inline-block;
             width: emCalc(65);
@@ -201,24 +214,6 @@ footer{
         .subscribe{
             .button{
                 font-size: emCalc(18);
-            }
-        }
-
-        /* Social Icons */
-        .sub-nav.social {
-            a i{
-                display: inline-block;
-                width: 32px;
-                height: 32px;
-                &.social-facebook{
-                    background:transparent url('../imgs/social-sprite.png') no-repeat 0 0;
-                }
-                &.social-twitter{
-                    background:transparent url('../imgs/social-sprite.png') no-repeat -32px 0;
-                }
-                &.social-instagram{
-                    background:transparent url('../imgs/social-sprite.png') no-repeat -64px 0;
-                }
             }
         }
     }
@@ -577,7 +572,7 @@ have a fixed width and height (but it's not required).
                         padding-bottom: 10px;
                     }
 
-                    dl li, td, h5{
+                    dl li, td, h5, p{
                         color: #666666;
                         font-size: emCalc(12);
                         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -611,6 +606,42 @@ have a fixed width and height (but it's not required).
             top: 50px;
         }
     }
+
+    /* Promote */
+    .promote{
+        ul{
+            list-style-type: none;
+            @extend .clearfix;
+            margin-left: 0;
+            line-height: 1.5;
+            li{
+                color: #666666;
+                float: left;
+                &:before{
+                    content: '|';
+                    float: left;
+                    margin: 0 10px;
+                }
+                &:first-child:before{
+                    content: '';
+                    display: none;
+                }
+            }
+
+            ul{
+                li{
+                    &:before{
+                        content: '';
+                        display: none;
+                    }
+                }
+                &.social{
+                    line-height: 2;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -634,6 +665,59 @@ have a fixed width and height (but it's not required).
 
         .jcarousel-prev, .jcarousel-next{
             top: 92px;
+        }
+    }
+}
+
+
+/* Social Icons - mini */
+
+.social {
+    list-style-type: none;
+    @extend .clearfix;
+    margin: 0;
+    li{
+        float: left;
+        margin-right: 5px;
+        a i{
+            display: inline-block;
+        }
+    }
+}
+
+.social-medium {
+    li{
+        margin-right: 10px;
+    }
+    a i{
+        width: 32px;
+        height: 32px;
+        &.social-facebook{
+            background:transparent url('../imgs/social-sprite.png') no-repeat 0 0;
+        }
+        &.social-twitter{
+            background:transparent url('../imgs/social-sprite.png') no-repeat -32px 0;
+        }
+        &.social-instagram{
+            background:transparent url('../imgs/social-sprite.png') no-repeat -64px 0;
+        }
+    }
+}
+
+.social-mini {
+    li{
+        a i{
+            width: 17px;
+            height: 17px;
+            &.social-facebook{
+                background:transparent url('../imgs/social-sprite-mini.png') no-repeat 0 0;
+            }
+            &.social-twitter{
+                background:transparent url('../imgs/social-sprite-mini.png') no-repeat -17px 0;
+            }
+            &.social-instagram{
+                background:transparent url('../imgs/social-sprite-mini.png') no-repeat -34px 0;
+            }
         }
     }
 }
