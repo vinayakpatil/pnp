@@ -177,7 +177,7 @@ $primary-color: #46166b;
 $crumb-bg: rgba(255, 255, 255, 0);
 
 // We use these to set the padding around the breadcrumbs.
-$crumb-padding: rem-calc(14 14 9 0);
+$crumb-padding: rem-calc(10 14 0 0);
 // $crumb-side-padding: rem-calc(12);
 
 // We use these to control border styles.
@@ -633,8 +633,8 @@ $orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
 // $pagination-li-margin: rem-calc(5);
 
 // We use these for the pagination anchor links
-// $pagination-link-pad: rem-calc(1 10 1);
-// $pagination-link-font-color: #999;
+$pagination-link-pad: rem-calc(1 10 1);
+$pagination-link-font-color: #47266a;
 // $pagination-link-active-bg: scale-color(#fff, $lightness: -10%);
 
 // We use these for disabled anchor links
@@ -647,7 +647,7 @@ $orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
 // $pagination-link-current-font-color: #fff;
 // $pagination-link-current-font-weight: bold;
 // $pagination-link-current-cursor: default;
-// $pagination-link-current-active-bg: $primary-color;
+$pagination-link-current-active-bg: #47266a;
 
 // Panels
 
@@ -855,7 +855,7 @@ $sub-nav-list-margin: rem-calc(0);
 // We use this to control the definition
 $sub-nav-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $sub-nav-font-size: rem-calc(14);
-$sub-nav-font-color: #515151;
+$sub-nav-font-color: #47266a;
 // $sub-nav-font-weight: normal;
 // $sub-nav-text-decoration: none;
 // $sub-nav-border-radius: 3px;
@@ -950,13 +950,13 @@ $sub-nav-item-divider: "|";
 
 // $include-html-tabs-classes: $include-html-classes;
 
-// $tabs-navigation-padding: rem-calc(16);
-// $tabs-navigation-bg-color: #efefef  ;
+$tabs-navigation-padding: rem-calc(10);
+// $tabs-navigation-bg-color: rgba(192, 170, 67, 0.5);
 // $tabs-navigation-active-bg-color: #fff;
 // $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
-// $tabs-navigation-font-color: #222;
-// $tabs-navigation-font-size: rem-calc(16);
-// $tabs-navigation-font-family: $body-font-family;
+$tabs-navigation-font-color: #47266a;
+$tabs-navigation-font-size: rem-calc(12);
+$tabs-navigation-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 // $tabs-content-margin-bottom: rem-calc(24);
 // $tabs-content-padding: $column-gutter/2;
@@ -1136,8 +1136,8 @@ $h4-font-size: rem-calc(22);
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
 // $hr-border-style: solid;
-// $hr-border-color: #ddd;
-// $hr-margin: rem-calc(20);
+$hr-border-color: #d9d9d9;
+$hr-margin: rem-calc(30);
 
 // We use these to style lists
 // $list-style-position: outside;
