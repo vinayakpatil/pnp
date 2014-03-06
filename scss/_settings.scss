@@ -586,11 +586,11 @@ $button-lrg: rem-calc(8);
 
 // We use these to control the caption styles
 // $orbit-container-bg: none;
-$orbit-caption-bg: rgba(46,38,16, 0.77);
+$orbit-caption-bg: none;
 // $orbit-caption-font-color: #fff;
 $orbit-caption-font-size: rem-calc(21);
 $orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
-// $orbit-caption-padding: rem-calc(10 14);
+$orbit-caption-padding: 0;
 // $orbit-caption-height: auto;
 
 // We use these to control the left/right nav styles

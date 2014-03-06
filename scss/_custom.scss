@@ -131,13 +131,16 @@ body{
         .orbit-caption{
             position: absolute;
             right: 0;
-            bottom: emCalc(80);
-            width: 35%;
-            font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-            .captionHeading{
-                display: block;
-                font-size: rem-calc(34);
-                line-height: 1;
+            bottom: emCalc(60);
+            .right{
+                font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+                .captionHeading{
+                    display: block;
+                    font-size: rem-calc(34);
+                    line-height: 1;
+                }
+                padding: 25px 15px 15px;
+                background: rgba(46,38,16, 0.77);
             }
         }
     }
