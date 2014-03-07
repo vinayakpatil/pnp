@@ -14,7 +14,6 @@ $(document).foundation({
 $(function() {
     // Hack to force navigation. Need to clean this up
     $('.flyout>a').on('click', function(e) {
-        console.log('taeg');
         window.location = $(this).attr('href');
     });
 
