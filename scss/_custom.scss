@@ -169,17 +169,17 @@ footer{
         color: #4d2875;
     }
 
+    .side-nav li, p{
+        font-size: rem-calc(13);
+    }
+
     &.main-nav{
-        border-top: 3px solid #e6e4ec;
+        // border-top: 3px solid #e6e4ec;
         border-bottom: 3px solid #e6e4ec;
         margin-top: emCalc(20);
         margin-bottom: emCalc(20);
         background-color: rgba(255, 255, 255, 0.6);
         padding: emCalc(20) 0;
-
-        .side-nav li, p{
-            font-size: rem-calc(13);
-        }
 
         .side-nav{
             padding: 0;
@@ -304,7 +304,10 @@ form{
         font-family: $body-font-family;
         text-align: center;
         color: #47266a;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #d9d9d9;
+        line-height: 0.8;
     }
     .thumbs-container{
         h4 {
@@ -334,6 +337,7 @@ form{
                 &:hover{
                     background: transparent;
                     color: inherit;
+                    text-decoration: none;
                 }
             }
         }
@@ -375,31 +379,34 @@ form{
 
 
 /* Pagination */
-.pagination{
+.pagination-container{
     padding-right: 0;
-    padding-left: 25px;
-    li{
-        border: 1px solid #d0d0d0;
-        border-radius: 4px;
-        &.arrow, &.current, &.all{
-            border:none;
-        }
+    .pagination{
+        padding-right: 0;
+        padding-left: 25px;
+        li{
+            border: 1px solid #d0d0d0;
+            border-radius: 4px;
+            &.arrow, &.current, &.all{
+                border:none;
+            }
 
-        &.all{
-            &:before{
-                content: '|';
-                float: left;
-                margin-left: 5px;
-            }
-            a{
-                padding: 0 0 0 25px;
-            }
-            &.unavailable{
+            &.all{
+                &:before{
+                    content: '|';
+                    float: left;
+                    margin-left: 5px;
+                }
                 a{
-                    color: #47266a;
-                    &:hover{
-                        text-decoration: underline;
-                        cursor: pointer;
+                    padding: 0 0 0 25px;
+                }
+                &.unavailable{
+                    a{
+                        color: #47266a;
+                        &:hover{
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
@@ -409,6 +416,8 @@ form{
 
 /* Thumbnails */
 .th{
+    border-bottom: 1px solid #a4a2a7;
+    padding-bottom: 10px;
     &.th-large{
         border: 10px solid #fff;
     }
@@ -487,6 +496,7 @@ have a fixed width and height (but it's not required).
 
 /* Product */
 .product{
+    margin-top: 20px;
     section{
         padding-left: 0;
 
@@ -725,6 +735,23 @@ have a fixed width and height (but it's not required).
             &.social-instagram{
                 background:transparent url('../imgs/social-sprite-mini.png') no-repeat -34px 0;
             }
+        }
+    }
+}
+
+
+/* BreadCrumbs */
+.breadcrumbs{
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+
+/* Side Nav */
+.side-nav{
+    a{
+        &:hover{
+            text-decoration: underline;
         }
     }
 }

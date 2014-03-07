@@ -44,9 +44,18 @@ $(function() {
     });
 
     // Flyout menu
-    $('.flyout').hover(function(e) {
-        $(this).toggleClass('active');
-    }, function(e) {
-        $(this).toggleClass('active');
-    });
+    (function($) {
+        var isActivePage = false;
+        $('.flyout').hover(function(e) {
+            isActivePage = $(this).hasClass('active');
+            if (!isActivePage) {
+                $(this).addClass('active');
+            }
+        }, function(e) {
+            if (!isActivePage) {
+                $(this).toggleClass('active');
+            }
+        });
+    })($);
+
 });
