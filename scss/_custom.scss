@@ -45,6 +45,9 @@ body{
     .sub-nav{
         li{
             font-size: emCalc(13);
+            &:before{
+                margin: 0 emCalc(8);
+            }
         }
         a span.notifications{
             background: transparent url('../imgs/notification-bg.png') no-repeat;
@@ -181,6 +184,10 @@ footer{
         background-color: rgba(255, 255, 255, 0.6);
         padding: emCalc(20) 0;
 
+        h6{
+            font-size: emCalc(14);
+        }
+
         .side-nav{
             padding: 0;
             li{
@@ -281,13 +288,14 @@ form{
             @include background(linear-gradient(top, #703baa, #51297b));
         }
         border: 1px solid #52297c;
-        padding-top: 1px;
+        padding-top: 1px ;
         padding-bottom: 1px;
     }
     &.secondary{
-        @include background(linear-gradient(bottom, #eaeaea, #cecece));
+        @include background(linear-gradient(bottom, #ededed, #fff));
+        color: $primary-color;
         &:hover{
-            @include background(linear-gradient(top, #eaeaea, #cecece));
+            @include background(linear-gradient(top, #ededed, #fff));
         }
         border: 1px solid #cccccc;
         padding-top: 1px;
@@ -297,17 +305,21 @@ form{
 
 
 
+.cart h1, .categories h1{
+    font-family: $body-font-family;
+    text-align: center;
+    color: #47266a;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    line-height: 0.8;
+}
+
+
 /* Categories */
 
 .categories{
     h1{
-        font-family: $body-font-family;
-        text-align: center;
-        color: #47266a;
-        margin-bottom: 20px;
-        padding-bottom: 10px;
         border-bottom: 1px solid #d9d9d9;
-        line-height: 0.8;
     }
     .thumbs-container{
         h4 {
@@ -363,10 +375,13 @@ form{
     }
     .sub-nav{
         padding-top:0;
-        margin-left: emCalc(-50);
+        margin-left: emCalc(-55);
         li{
             margin-bottom: 0;
             font-size: emCalc(12);
+            &:before{
+                margin: 0  emCalc(8);
+            }
             a{
                 color: #47266a;
                 &:hover{
@@ -419,13 +434,14 @@ form{
     border-bottom: 1px solid #a4a2a7;
     padding-bottom: 10px;
     &.th-large{
-        border: 10px solid #fff;
+        border: 10px solid #fff !important;
     }
     &.th-mini{
-        border: 2px solid #fff;
+        border: 2px solid #fff !important;
     }
     &.th-large, &.th-mini{
         outline: 1px solid #d9d9d9;
+        padding-bottom: 0;
     }
 }
 
@@ -466,6 +482,10 @@ have a fixed width and height (but it's not required).
 .jcarousel li {
     /* Required only for block elements like <li>'s */
     float: left;
+
+    .th{
+        border-bottom: none;
+    }
 }
 
 
@@ -749,9 +769,122 @@ have a fixed width and height (but it's not required).
 
 /* Side Nav */
 .side-nav{
-    a{
-        &:hover{
+    li{
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+/* Shopping cart */
+.cart {
+    .button{
+        font-size: emCalc(14);
+        padding-top: 8px;
+        padding-bottom: 9px;
+    }
+
+    h1{
+        border-bottom: none;
+    }
+
+    h4{
+        color: $primary-color;
+    }
+
+    .cart-refresh{
+        background: transparent url(../imgs/cart-sprite.png) no-repeat;
+    }
+
+    .cart-delete{
+        background: transparent url(../imgs/cart-sprite.png) no-repeat -24px;
+    }
+    .cart-refresh, .cart-delete{
+        display: inline-block;
+        width: 24px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    form.item{
+        input{
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .controls{
+            display: inline-block;
+            height: 30px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    }
+
+    /* Coupons */
+    .coupons{
+        padding-left: 0;
+        table{
+            td{
+                padding: 12px 9px;
+            }
+
+            input, .button{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    /* Summary */
+    .summary{
+        padding-right: 0;
+        margin-top: 35px;
+
+        table{
+            background: #dfd4a1;
+
+            th, td{
+                text-align: right;
+            }
+            tbody{
+                td{
+                    font-weight: bold;
+                }
+            }
+            tfoot{
+                background: #dfd4a1;
+                td{
+                    font-size: emCalc(18);
+                    border-top: 1px solid #fff;
+                    font-weight: normal;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Tables */
+table{
+    border-spacing: 0;
+    width: 100%;
+
+    &.products tbody{
+        background: rgba(255, 255, 255, 0.63);
+        h6{
             text-decoration: underline;
+            margin-bottom: 0;
+        }
+        small{
+            display: block;
+            font-size: emCalc(10);
         }
     }
 }
