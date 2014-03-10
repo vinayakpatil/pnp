@@ -1,0 +1,114 @@
+footer.row.main-nav
+  .large-2.columns
+    h6 Peacocks & Paisleys
+    ul.side-nav
+      li
+        a(href='#') Who we are
+      li
+        a(href='#') Contact Us
+      li
+        a(href='#') Blog
+      li
+        a(href='#') Terms
+      li
+        a(href='#') Privacy Policy
+  .large-2.columns
+    h6 Customer Care
+    ul.side-nav
+      li
+        a(href='#') Shipping
+      li
+        a(href='#') Return and Exchange
+      li
+        a(href='#') FAQs
+  .large-2.columns
+    h6 Payment options
+    ul.sub-nav.payment
+      li
+        a(href='#', title='visa')
+          i.visa
+      li
+        a(href='#', title='master-card')
+          i.master-card
+      li
+        a(href='#', title='other')
+          i.other
+    h5 Secured by
+    a(href='http://geotrust.com', target='_blank')
+      img(src='imgs/geotrust.jpg', alt='Geotrust logo')
+  .large-4.columns
+    hgroup
+      h6 Be first to receive exclusive offers
+      h6
+        strong SIGN UP NOW
+    form
+      input(type='text', placeholder='Enter email address')
+      input.button.primary.large.radius(type='submit', value='Subscribe')
+  .large-2.columns
+    h6 Follow us
+    ul.social.social-medium
+      li
+        a(href='#', title='facebook')
+          i.social-facebook
+      li
+        a(href='#', title='twitter')
+          i.social-twitter
+      li
+        a(href='#', title='instagram')
+          i.social-instagram
+footer.row
+  p.large-7.columns.large-centered
+    | Copyright © 2014 Peacocks & Paisleys, All rights reserved. Site by Chiefsons
+// Slide out tabs mark up
+.slide-out-div.feedback
+  a.handle.handleFeedback(href='http://link-for-non-js-users.html') Feedback
+  form(action='#')
+    .row
+      .large-12.columns
+        label
+          | Name
+          span.required *
+        input(type='text')
+    .row
+      .large-12.columns
+        label
+          | Email
+          span.required *
+        input(type='email')
+    .row
+      .large-12.columns
+        label
+          | Category
+          span.required *
+        select
+          option Select category
+          option(value='') Category1
+          option(value='') Category2
+          option(value='') Category3
+    .row
+      .large-12.columns
+        label
+          | Message
+          span.required *
+        textarea
+    .row
+      .large-12.columns.agreement
+        input(type='checkbox')
+        | Click to automatically attach a screenshot of this page
+    .row
+      .large-12.columns
+        input.button.primary.large.radius(type='submit', value='Submit')
+        input.cancel.button.secondary.large.radius(type='button', value='Cancel')
+.slide-out-div.blog
+  a.handle.handleBlog(href='http://link-for-non-js-users.html') Blog
+  h3 Contact me
+  p
+    | Thanks for checking out my jQuery plugin, I hope you find this useful.
+  p This can be a form to submit feedback, or contact info
+
+// Scripts
+block scripts
+  script(src='bower_components/jquery/jquery.js')
+  script(src='js/libraries/jquery.tabSlideOut.js')
+  script(src='bower_components/foundation/js/foundation.min.js')
+  script(src='js/app.js')

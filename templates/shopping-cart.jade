@@ -1,0 +1,108 @@
+// Extend Default page layout
+extends layout
+// Change title of page
+block prepend headTag
+  title Peacocks and Paisleys | Shopping Cart
+// Change page content
+block content
+  section.row
+    ul.breadcrumbs
+      li
+        a(href='index.html') Home
+      li.current
+        a(href='#') Furniture
+  section.row.cart
+    h1 Shopping Cart
+    table.large-12.products
+      thead
+        tr
+          th Image
+          th Product Name
+          th Color
+          th Quantity
+          th Unit Price
+          th Total
+      tbody
+        tr
+          td
+            a.th.th-mini(href='')
+              img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
+          td
+            h6
+              | Traditional Side Table
+            small Product code: PP234561F
+          td
+            | Brown
+          td
+            form.item
+              input(type='text', value='1')
+              span.controls
+                span.cart-refresh
+                span.cart-delete
+          td
+            | 185.300 KD
+          td
+            | 185.300 KD
+        tr
+          td
+            a.th.th-mini(href='')
+              img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
+          td
+            h6
+              | Contemporary Side Table
+            small Product code: PP234561F
+          td
+            | Brown
+          td
+            form.item
+              input(type='text', value='1')
+              span.controls
+                span.cart-refresh
+                span.cart-delete
+          td
+            | 185.300 KD
+          td
+            | 185.300 KD
+    section.row
+      .coupons.columns.large-6
+        h4 Gift Voucher & Discount Coupon
+        table
+          tbody
+            tr
+              td
+                strong Use Deal / Coupon Code:
+              td
+                input(type='text', placeholder='Enter deal / coupon code')
+              td
+                button.button.secondary.radius.large Apply
+            tr
+              td
+                strong Use Gift Voucher:
+              td
+                input(type='text', placeholder='Enter gift voucher code')
+              td
+                button.button.secondary.radius.large Apply
+      .summary.columns.large-6
+        table
+          tbody
+            tr.row
+              td.large-8.columns Sub-Total:
+              td.large-4.columns 370.600 KD
+            tr.row
+              td.large-8.columns Shipping:
+              td.large-4.columns 10.000 KD
+          tfoot
+            tr.row
+              td.large-8.columns Grand Total:
+              td.large-4.columns 380.600 KD
+        button.button.secondary.large Continue Shopping
+        button.button.primary.large.right Checkout
+
+
+
+
+
+
+
+
+

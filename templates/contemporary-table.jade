@@ -1,0 +1,147 @@
+// Extend Default page layout
+extends layout
+// Change title of page
+block prepend headTag
+  title Peacocks and Paisleys | Contemporary Table
+// Change page content
+block content
+  section.row
+    ul.breadcrumbs
+      li
+        a(href='index.html') Home
+      li
+        a(href='furniture.html') Furniture
+      li
+        a(href='accent-tables.html') Accent Tables
+      li.current
+        a(href='#') Contemporary Table
+  section.row.product
+    section.columns.large-6
+      a.th.th-large
+        img(src='imgs/furniture/accent-tables/contemporary-side-large.jpg', alt='contemporary-side-large')
+      section.productCarousel.row
+        .jcarousel
+          ul
+            li
+              a.th.th-mini(href='')
+                img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
+            li
+              a.th.th-mini(href='')
+                img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
+            li
+              a.th.th-mini(href='')
+                img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
+            li
+              a.th.th-mini(href='')
+                img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
+            li
+              a.th.th-mini(href='')
+                img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
+        // Controls
+        a.jcarousel-prev(href='#')
+        a.jcarousel-next(href='#')
+      section.promote
+        ul
+          li(class="fb-like")
+            a(href='#')
+              img(src='imgs/fb-like.png', alt='FB Like Button')
+            | 7 people like this
+          li
+            strong.left Share On:
+            ul.social.social-mini.left
+              li
+                a(href='#', title='facebook')
+                  i.social-facebook
+              li
+                a(href='#', title='twitter')
+                  i.social-twitter
+              li
+                a(href='#', title='instagram')
+                  i.social-instagram
+    section.columns.large-6.info
+      h3 Contemporary Table
+      p Product code: PP234561F
+      h3.highlight
+        | 185.300 KD
+        small.instock In Stock
+      form.row(action='shopping-cart.html')
+        .large-4.columns
+          .row
+            .large-1.columns
+              label.right.inline(for='qty') QTY:
+            .large-9.columns.end
+              input#qty.text-center(type='text', value='1')
+        .large-5.columns.end
+          button.button.primary.large(type='submit') Add To Cart
+      section.tabs-container
+        dl.tabs(data-tab='')
+          dd.active
+            a(href='#panel1') Product Details
+          dd
+            a(href='#panel2') Delivery
+          dd
+            a(href='#panel3') Returns
+        .tabs-content
+          #panel1.content.active
+            dl
+              dd
+                h5 Attributes
+                div
+                  table
+                    tbody
+                      tr
+                        td SKU
+                        td TR318FU90GXDINDFUR
+              dd
+                h5 Descrption
+                div
+                  ul
+                    li
+                      | Table Height: 20 inches (50 cm), Length: 23.5 inches (59 cm), Width: 16 inches (40 cm)
+                    li Material: Solid Wood (Tropical Fruit Wood)
+                    li Color: Brown
+                    li Table Top Material: Solid Wood (Tropical Fruit Wood)
+                    li Style: Contemporary
+                    li Folding: Yes
+                    li Finish: Matt
+                    li Quantity: 1 Piece (Accent Table)
+          #panel2.content
+            p
+              | This is the second panel of the basic tab example. This is the second panel of the basic tab example.
+          #panel3.content
+            p
+              | This is the third panel of the basic tab example. This is the third panel of the basic tab example.
+  .row.featured
+    h4 You may also like:
+    section.featuredCarousel
+      .jcarousel
+        ul
+          li
+            a.th(href='')
+              img(src='imgs/furniture/accent-tables/baldwin-solid-wood-sofa.jpg', alt='baldwin-solid-wood-sofa')
+          li
+            a.th(href='')
+              img(src='imgs/furniture/accent-tables.jpg', alt='traditional-tables')
+          li
+            a.th(href='')
+              img(src='imgs/furniture/accent-tables/contemporary-side.jpg', alt='contemporary-side')
+          li
+            a.th(href='')
+              img(src='imgs/furniture/accent-tables/baldwin-solid-wood-sofa2.jpg', alt='baldwin-solid-wood-sofa.jpg')
+          li
+            a.th(href='')
+              img(src='imgs/furniture/accent-tables/contemporary-side2.jpg', alt='contemporary-side2')
+      // Controls
+      a.jcarousel-prev(href='#')
+      a.jcarousel-next(href='#')
+
+block append scripts
+  script(src='bower_components/jcarousel/dist/jquery.jcarousel.min.js')
+  script(src='js/jcarousel.js')
+
+
+
+
+
+
+

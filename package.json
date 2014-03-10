@@ -1,0 +1,28 @@
+{
+    "name": "PNP",
+    "version": "0.0.1",
+    "description": "E-Commerce website for PNP",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/vinayakpatil/pnp.git"
+    },
+    "keywords": [
+        "PNP"
+    ],
+    "author": "Vinayak Patil",
+    "license": "BSD-2-Clause",
+    "bugs": {
+        "url": "https://github.com/vinayakpatil/pnp/issues"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.3",
+        "node-sass": "~0.7.0",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-sass": "~0.8.0",
+        "grunt-contrib-jade": "~0.11.0"
+    }
+}

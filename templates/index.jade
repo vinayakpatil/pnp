@@ -1,0 +1,45 @@
+// Extend Default page layout
+extends layout
+// Change title of page
+block prepend headTag
+  title Peacocks and Paisleys
+// Change page content
+block content
+  section.row
+    ul(data-orbit='')
+      li
+        img(src='imgs/banner.jpg', alt='slide 1')
+        .orbit-caption
+          .right
+            | Welcome to the world of
+            span.captionHeading Peacocks & Paisleys
+      li
+        img(src='imgs/banner.jpg', alt='slide 2')
+        .orbit-caption
+          .right
+            | Caption 2
+            span.captionHeading Peacocks & Paisleys
+      li
+        img(src='imgs/banner.jpg', alt='slide 3')
+        .orbit-caption
+          .right
+            | Caption 2
+            span.captionHeading Peacocks & Paisleys
+  section.row
+    ul.large-block-grid-3.thumbs-container
+      li
+        a.th(href='#')
+          img(src='imgs/thumb_1.jpg', alt='Thumbnail')
+          h4 Luce Casmere
+          h5.subheader Loreum lipsum
+      li
+        a.th(href='#')
+          img(src='imgs/thumb_2.jpg', alt='Thumbnail')
+          h4 Luce Casmere
+          h5.subheader Loreum lipsum
+      li
+        a.th(href='#')
+          img(src='imgs/thumb_3.jpg', alt='Thumbnail')
+          h4 Luce Casmere
+          h5.subheader Loreum lipsum
+

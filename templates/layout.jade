@@ -1,0 +1,132 @@
+doctype html
+html(class="no-js",lang="en")
+  head
+    block headTag
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      link(rel='stylesheet', href='stylesheets/app.css')
+      script(src='bower_components/modernizr/modernizr.js')
+  body
+    // Headers
+    header.row.top-nav-container
+      form.large-4.columns.search-container(action='#')
+        .row.collapse
+          .large-10.columns
+            input(type='text', placeholder='Enter keyword or product code')
+          .large-2.columns
+            a.postfix(href='#')
+              // <i class="fi-page-search"></i>
+      h1.large-3.large-offset-1.columns.logo Peacocks and Paisleys
+      nav.large-4.columns.top-side-nav-container
+        ul.sub-nav.right
+          li
+            a(href='#') Sign In
+          li
+            a(href='#') Register
+          li
+            a.dropdown(href='#', data-dropdown='drop') My Account
+            br
+            ul#drop.f-dropdown(data-dropdown-content='')
+              li
+                a(href='#') This is a link
+              li
+                a(href='#') This is another
+              li
+                a(href='#') Yet another
+          li
+            a(href='#')
+              span.notifications 2
+    header.row
+      nav.top-bar.large-12.columns
+        ul.title-area
+          li.name
+            a(href='index.html')
+              h3 Peacocks and Paisleys
+        section.top-bar-section
+          // Left Nav Section
+          ul.left
+            li
+              a(href='#') What's New
+            li.flyout
+              a(href='furniture.html', data-dropdown='furnitureCategories', data-options='is_hover:true') Furniture
+              #furnitureCategories.f-dropdown.content.large(data-dropdown-content='')
+                .row
+                  .columns.large-3
+                    .row
+                      h6 Furniture
+                      ul.side-nav
+                        each val in ["accent-tables", "dining tables", "shelving", "buffets", "desks", "media center", "beds", "trolleys", "cabinets", "night stands", "stools & poufs", "screens", "chairs", "sofas", "outdoor furniture"].sort()
+                          li
+                            a(href=val+'.html')= val
+                    .row
+                      h6 Gifts
+                      ul.side-nav
+                        each val in ["under 50kd", "under 100kd", "under 200kd", "seasonal gifts", "gift certificate "].sort()
+                          li
+                            a(href='#')= val
+                  .columns.large-9
+                    .row
+                      .large-4.columns
+                        h6 Lighting
+                        ul.side-nav
+                          each val in ["ceiling mounts", "chandeliers", "table lamps", "floor lamps", "pendants", "sconces", "shades", "lanterns"].sort()
+                            li
+                              a(href='#')= val
+                      .large-4.columns
+                        h6 Decor
+                        ul.side-nav
+                          each val in ["home fragrance", "Candle holders", "decorative objects", "frames","hardware", "bins & boxes", "trays", "vases & bowls", "decorative pillows"].sort()
+                            li
+                              a(href='#')= val
+                      .large-4.columns
+                        h6 Walls & Floors
+                        ul.side-nav
+                          each val in ["Art", "mirrors", "shelves", "wall decor", "wallpaper", "rugs", "rug pads"].sort()
+                            li
+                              a(href='#')= val
+                    .row
+                      .large-4.columns
+                        h6 Kitchen
+                        ul.side-nav
+                          each val in ["dinnerware", "glassware", "flatware & utensils", "serving sets", "trays", "table linens", "mugs & cups", "table accessories", "trolleys"].sort()
+                            li
+                              a(href='#')= val
+                      .large-4.columns
+                        h6 Bed & Bath
+                        ul.side-nav
+                          each val in ["bedding sets", "throws & blankets", "decorative pillows", "towels", "toiletry bags", "bath accessories "].sort()
+                            li
+                              a(href='#')= val
+                      .large-4.columns
+                        h6 Peachicks
+                        ul.side-nav
+                          each val in ["furniture", "bedding", "decor", "gifts"].sort()
+                            li
+                              a(href='#')= val
+            li
+              a(href='#') Lighting
+            li
+              a(href='#') Decor
+            li
+              a(href='#') Walls & Floors
+            li
+              a(href='#') Kitchen
+            li
+              a(href='#') Bed & Bath
+            li
+              a(href='#') Peachicks
+            li
+              a(href='#') Gifts
+            li
+              a(href='#') Decor
+            li
+              a(href='#') Exceptional
+          // Right Nav Section
+          ul.right
+            li
+              a(href='#')
+                img(src='imgs/sale.png', alt='Sale')
+    // Actual page content
+    block content
+    // Footer
+    include includes/footer

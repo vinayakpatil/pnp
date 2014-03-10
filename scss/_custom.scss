@@ -177,7 +177,7 @@ footer{
     }
 
     &.main-nav{
-        // border-top: 3px solid #e6e4ec;
+        border-top: 3px solid #e6e4ec;
         border-bottom: 3px solid #e6e4ec;
         margin-top: emCalc(20);
         margin-bottom: emCalc(20);
@@ -236,6 +236,14 @@ footer{
 
 /* Slide out tabs */
 .slide-out-div{
+    // Link opacity
+    a.handle{
+        opacity: 0.75;
+    }
+    &.open a.handle{
+        opacity: 1;
+    }
+
     padding: 20px;
     width: 390px;
     border: 1px solid #fff;
@@ -340,12 +348,16 @@ form{
 .flyout{
     h6{
         color: $primary-color;
+        text-transform: uppercase;
     }
     .f-dropdown .side-nav{
         li{
             clear: left;
             a{
                 color: $body-font-color;
+                font-size: emCalc(12);
+                text-transform: capitalize;
+                line-height: 1.75 !important;
                 &:hover{
                     background: transparent;
                     color: inherit;
@@ -525,6 +537,7 @@ have a fixed width and height (but it's not required).
                 color: #47266a;
                 font-size: emCalc(28);
                 margin: 0;
+                line-height: 1.6;
 
                 &.highlight{
                     color: #a9973b;
@@ -535,7 +548,6 @@ have a fixed width and height (but it's not required).
                     line-height: 1.125;
                     margin-left: emCalc(15);
                     padding-left: 20px;
-
                     &.instock{
                         background: transparent url(../imgs/in-stock.png) no-repeat left 4px;
                     }
@@ -654,6 +666,14 @@ have a fixed width and height (but it's not required).
             li{
                 color: #666666;
                 float: left;
+                font-size: emCalc(12);
+
+                &.fb-like{
+                    a{
+                        margin-right: 10px;
+                    }
+                }
+
                 &:before{
                     content: '|';
                     float: left;

@@ -19,7 +19,7 @@ $(function() {
 
 
     $('.slide-out-div.feedback').tabSlideOut({
-        tabHandle: '.handle', //class of the element that will become your tab
+        tabHandle: '.handleFeedback', //class of the element that will become your tab
         pathToTabImage: 'imgs/feedback-vtab.png', //path to the image for the tab //Optionally can be set using css
         imageHeight: '131px', //height of tab image           //Optionally can be set using css
         imageWidth: '45px', //width of tab image            //Optionally can be set using css
@@ -31,7 +31,7 @@ $(function() {
         fixedPosition: true //options: true makes it stick(fixed position) on scroll
     });
     $('.slide-out-div.blog').tabSlideOut({
-        tabHandle: '.handle1', //class of the element that will become your tab
+        tabHandle: '.handleBlog', //class of the element that will become your tab
         pathToTabImage: 'imgs/blog-vtab.png', //path to the image for the tab //Optionally can be set using css
         imageHeight: '93px', //height of tab image           //Optionally can be set using css
         imageWidth: '45px', //width of tab image            //Optionally can be set using css
@@ -41,6 +41,11 @@ $(function() {
         topPos: '330px', //position from the top/ use if tabLocation is left or right
         leftPos: '20px', //position from left/ use if tabLocation is bottom or top
         fixedPosition: true //options: true makes it stick(fixed position) on scroll
+    });
+
+    // Feedback cancel action
+    $('.feedback .cancel').on('click', function(){
+        $(document).trigger('click');
     });
 
     // Flyout menu
