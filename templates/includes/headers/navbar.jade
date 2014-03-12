@@ -1,0 +1,76 @@
+header.row
+  nav.top-bar.large-12.columns
+    //- ul.title-area
+    //-   li.name
+    //-     a(href='index.html')
+    //-       h3 Peacocks and Paisleys
+    section.top-bar-section
+      // Left Nav Section
+      ul.left
+        li
+          a(href='#') What's New
+        li.flyout
+          a(href='furniture.html', data-dropdown='furnitureCategories', data-options='is_hover:true') Furniture
+          #furnitureCategories.f-dropdown.content.small(data-dropdown-content='')
+            ul.side-nav.clearfix
+              each val in ["accent-tables", "dining tables", "shelving", "buffets", "desks", "media center", "beds", "trolleys", "cabinets", "night stands", "stools & poufs", "screens", "chairs", "sofas", "outdoor furniture"].sort()
+                li
+                  a(href=val+'.html')= val
+        li.flyout
+          a(href='lighting.html', data-dropdown='lightingCategories', data-options='is_hover:true') Lighting
+          #lightingCategories.f-dropdown.content.small(data-dropdown-content='')
+            ul.side-nav.clearfix
+              each val in ["ceiling mounts", "chandeliers", "table lamps", "floor lamps", "pendants", "sconces", "shades", "lanterns"].sort()
+                li
+                  a(href='#')= val
+        li.flyout
+          a(href='decor.html', data-dropdown='decorCategories', data-options='is_hover:true') Decor
+          #decorCategories.f-dropdown.content.small(data-dropdown-content='')
+            ul.side-nav.clearfix
+              each val in ["home fragrance", "Candle holders", "decorative objects", "frames","hardware", "bins & boxes", "trays", "vases & bowls", "decorative pillows"].sort()
+                li
+                  a(href='#')= val
+        li.flyout
+          a(href='decor.html', data-dropdown='wallFloorsCategories', data-options='is_hover:true') Walls & Floors
+          #wallFloorsCategories.f-dropdown.content.small(data-dropdown-content='')
+            ul.side-nav.clearfix
+              each val in ["Art", "mirrors", "shelves", "wall decor", "wallpaper", "rugs", "rug pads"].sort()
+                li
+                  a(href='#')= val
+        li.flyout
+          a(href='decor.html', data-dropdown='kitchenCategories', data-options='is_hover:true') Kitchen
+          #kitchenCategories.f-dropdown.content.small(data-dropdown-content='')
+            ul.side-nav.clearfix
+              each val in ["dinnerware", "glassware", "flatware & utensils", "serving sets", "trays", "table linens", "mugs & cups", "table accessories", "trolleys"].sort()
+                li
+                  a(href='#')= val
+        li.flyout
+          a(href='decor.html', data-dropdown='bedBathCategories', data-options='is_hover:true') Bed & Bath
+          #bedBathCategories.f-dropdown.content.small(data-dropdown-content='')
+            ul.side-nav.clearfix
+              each val in ["bedding sets", "throws & blankets", "decorative pillows", "towels", "toiletry bags", "bath accessories "].sort()
+                li
+                  a(href='#')= val
+        li.flyout
+          a(href='decor.html', data-dropdown='peachicksCategories', data-options='is_hover:true') Peachicks
+          #peachicksCategories.f-dropdown.content.small(data-dropdown-content='')
+            ul.side-nav.clearfix
+              each val in ["furniture", "bedding", "decor", "gifts"].sort()
+                li
+                  a(href='#')= val
+        li.flyout
+          a(href='decor.html', data-dropdown='giftsCategories', data-options='is_hover:true') Gifts
+          #giftsCategories.f-dropdown.content.small(data-dropdown-content='')
+            ul.side-nav.clearfix
+              each val in ["under 50kd", "under 100kd", "under 200kd", "seasonal gifts", "gift certificate "].sort()
+                li
+                  a(href='#')= val
+        //- li
+        //-   a(href='#') Decor
+        //- li
+        //-   a(href='#') Exceptional
+      // Right Nav Section
+      ul.right
+        li
+          a(href='#')
+            img(src='imgs/sale.png', alt='Sale')
