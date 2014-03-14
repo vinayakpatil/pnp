@@ -458,17 +458,15 @@ form{
 .th{
     border-bottom: 1px solid #a4a2a7;
     padding-bottom: 10px;
-    img {
+    img{
         cursor: pointer;
-        -moz-transition: opacity 0.5s;
-        -o-transition: opacity 0.5s;
-        -webkit-transition: opacity 0.5s;
-        transition: opacity 0.5s
     }
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
     &:hover{
-        img{
-            opacity: 0.85;
-        }
+        opacity: 0.85;
     }
     &.th-large{
         border: 10px solid #fff !important;
