@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+    'use strict';
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -106,4 +108,4 @@ module.exports = function(grunt) {
     grunt.registerTask('server', ['connect', 'watch']);
 
 
-}
+};

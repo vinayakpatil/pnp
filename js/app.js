@@ -12,6 +12,8 @@ $(document).foundation({
 
 // document ready event
 $(function() {
+    'use strict';
+
     // Hack to force navigation. Need to clean this up
     $('.flyout>a').on('click', function(e) {
         window.location = $(this).attr('href');
