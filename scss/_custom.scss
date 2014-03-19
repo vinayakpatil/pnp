@@ -96,6 +96,7 @@ body{
         border: 0px solid #4c2c6d;
         @include border-radius(5px);
         text-transform: uppercase;
+        font-size: emCalc(13);
     }
 
     .top-bar-section li.active:not(.has-form) > a:not(.button){
@@ -103,7 +104,7 @@ body{
     }
 
     .top-bar-section li{
-        margin-right: 10px;
+        margin-right: 6px;
     }
 
     .top-bar-section .right{
@@ -162,13 +163,9 @@ body{
         }
     }
     margin:0 -0.625rem 0 -0.625rem;
-    h5{
-        color: #9f9f9f;
-        margin-top: 0;
-    }
     h4{
         margin: 10px 0 0;
-        font-size: emCalc(14);
+        font-size: emCalc(13);
     }
 }
 
@@ -474,8 +471,18 @@ form{
     -o-transition: opacity 0.5s;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
+
+    h4{
+        -moz-transition: color 0.5s;
+        -o-transition: color 0.5s;
+        -webkit-transition: color 0.5s;
+        transition: color 0.5s;
+    }
     &:hover{
         opacity: 0.85;
+        h4{
+            color: #897719;
+        }
     }
     &.th-large{
         border: 10px solid #fff !important;
