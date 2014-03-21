@@ -87,12 +87,12 @@ body{
 
 /* Top Nav-bar */
 .top-bar{
-    padding: 7px 0;
+    padding: 9px 0;
     border-top: 1px solid #c4c4c4;
     border-bottom: 1px solid #c4c4c4;
     .top-bar-section li:not(.has-form) a:not(.button){
-        padding: 0 emCalc(7.5);
-        line-height: 30px;
+        padding: 0 5px;
+        line-height: 25px;
         border: 0px solid #4c2c6d;
         @include border-radius(5px);
         text-transform: uppercase;
@@ -104,15 +104,31 @@ body{
     }
 
     .top-bar-section li{
-        margin-right: 6px;
+        margin: 0;
     }
 
-    .top-bar-section .right{
-        li:not(.has-form) a:not(.button){
-            padding: 0;
-            line-height: 1.5;
-            &:hover{
-                background: none;
+    .top-bar-section {
+        .left{
+            & > li{
+                border-right: 1px solid $primary-color;
+                padding: 0 15px;
+
+                &:last-child{
+                    border-right: none;
+                }
+                &:first-child{
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .right {
+            li:not(.has-form) a:not(.button){
+                padding: 0;
+                line-height: 1.5;
+                &:hover{
+                    background: none;
+                }
             }
         }
     }
@@ -367,14 +383,15 @@ form{
                 clear: left;
                 width: 100%;
                 a{
-                    color: $body-font-color;
+                    color: #46166b;
                     font-size: emCalc(13);
                     text-transform: capitalize;
                     display: block;
                     padding: 0 20px !important;
+                    line-height: 30px !important;
                     &:hover{
                         background: transparent;
-                        color: inherit;
+                        color: $body-font-color;
                         text-decoration: none;
                     }
                 }
@@ -481,7 +498,7 @@ form{
     &:hover{
         opacity: 0.85;
         h4{
-            color: #897719;
+            color: #46166b;
         }
     }
     &.th-large{
@@ -493,6 +510,10 @@ form{
     &.th-large, &.th-mini{
         outline: 1px solid #d9d9d9;
         padding-bottom: 0;
+
+        &:hover{
+            opacity: 1;
+        }
     }
 }
 
@@ -609,72 +630,106 @@ have a fixed width and height (but it's not required).
             }
 
             .tabs-container{
-                border: 1px solid rgba(192, 170, 67, 0.5);
+                // border: 1px solid rgba(192, 170, 67, 0.5);
                 height: 315px;
                 overflow-y: auto;
                 overflow-x: hidden;
                 margin-top: 20px;
 
-                .tabs{
-                    background-color: rgba(192, 170, 67, 0.5);
-                    padding: 0 emCalc(7);
-
-                    dd{
-                        margin-top: emCalc(7);
-                        &.active{
-                            a{
-                                background-color: #fff;
-                            }
-                        }
-                        a{
-                            background-color: transparent;
-                            padding: 7px 10px 10px;
-                        }
-                    }
-
+                dl li, td, h5, p{
+                    color: #666666;
+                    font-size: emCalc(12);
+                    font-family: $body-font-family;
                 }
 
-                .tabs-content{
-                    padding: emCalc(15);
-                    .content{
-                        padding-top: 0;
+                h5{
+                    font-weight: bold;
+                    border-bottom: 1px solid #cecece;
+                    padding-bottom: 10px;
+                }
 
-                        table{
-                            background: none;
-                            border: none;
-                            margin-bottom: 0;
-                            width: 100%;
+                table{
+                    background: none;
+                    border: none;
+                    margin-bottom: 0;
+                    width: 100%;
 
-                            td:first-child{
-                                padding-left: 0;
-                            }
-                            td:last-child{
-                                padding-right: 0;
-                            }
-                        }
+                    td:first-child{
+                        padding-left: 0;
                     }
-
-                    h5{
-                        font-weight: bold;
-                        border-bottom: 1px solid #cecece;
-                        padding-bottom: 10px;
-                    }
-
-                    dl li, td, h5, p{
-                        color: #666666;
-                        font-size: emCalc(12);
-                        font-family: $body-font-family;
-                    }
-
-                    ul li{
-                        list-style-type: none;
-                        &:before{
-                            content: '*';
-                            margin-left: -15px;
-                            margin-right: 5px;
-                        }
+                    td:last-child{
+                        padding-right: 0;
                     }
                 }
+
+                ul li{
+                    list-style-type: none;
+                    &:before{
+                        content: '*';
+                        margin-left: -15px;
+                        margin-right: 5px;
+                    }
+                }
+
+                // .tabs{
+                //     background-color: rgba(192, 170, 67, 0.5);
+                //     padding: 0 emCalc(7);
+
+                //     dd{
+                //         margin-top: emCalc(7);
+                //         &.active{
+                //             a{
+                //                 background-color: #fff;
+                //             }
+                //         }
+                //         a{
+                //             background-color: transparent;
+                //             padding: 7px 10px 10px;
+                //         }
+                //     }
+                // }
+
+                // .tabs-content{
+                //     padding: emCalc(15);
+                //     .content{
+                //         padding-top: 0;
+
+                //         table{
+                //             background: none;
+                //             border: none;
+                //             margin-bottom: 0;
+                //             width: 100%;
+
+                //             td:first-child{
+                //                 padding-left: 0;
+                //             }
+                //             td:last-child{
+                //                 padding-right: 0;
+                //             }
+                //         }
+                //     }
+
+                //     h5{
+                //         font-weight: bold;
+                //         border-bottom: 1px solid #cecece;
+                //         padding-bottom: 10px;
+                //     }
+
+                //     dl li, td, h5, p{
+                //         color: #666666;
+                //         font-size: emCalc(12);
+                //         font-family: $body-font-family;
+                //     }
+
+                //     ul li{
+                //         list-style-type: none;
+                //         &:before{
+                //             content: '*';
+                //             margin-left: -15px;
+                //             margin-right: 5px;
+                //         }
+                //     }
+                // }
             }
         }
     }
@@ -747,6 +802,11 @@ have a fixed width and height (but it's not required).
         color: #522a7d;
         font-size: emCalc(20);
         margin-top: 20px;
+    }
+    .th{
+        img{
+            height: 185px;
+        }
     }
     .featuredCarousel{
         position: relative;

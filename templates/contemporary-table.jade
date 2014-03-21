@@ -74,14 +74,36 @@ block content
         .large-5.columns.end
           button.button.primary.large(type='submit') Add To Cart
       section.tabs-container
-        dl.tabs(data-tab='')
-          dd.active
-            a(href='#panel1') Product Details
+        dl
           dd
-            a(href='#panel2') Delivery
+            h5 Attributes
+            div
+              table
+                tbody
+                  tr
+                    td SKU
+                    td TR318FU90GXDINDFUR
           dd
-            a(href='#panel3') Returns
-        .tabs-content
+            h5 Descrption
+            div
+              ul
+                li
+                  | Table Height: 20 inches (50 cm), Length: 23.5 inches (59 cm), Width: 16 inches (40 cm)
+                li Material: Solid Wood (Tropical Fruit Wood)
+                li Color: Brown
+                li Table Top Material: Solid Wood (Tropical Fruit Wood)
+                li Style: Contemporary
+                li Folding: Yes
+                li Finish: Matt
+                li Quantity: 1 Piece (Accent Table)
+        //- dl.tabs(data-tab='')
+        //-   dd.active
+        //-     a(href='#panel1') Product Details
+        //-   dd
+        //-     a(href='#panel2') Delivery
+        //-   dd
+        //-     a(href='#panel3') Returns
+        //- .tabs-content
           #panel1.content.active
             dl
               dd
