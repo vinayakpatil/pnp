@@ -51,7 +51,8 @@ module.exports = function(grunt) {
                 files: {
                     'jquery/jquery.js': 'jquery/jquery.js',
                     'jcarousel/jquery.jcarousel.js': 'jcarousel/dist/jquery.jcarousel.js',
-                    'foundation/foundation.js': 'foundation/js/foundation.js'
+                    'foundation/foundation.js': 'foundation/js/foundation.js',
+                    'jqzoom/jquery.jqzoom.js': 'jqzoom/js/jquery.jqzoom-core.js'
                 }
             }
         },

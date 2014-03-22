@@ -17,25 +17,25 @@ block content
         a(href='#') Contemporary Table
   section.row.product
     section.columns.large-6
-      a.th.th-large
-        img(src='imgs/furniture/accent-tables/contemporary-side-large.jpg', alt='contemporary-side-large')
+      a.th.th-large(href='./imgs/furniture/accent-tables/contemporary-side-large.jpg', title='contemporary-side-large', rel='productGallery')
+        img(src='./imgs/furniture/accent-tables/contemporary-side-large.jpg', alt='contemporary-side-large')
       section.productCarousel.row
         .jcarousel
           ul
             li
-              a.th.th-mini(href='')
+              a.th.th-mini(href='', rel="{gallery: 'productGallery', smallimage: './imgs/furniture/accent-tables/contemporary-side-large.jpg',largeimage: './imgs/furniture/accent-tables/contemporary-side-xlarge.jpg'}")
                 img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
             li
-              a.th.th-mini(href='')
+              a.th.th-mini(href='', rel="{gallery: 'productGallery', smallimage: './imgs/furniture/accent-tables/contemporary-side-large2.jpg',largeimage: './imgs/furniture/accent-tables/contemporary-side-xlarge2.jpg'}")
+                img(src='imgs/furniture/accent-tables/contemporary-side-mini2.jpg', alt='contemporary-side-mini2')
+            li
+              a.th.th-mini(href='', rel="{gallery: 'productGallery', smallimage: './imgs/furniture/accent-tables/contemporary-side-large.jpg',largeimage: './imgs/furniture/accent-tables/contemporary-side-xlarge.jpg'}")
                 img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
             li
-              a.th.th-mini(href='')
-                img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
+              a.th.th-mini(href='', rel="{gallery: 'productGallery', smallimage: './imgs/furniture/accent-tables/contemporary-side-large2.jpg',largeimage: './imgs/furniture/accent-tables/contemporary-side-xlarge2.jpg'}")
+                img(src='imgs/furniture/accent-tables/contemporary-side-mini2.jpg', alt='contemporary-side-mini2')
             li
-              a.th.th-mini(href='')
-                img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
-            li
-              a.th.th-mini(href='')
+              a.th.th-mini(href='', rel="{gallery: 'productGallery', smallimage: './imgs/furniture/accent-tables/contemporary-side-large.jpg',largeimage: './imgs/furniture/accent-tables/contemporary-side-xlarge.jpg'}")
                 img(src='imgs/furniture/accent-tables/contemporary-side-mini.jpg', alt='contemporary-side-mini')
         // Controls
         a.jcarousel-prev(href='#')
@@ -76,26 +76,29 @@ block content
       section.tabs-container
         dl
           dd
-            h5 Attributes
-            div
-              table
-                tbody
-                  tr
-                    td SKU
-                    td TR318FU90GXDINDFUR
-          dd
             h5 Descrption
             div
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Orationis voluntates lucifugi adquiescere quosvis ratio huc, chremes liberavisse titillaret aristotelem sophocles, sive facio tenere primis artibus.
               ul
                 li
-                  | Table Height: 20 inches (50 cm), Length: 23.5 inches (59 cm), Width: 16 inches (40 cm)
-                li Material: Solid Wood (Tropical Fruit Wood)
-                li Color: Brown
-                li Table Top Material: Solid Wood (Tropical Fruit Wood)
-                li Style: Contemporary
-                li Folding: Yes
-                li Finish: Matt
-                li Quantity: 1 Piece (Accent Table)
+                  | 31.5"Hx88"Wx39"D
+                li Solid Wood (Tropical Fruit Wood) material
+                li Brown color
+                li Folding table
+                li Matt finish
+          dd
+            h5 Estimated Ship Date
+            p
+              | Usually ships within 5-7 business days.
+          dd
+            h5 Delivery Method
+            p
+              | Ships via Standard Ground Service. Please contact us for expedited shipping options.
+          dd
+            h5 Return/Exchange
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Orationis voluntates lucifugi adquiescere quosvis ratio huc.
         //- dl.tabs(data-tab='')
         //-   dd.active
         //-     a(href='#panel1') Product Details
@@ -159,6 +162,7 @@ block content
 
 block append scripts
   script(src='js/libraries/jcarousel/jquery.jcarousel.js')
+  script(src='js/libraries/jqzoom/jquery.jqzoom.js')
   script(src='js/jcarousel.js')
 
 

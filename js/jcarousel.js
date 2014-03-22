@@ -47,4 +47,20 @@ $(function() {
                 $(this).siblings('.jcarousel-next').removeClass('disabled');
             }
         });
+
+    // Bring in jqzoom
+    var options = {
+            zoomType: 'innerzoom',
+            lens:true,
+            preloadImages: false,
+            alwaysOn: false,
+            // zoomWidth: 300,
+            // zoomHeight: 250,
+            xOffset:15,
+            yOffset:0,
+            position:'left'
+            //...MORE OPTIONS
+    };
+    $('.th-large').jqzoom(options);
+    $('.product .jcarousel li:first-child a').click();
 });

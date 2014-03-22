@@ -110,7 +110,7 @@ body{
     .top-bar-section {
         .left{
             & > li{
-                border-right: 1px solid $primary-color;
+                border-right: 1px solid #9a9a9a;
                 padding: 0 15px;
 
                 &:last-child{
@@ -401,6 +401,9 @@ form{
             max-width: 220px;
             padding: 20px 0 0;
         }
+        &.content{
+            z-index: 999;
+        }
     }
 }
 
@@ -593,6 +596,7 @@ have a fixed width and height (but it's not required).
         padding-left: 0;
 
         &.info{
+            padding-left: 15px;
             h3{
                 color: #47266a;
                 font-size: emCalc(28);
@@ -631,14 +635,14 @@ have a fixed width and height (but it's not required).
 
             .tabs-container{
                 // border: 1px solid rgba(192, 170, 67, 0.5);
-                height: 315px;
-                overflow-y: auto;
-                overflow-x: hidden;
+                // height: 315px;
+                // overflow-y: auto;
+                // overflow-x: hidden;
                 margin-top: 20px;
 
                 dl li, td, h5, p{
                     color: #666666;
-                    font-size: emCalc(12);
+                    font-size: emCalc(13);
                     font-family: $body-font-family;
                 }
 
@@ -662,12 +666,15 @@ have a fixed width and height (but it's not required).
                     }
                 }
 
-                ul li{
+                ul {
                     list-style-type: none;
-                    &:before{
-                        content: '*';
-                        margin-left: -15px;
-                        margin-right: 5px;
+                    margin: 0 0 35px;
+                    li{
+                        border-top: 1px dotted #9a9a9a;
+                        line-height: 3;
+                        &:last-child{
+                            border-bottom: 1px dotted #9a9a9a;
+                        }
                     }
                 }
 
@@ -806,6 +813,7 @@ have a fixed width and height (but it's not required).
     .th{
         img{
             height: 185px;
+            max-width: 210px;
         }
     }
     .featuredCarousel{
