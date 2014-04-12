@@ -1,28 +1,33 @@
-header.row.top-nav-container
-  form.medium-4.columns.search-container(action='#')
-    .row.collapse
-      .medium-10.columns
-        input(type='text', placeholder='Enter keyword or product code')
-      .medium-2.columns
-        a.postfix(href='#')
-          // <i class="fi-page-search"></i>
-  h1.medium-4.columns.logo Peacocks and Paisleys
-  nav.medium-4.columns.top-side-nav-container
-    ul.sub-nav.right
-      li
-        a(href='#') Sign In
-      li
-        a(href='#') Register
-      li
-        a.dropdown(href='#', data-dropdown='drop') My Account
-        br
-        ul#drop.f-dropdown(data-dropdown-content='')
-          li
-            a(href='#') This is a link
-          li
-            a(href='#') This is another
-          li
-            a(href='#') Yet another
-      li
-        a(href='#')
-          span.notifications 2
+header.top-nav-container
+  h5.hide Top Banner
+  div.row.top-search-bar
+    form.medium-4.columns.search-container(action='#')
+      .row.collapse
+        .medium-1.columns
+          a.prefix.search-button(href='#')
+            // <i class="fi-page-search"></i>
+        .medium-10.columns
+          input(type='text', placeholder='Search...')
+        .medium-1.columns
+          a.postfix.microphone-button(href='#')
+            // <i class="fi-page-search"></i>
+    nav.medium-4.columns.top-side-nav-container
+      h5.hide Quick access menu
+      ul.sub-nav.right
+        li
+          a(href='#') Sign In
+        li
+          a(href='#') Register
+        li
+          a.dropdown(href='#', data-dropdown='drop') My Account
+          br
+          ul#drop.f-dropdown(data-dropdown-content='')
+            li
+              a(href='#') This is a link
+            li
+              a(href='#') This is another
+            li
+              a(href='#') Yet another
+        li
+          a(href='#')
+            span.notifications 2
