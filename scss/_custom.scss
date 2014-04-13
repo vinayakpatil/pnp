@@ -48,78 +48,8 @@ body{
     }
 }
 
-
 /* Footer */
-footer{
-    h6{
-        color: #4d2875;
-    }
-
-    .side-nav li, p{
-        font-size: rem-calc(13);
-    }
-
-    &.main-nav{
-        border-top: 1px solid #999;
-        border-bottom: 1px solid #999;
-        margin-top: emCalc(20);
-        margin-bottom: emCalc(20);
-        background-color: rgba(255, 255, 255, 0.6);
-        padding: emCalc(20) 0;
-
-        h6{
-            font-size: emCalc(14);
-            &.compact{
-                margin: 0;
-                font-size: emCalc(12);
-            }
-        }
-
-        .side-nav{
-            padding: 0;
-            li{
-                margin-bottom: 0;
-            }
-        }
-
-        // Remove dividers in footer sub-navs
-        .sub-nav{
-            margin: 0 emCalc(5) 0 0;
-            li{
-                &:after, &:before{
-                    display: none;
-                }
-                margin-right: emCalc(5);
-            }
-        }
-
-        /* Payment options */
-        .sub-nav.payment {
-            a i{
-                display: inline-block;
-                width: 32px;
-                height: 20px;
-                &.visa{
-                    background:transparent url('../imgs/payment-options-sprite.png') no-repeat 0 0;
-                }
-                &.master-card{
-                    background:transparent url('../imgs/payment-options-sprite.png') no-repeat -32px 0;
-                }
-                &.other{
-                    background:transparent url('../imgs/payment-options-sprite.png') no-repeat -64px 0;
-                }
-            }
-        }
-
-        /* Subscribe */
-        .subscribe{
-            .button{
-                font-size: emCalc(18);
-            }
-        }
-    }
-}
-
+@import "footer";
 
 /* Slide out tabs */
 .slide-out-div{
@@ -142,9 +72,9 @@ footer{
     @include filter-gradient(#fff, #e3e3e3);
     /* Fallback: */
     background: #e3e3e3;
-    @include background(linear-gradient(left, #fff, #e3e3e3));
-    @include box-shadow(#000 0px 0px 12px);
-    @include border-right-radius(12px);
+    @include background(linear-gradient(right, #fff, #e3e3e3));
+    @include box-shadow(#000 5px 0px 8px);
+    @include border-left-radius(12px);
     .agreement{
         font-size: emCalc(11);
     }
@@ -714,19 +644,23 @@ have a fixed width and height (but it's not required).
 
 .social-medium {
     li{
-        margin-right: 10px;
+        margin-right: 7px;
     }
     a i{
-        width: 32px;
-        height: 32px;
+        width: 37px;
+        height: 37px;
+        transition: opacity 0.2s;
         &.social-facebook{
-            background:transparent url('../imgs/social-sprite.png') no-repeat 0 0;
+            background:transparent url('../imgs/social-sprite-new.png') no-repeat 0 0;
         }
         &.social-twitter{
-            background:transparent url('../imgs/social-sprite.png') no-repeat -32px 0;
+            background:transparent url('../imgs/social-sprite-new.png') no-repeat -37px 0;
         }
         &.social-instagram{
-            background:transparent url('../imgs/social-sprite.png') no-repeat -64px 0;
+            background:transparent url('../imgs/social-sprite-new.png') no-repeat -74px 0;
+        }
+        &:hover{
+            opacity: 0.8;
         }
     }
 }

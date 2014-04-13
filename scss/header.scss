@@ -44,11 +44,10 @@
 .top-side-nav-container{
     padding-right: 0;
     .sub-nav{
-        position: relative;
-        top: 2px;
         li{
             font-size: emCalc(13);
             margin-bottom: 0;
+            line-height: 2;
             &:before{
                 margin: 0 emCalc(8);
             }

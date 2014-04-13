@@ -1,0 +1,93 @@
+footer{
+    h6{
+        color: #4d2875;
+    }
+
+    .side-nav li, p{
+        font-size: rem-calc(13);
+    }
+
+    &.main-nav{
+        border-bottom: 1px solid #a9a7ac;
+        margin-top: emCalc(20);
+        margin-bottom: emCalc(20);
+        padding: emCalc(20) 0;
+
+        .side-nav{
+            padding: 0;
+            li{
+                margin-bottom: 0;
+                border-top: 1px dotted #9f9f9f;
+                line-height: 2.2;
+            }
+            &.pnp{
+                width: 90%;
+            }
+        }
+
+        // Remove dividers in footer sub-navs
+        .sub-nav{
+            margin: 0 emCalc(5) 0 0;
+            li{
+                &:after, &:before{
+                    display: none;
+                }
+                margin-right: emCalc(5);
+            }
+        }
+
+        /* Payment options */
+        .sub-nav.payment {
+            a i{
+                display: inline-block;
+                width: 50px;
+                height: 30px;
+                &.visa{
+                    background:transparent url('../imgs/payment-options-sprite-new.png') no-repeat 0 0;
+                }
+                &.master-card{
+                    background:transparent url('../imgs/payment-options-sprite-new.png') no-repeat -50px 0;
+                }
+                &.other{
+                    background:transparent url('../imgs/payment-options-sprite-new.png') no-repeat -100px 0;
+                }
+            }
+        }
+
+        /* Subscribe */
+        input {
+            &.subscribe{
+                margin: 0;
+                width: 95%;
+                padding: 0 8px;
+                height: 27px;
+            }
+            &.button{
+                text-transform: uppercase;
+                height: 27px;
+            }
+        }
+    }
+
+    &.copyright{
+        p, h6{
+            text-align: center;
+        }
+        p{
+            margin-bottom: 3px;
+        }
+        h6{
+            text-transform: none;
+            padding-bottom: 10px;
+        }
+    }
+
+    h6{
+        font-size: emCalc(17);
+        text-transform: uppercase;
+        &.compact{
+            margin: 0;
+            font-size: emCalc(12);
+        }
+    }
+}

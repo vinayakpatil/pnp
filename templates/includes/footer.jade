@@ -1,7 +1,7 @@
-footer.row.main-nav
-  .large-2.columns
+footer.row.main-nav.collapse
+  .large-3.columns
     h6 Peacocks & Paisleys
-    ul.side-nav
+    ul.side-nav.pnp
       li
         a(href='#') Who we are
       li
@@ -12,40 +12,36 @@ footer.row.main-nav
         a(href='#') Terms
       li
         a(href='#') Privacy Policy
-  .large-2.columns
-    h6 Customer Care
-    ul.side-nav
-      li
-        a(href='#') Shipping
-      li
-        a(href='#') Return and Exchange
-      li
-        a(href='#') FAQs
-  .large-2.columns
-    h6 Payment options
-    ul.sub-nav.payment
-      li
-        a(href='#', title='visa')
-          i.visa
-      li
-        a(href='#', title='master-card')
-          i.master-card
-      li
-        a(href='#', title='other')
-          i.other
-    h6.compact Secured by
-    a(href='http://geotrust.com', target='_blank')
-      img(src='imgs/geotrust.jpg', alt='Geotrust logo')
+  .large-5.columns
+    .row
+      .large-6.columns
+        h6 Customer Care
+        ul.side-nav
+          li
+            a(href='#') Shipping
+          li
+            a(href='#') Return and Exchange
+          li
+            a(href='#') FAQs
+      .large-6.columns
+        h6 Payment options
+        ul.sub-nav.payment
+          li
+            a(href='#', title='visa')
+              i.visa
+          li
+            a(href='#', title='master-card')
+              i.master-card
+          li
+            a(href='#', title='other')
+              i.other
   .large-4.columns
-    hgroup
-      h6 Be first to receive exclusive offers
-      h6
-        strong SIGN UP NOW
-    form
-      input(type='text', placeholder='Enter email address')
-      input.button.primary.large.radius(type='submit', value='Subscribe')
-  .large-2.columns
-    h6 Follow us
+    h6 to receive exclusive offers!
+    form.row.collapse
+      .large-9.columns
+        input.subscribe(type='text', placeholder='Enter email address')
+      input.button.primary.medium.large-3.columns(type='submit', value='Sign Up')
+    h6 Be Social
     ul.social.social-medium
       li
         a(href='#', title='facebook')
@@ -56,9 +52,12 @@ footer.row.main-nav
       li
         a(href='#', title='instagram')
           i.social-instagram
-footer.row
-  p.large-7.columns.large-centered
+footer.row.copyright
+  p
     | Copyright © 2014 Peacocks & Paisleys, All rights reserved. Site by Chiefsons
+  h6.compact Secured by: &nbsp;
+    a(href='http://geotrust.com', target='_blank')
+      img(src='imgs/geotrust.jpg', alt='Geotrust logo')
 // Slide out tabs mark up
 .slide-out-div.feedback
   a.handle.handleFeedback(href='http://link-for-non-js-users.html') Feedback
