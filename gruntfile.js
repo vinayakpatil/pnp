@@ -18,6 +18,7 @@ module.exports = function(grunt) {
                     "accent-tables.html": ["templates/accent-tables.jade"],
                     "contemporary-table.html": ["templates/contemporary-table.jade"],
                     "shopping-cart.html": ["templates/shopping-cart.jade"],
+                    "checkout.html": ["templates/checkout.jade"],
                 }]
             }
         },

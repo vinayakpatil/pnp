@@ -1,0 +1,121 @@
+section.checkout{
+	.accordion{
+		padding-right: 15px !important;
+		//Tabs
+		dd{
+			margin-bottom: 20px !important;
+			&:last-child{
+				margin-bottom: 0 !important;
+			}
+			// Tab content
+			.content{
+				padding: 10px 0;
+
+				&.active{
+					display: table;
+				}
+				// Divider (OR)
+				&.divider{
+					position: relative;
+					width: 100%;
+
+					// Zero out padding of columns
+					.large-6{
+						&:first-child{
+							padding-left: 0;
+							padding-right: 25px;
+						}
+						&:last-child{
+							padding-right: 0;
+							padding-left: 25px;
+						}
+					}
+
+					&:after, &:before{
+						display: table-cell;
+						height: 100%;
+						position: relative;
+					}
+
+					&:after{
+						content: '';
+						border-right: 1px solid #dddddd;
+						left: -48%;
+					}
+
+					&:before{
+						content: url(../imgs/vdivider-text.png);
+						left: 50%;
+						vertical-align: middle;
+						z-index: 100;
+					}
+				}
+			}
+		}
+	}
+
+
+	/* Cart Summary */
+	.cart-summary{
+		background-color: #fff;
+		border-left: 5px solid #d0cfcf;
+
+		h4{
+			color: #47266a;
+			font-size: 14px;
+			text-transform: uppercase;
+			border: 1px solid #000;
+			border-right: none;
+			border-left-width: 5px;
+			margin: 0;
+			margin-left: -5px;
+			padding: 10px;
+		}
+
+		.rowContainer{
+			padding: 10px;
+			a, h6{
+				font-size: 12px;
+			}
+			span{
+				font-size: 11px;
+				color: #757575;
+			}
+
+			.row{
+				//Totals row
+				&.total{
+					h6, span{
+						font-weight: bold;
+						color: #47266a;
+					}
+				}
+
+				a{
+					display: block;
+					text-decoration: underline;
+					line-height: 1.5;
+				}
+
+				.columns{
+					text-align: right;
+					&:first-child{
+						padding-right: 5px;
+					}
+					&:last-child span{
+						color: #47266a;
+						font-size: 12px;
+					}
+				}
+			}
+
+			& > .row{
+				border-top: 1px solid #ddd;
+				padding: 8px 0;
+				&:first-child{
+					border-top: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,286 @@
+// Extend Default page layout
+extends layout
+// Change title of page
+block prepend headTag
+  title Peacocks and Paisleys | Checkout
+// Change page content
+block content
+  section.row
+    ul.breadcrumbs
+      li
+        a(href='index.html') Home
+      li
+        a(href='#') Shopping Cart
+      li.current
+        a(href='#') Checkout
+  section.row.checkout.collapse
+    h1 Checkout
+    div.row.collapse
+      dl.accordion.columns.large-9(data-accordion='')
+        dd
+          a(href='#panel1') Step 1: Checkout Options
+          #panel1.content.active.divider
+            .row
+              div.columns.large-6
+                h4
+                  | New Customer
+                  small
+                    | Checkout Options:
+                input#register(type='radio')
+                label(for='register') Register Account
+                p
+                 | By creating an account you will be able to shop faster, be up tp date on an order’s status, and keep track of the orders you have previously made
+                input.button.primary(type="submit", value="Continue")
+              div.columns.large-6
+                form
+                  .row
+                    h4
+                      | Returning Customer
+                      small
+                        | I am a returning customer
+                    .row
+                      .large-8.columns
+                        label
+                          | Email:
+                          input(type='email', placeholder='abcd@abcd.com')
+                    .row
+                      .large-8.columns
+                        label
+                          | Password:
+                          input(type='password', placeholder='password')
+                      .large-4.columns
+                        a(href='#') Forgot Password ?
+                    .row
+                      .large-4.columns.large-offset-4
+                        input.button.primary(type='submit', value='Continue')
+        dd
+          a(href='#panel2') Step 2: Account & Billing Details
+          #panel2.content
+            .row
+              div.columns.large-6
+                h4
+                  | Your Personal Details
+                form
+                  .row
+                    .large-12.columns
+                      label
+                        | First Name:
+                        input(type='text', placeholder='abcd')
+                    .large-12.columns
+                      label
+                        | Last Name:
+                        input(type='text', placeholder='abcd')
+                    .large-12.columns
+                      label
+                        | Email:
+                        input(type='email', placeholder='abcd@abcd.com')
+                    .large-12.columns
+                      label
+                        | Telephone:
+                        input(type='text', placeholder='965-123-1010')
+                    .large-12.columns
+                      label
+                        | Fax:
+                        input(type='text', placeholder='965-123-1010')
+              div.columns.large-6
+                form
+                  .row
+                    h4
+                      | Your Address
+                    .large-12.columns
+                      label
+                        | Company:
+                        input(type='text', placeholder='abcd')
+                    .large-12.columns
+                      label
+                        | Address:
+                        textarea(placeholder='abcd')
+                    .large-12.columns
+                      label
+                        | City:
+                        input(type='text', placeholder='Kuwait')
+                    .large-12.columns
+                      label
+                        | Country:
+                        input(type='text', placeholder='Kuwait')
+                    .large-12.columns
+                      label
+                        | Post Code:
+                        input(type='text', placeholder='Kuwait')
+                    .large-12.columns
+                      input(type='checkbox', id='addressConfirmation')
+                      label(for='addressConfirmation')
+                        | My delivery address and billing addresses are the same.
+            .row
+              .large-2.columns.large-offset-10
+                input.button.primary(type='submit', value='Continue')
+        dd
+          a(href='#panel3') Step 3: Delivery Details
+          #panel3.content.divider
+            .row
+              div.columns.large-6
+                h4
+                  | Select an existing address
+                div
+                  input#shippingAddress1(type='radio', name='shippingAddress')
+                  label(for='shippingAddress1') Address 1
+                  address
+                    |Fay Al Hassawi <br>
+                    |Heba Al Homaizi Complex <br>
+                    |Behind City Center & near Home Center <br>
+                    |Industrial Shuwaikh <br>
+                    |Kuwait <br>
+                    |+965 6990 9463
+                div
+                  input#shippingAddress2(type='radio', , name='shippingAddress')
+                  label(for='shippingAddress2') Address 2
+                  address
+                    |Fay Al Hassawi <br>
+                    |Heba Al Homaizi Complex <br>
+                    |Behind City Center & near Home Center <br>
+                    |Industrial Shuwaikh <br>
+                    |Kuwait <br>
+                    |+965 6990 9463
+              div.columns.large-6
+                form
+                  .row
+                    h4
+                      | Enter a new address
+                    .large-12.columns
+                      label
+                        | Name:
+                        input(type='text', placeholder='abcd')
+                    .large-12.columns
+                      label
+                        | Phone:
+                        input(type='text', placeholder='000-000-0000')
+                    .large-12.columns
+                      label
+                        | Address:
+                        textarea(placeholder='abcd')
+                    .large-12.columns
+                      label
+                        | City:
+                        input(type='text', placeholder='Kuwait')
+                    .large-12.columns
+                      label
+                        | Country:
+                        input(type='text', placeholder='Kuwait')
+                    .large-12.columns
+                      label
+                        | Post Code:
+                        select
+                          option 12345
+                          option 48220
+            .row
+              .large-2.columns.large-offset-10
+                input.button.primary(type='submit', value='Continue')
+        dd
+          a(href='#panel4') Step 4: Payment Method
+          #panel4.content
+            dl.tabs.vertical(data-tab='')
+              dd.active
+                a(href='#panel1a') Credit Card
+              dd
+                a(href='#panel2a') Debit Card
+              dd
+                a(href='#panel3a') Cash on Delivery
+            .tabs-content.vertical
+              #panel1a.content.active
+                h4
+                  |Pay using your Visa/Master Card
+                form
+                  .row
+                    .large-4.columns
+                      label
+                        | Card Number:
+                    .large-8.columns
+                      input(type='text')
+                  .row
+                    .large-4.columns
+                      label
+                        | Name on Card:
+                    .large-8.columns
+                      input(type='text')
+                  .row
+                    .large-4.columns
+                      label
+                        | Expiry Date:
+                    .large-8.columns
+                      .row
+                        .large-6.columns
+                          select
+                            option Select Month
+                        .large-6.columns
+                          select
+                            option Select Year
+                  .row
+                    .large-4.columns
+                      label
+                        | CVV Number:
+                    .large-8.columns
+                      .row
+                        .large-4.columns
+                          input(type='text')
+                        .large-8.columns
+                          |image will go here
+                  .row
+                    .large-8.columns.large-offset-4
+                      span
+                        |Amount Due: 305.000KD
+              #panel2a.content
+                p Panel 2 content goes here.
+              #panel3a.content
+                p Panel 3 content goes here.
+            .row
+              .large-8.large-offset-4
+                .row
+                  .large-8.columns
+                    |Note: Some note content
+                  .large-4.columns
+                    input.button.primary(type='submit', value='Continue')
+      div.columns.large-3.cart-summary
+        h4 CART SUMMARY / 2 ITEM
+        .rowContainer
+          .row.collapse
+            .large-8.columns
+              a(href='#')
+                |Traditional Side Table
+              span
+                | Colour: Brown &nbsp; QTY:1
+            .large-4.columns
+              span 185.300KD
+          .row.collapse
+            .large-8.columns
+              a(href='#')
+               |Traditional Side Table
+              span
+                | Colour: Brown &nbsp; QTY:1
+            .large-4.columns
+              span 185.300KD
+          .row.collapse
+            .row.collapse
+              .large-8.columns
+                h6 Sub-Total:
+              .large-4.columns
+                span 370.600KD
+            .row.collapse
+              .large-8.columns
+                h6 Shipping:
+              .large-4.columns
+                span 10.000KD
+          .row.collapse.total
+            .large-8.columns
+              h6 Grand Total:
+            .large-4.columns
+              span 380.600KD
+
+
+
+
+
+
+
+
+
+

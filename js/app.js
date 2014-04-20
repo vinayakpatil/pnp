@@ -65,4 +65,23 @@ $(function() {
         });
     })($);
 
+
+    // Accordion in checkout page
+    // TODO: Remove timeout
+    (function(){
+        var accordion$ = $('.checkout .accordion');
+        var cartSummary$ = accordion$.next('.cart-summary');
+        //Initial height
+        setTimeout(function(){
+            // Update height
+            cartSummary$.css('height', accordion$.height()+'px');
+        }, 50);
+
+        accordion$.find('dd > a').on('click', function(e){
+            setTimeout(function(){
+                // Update height
+                cartSummary$.css('height', accordion$.height()+'px');
+            }, 50);
+        });
+    })();
 });
