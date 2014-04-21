@@ -172,7 +172,7 @@
     <section class="row">
       <ul class="breadcrumbs">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Shopping Cart</a></li>
+        <li><a href="shopping-cart.html">Shopping Cart</a></li>
         <li class="current"><a href="#">Checkout</a></li>
       </ul>
     </section>
@@ -185,10 +185,12 @@
               <div class="row">
                 <div class="columns large-6">
                   <h4>New Customer<small>Checkout Options:</small></h4>
-                  <input id="register" type="radio">
-                  <label for="register">Register Account</label>
-                  <p>By creating an account you will be able to shop faster, be up tp date on an order’s status, and keep track of the orders you have previously made</p>
-                  <input type="submit" value="Continue" class="button primary">
+                  <form>
+                    <input id="register" type="radio" required>
+                    <label for="register">Register Account</label>
+                    <p>By creating an account you will be able to shop faster, be up tp date on an order’s status, and keep track of the orders you have previously made</p>
+                    <input type="submit" value="Continue" class="button primary">
+                  </form>
                 </div>
                 <div class="columns large-6">
                   <form>
@@ -467,7 +469,7 @@
                       Please do not close the browser window or press back button.
                     </div>
                     <div class="large-4 columns text-right">
-                      <input type="submit" value="Continue" class="button primary">
+                      <input type="submit" value="Make Payment" class="button primary large">
                     </div>
                   </div>
                 </div>

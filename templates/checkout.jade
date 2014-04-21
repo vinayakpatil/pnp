@@ -10,7 +10,7 @@ block content
       li
         a(href='index.html') Home
       li
-        a(href='#') Shopping Cart
+        a(href='shopping-cart.html') Shopping Cart
       li.current
         a(href='#') Checkout
   section.row.checkout.collapse
@@ -26,11 +26,12 @@ block content
                   | New Customer
                   small
                     | Checkout Options:
-                input#register(type='radio')
-                label(for='register') Register Account
-                p
-                 | By creating an account you will be able to shop faster, be up tp date on an order’s status, and keep track of the orders you have previously made
-                input.button.primary(type="submit", value="Continue")
+                form
+                  input#register(type='radio', required)
+                  label(for='register') Register Account
+                  p
+                   | By creating an account you will be able to shop faster, be up tp date on an order’s status, and keep track of the orders you have previously made
+                  input.button.primary(type="submit", value="Continue")
               div.columns.large-6
                 form
                   .row.collapse
@@ -251,7 +252,7 @@ block content
                     |&nbsp; On clicking 'Make Payment' you will be redirected to the payment gateway.
                     | Please do not close the browser window or press back button.
                   .large-4.columns.text-right
-                    input.button.primary(type='submit', value='Continue')
+                    input.button.primary.large(type='submit', value='Make Payment')
       div.columns.large-3.cart-summary
         h4 CART SUMMARY / 2 ITEM
         .rowContainer

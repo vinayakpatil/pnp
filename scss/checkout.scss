@@ -165,10 +165,17 @@ section.checkout{
 
                             margin-right: 6px;
                             margin-bottom: 6px !important;
+
+                            & > a{
+                                /* Fallback: */
+                                background: #fcfcfc;
+                                @include background(linear-gradient(top, #fcfcfc, #f0f0f0));
+                                padding: 10px;
+                            }
+
                             & > a, &.active a{
                                 text-decoration: none;
                                 font-size: 14px;
-                                padding: 10px;
                             }
 
                             border: 1px solid #eeeeee;
@@ -178,6 +185,7 @@ section.checkout{
                                 border-right: none;
                                 a{
                                     color: #47266a;
+                                    background: #fff;
                                     font-weight: bold;
                                 }
 
@@ -202,7 +210,7 @@ section.checkout{
                         margin-bottom: 10px;
                         .content{
                             padding: 10px 20px;
-                            min-height: 250px;
+                            min-height: 265px;
 
                             //Heading
                             h4{
@@ -263,6 +271,11 @@ section.checkout{
 
                 footer.payment{
                     padding: 0 25px;
+
+                    .button.primary{
+                        padding: 5px 16px;
+                        font-size: 16px;
+                    }
                     .note{
                         font-size: 11px;
                         background-color: #fffadc;

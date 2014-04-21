@@ -46,7 +46,7 @@ $(function() {
     });
 
     // Feedback cancel action
-    $('.feedback .cancel').on('click', function(){
+    $('.feedback .cancel').on('click', function() {
         $(document).trigger('click');
     });
 
@@ -68,20 +68,39 @@ $(function() {
 
     // Accordion in checkout page
     // TODO: Remove timeout
-    (function(){
+    (function() {
         var accordion$ = $('.checkout .accordion');
         var cartSummary$ = accordion$.next('.cart-summary');
+
+        // Initial states for accordion
+        accordion$.children('dd').first().addClass('open').end().addClass('disabled');
+
         //Initial height
-        setTimeout(function(){
+        setTimeout(function() {
             // Update height
-            cartSummary$.css('height', accordion$.height()+'px');
+            cartSummary$.css('height', accordion$.height() + 'px');
         }, 50);
 
-        accordion$.find('dd > a').on('click', function(e){
-            setTimeout(function(){
+        // ON TAB CLICK
+        accordion$.children('dd').on('click', function(e) {
+            var dd$ = $(e.target).closest('dd');
+
+            // if (!dd$.hasClass('active')) {
+            //     // prevent default action
+            //     e.stopPropagation();
+            // }
+
+            setTimeout(function() {
                 // Update height
-                cartSummary$.css('height', accordion$.height()+'px');
+                cartSummary$.css('height', accordion$.height() + 'px');
             }, 50);
+        });
+
+        // ON FORM SUBMIT
+        accordion$.find('form').on('submit', function(e){
+            e.preventDefault();
+            var target$ = $(e.target);
+            target$.closest('dd').removeClass('disabled open').next('dd').addClass('open').trigger($.Event('click'));
         });
     })();
 });
