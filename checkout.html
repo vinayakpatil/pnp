@@ -192,25 +192,25 @@
                 </div>
                 <div class="columns large-6">
                   <form>
-                    <div class="row">
+                    <div class="row collapse">
                       <h4>Returning Customer<small>I am a returning customer</small></h4>
-                      <div class="row">
-                        <div class="large-8 columns">
+                      <div class="row collapse">
+                        <div class="large-7 columns">
                           <label>Email:
                             <input type="email" placeholder="abcd@abcd.com">
                           </label>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="large-8 columns">
+                      <div class="row collapse">
+                        <div class="large-7 columns">
                           <label>Password:
                             <input type="password" placeholder="password">
                           </label>
                         </div>
-                        <div class="large-4 columns"><a href="#">Forgot Password ?</a></div>
+                        <div class="large-5 columns absoluteCenter"><a href="#">Forgot Password ?</a></div>
                       </div>
-                      <div class="row">
-                        <div class="large-4 columns large-offset-4">
+                      <div class="row collapse">
+                        <div class="large-12 columns">
                           <input type="submit" value="Continue" class="button primary">
                         </div>
                       </div>
@@ -226,7 +226,7 @@
                 <div class="columns large-6">
                   <h4>Your Personal Details</h4>
                   <form>
-                    <div class="row">
+                    <div class="row collapse">
                       <div class="large-12 columns">
                         <label>First Name:
                           <input type="text" placeholder="abcd">
@@ -257,7 +257,7 @@
                 </div>
                 <div class="columns large-6">
                   <form>
-                    <div class="row">
+                    <div class="row collapse">
                       <h4>Your Address</h4>
                       <div class="large-12 columns">
                         <label>Company:
@@ -285,27 +285,29 @@
                         </label>
                       </div>
                       <div class="large-12 columns">
-                        <input type="checkbox" id="addressConfirmation">
-                        <label for="addressConfirmation">My delivery address and billing addresses are the same.</label>
+                        <label for="addressConfirmation">
+                          <input type="checkbox" id="addressConfirmation">My delivery address and billing addresses are the same.
+                        </label>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
+              <hr class="row">
               <div class="row">
-                <div class="large-2 columns large-offset-10">
+                <div class="large-6 columns large-offset-6 text-right">
                   <input type="submit" value="Continue" class="button primary">
                 </div>
               </div>
             </div>
           </dd>
           <dd><a href="#panel3">Step 3: Delivery Details</a>
-            <div id="panel3" class="content divider">
+            <div id="panel3" class="content divider deliveryDetails">
               <div class="row">
                 <div class="columns large-6">
                   <h4>Select an existing address</h4>
                   <div>
-                    <input id="shippingAddress1" type="radio" name="shippingAddress">
+                    <input id="shippingAddress1" type="radio" name="shippingAddress" checked="checked">
                     <label for="shippingAddress1">Address 1</label>
                     <address>
                       Fay Al Hassawi <br>
@@ -370,94 +372,106 @@
                   </form>
                 </div>
               </div>
-              <div class="row">
-                <div class="large-2 columns large-offset-10">
-                  <input type="submit" value="Continue" class="button primary">
+              <footer>
+                <hr class="row">
+                <div class="row">
+                  <div class="large-6 columns large-offset-6 text-right">
+                    <input type="submit" value="Continue" class="button primary">
+                  </div>
                 </div>
-              </div>
+              </footer>
             </div>
           </dd>
           <dd><a href="#panel4">Step 4: Payment Method</a>
             <div id="panel4" class="content">
-              <dl data-tab="" class="tabs vertical">
-                <dd class="active"><a href="#panel1a">Credit Card</a></dd>
-                <dd><a href="#panel2a">Debit Card</a></dd>
-                <dd><a href="#panel3a">Cash on Delivery</a></dd>
-              </dl>
-              <div class="tabs-content vertical">
-                <div id="panel1a" class="content active">
-                  <h4>Pay using your Visa/Master Card</h4>
-                  <form>
-                    <div class="row">
-                      <div class="large-4 columns">
-                        <label>Card Number:</label>
-                      </div>
-                      <div class="large-8 columns">
-                        <input type="text">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="large-4 columns">
-                        <label>Name on Card:</label>
-                      </div>
-                      <div class="large-8 columns">
-                        <input type="text">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="large-4 columns">
-                        <label>Expiry Date:</label>
-                      </div>
-                      <div class="large-8 columns">
-                        <div class="row">
-                          <div class="large-6 columns">
-                            <select>
-                              <option>Select Month</option>
-                            </select>
-                          </div>
-                          <div class="large-6 columns">
-                            <select>
-                              <option>Select Year</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="large-4 columns">
-                        <label>CVV Number:</label>
-                      </div>
-                      <div class="large-8 columns">
-                        <div class="row">
+              <div class="tabContainer row collapse">
+                <div class="columns large-3">
+                  <dl data-tab="" class="tabs vertical">
+                    <dd class="active"><a href="#panel1a">Credit Card</a></dd>
+                    <dd><a href="#panel2a">Debit Card</a></dd>
+                    <dd><a href="#panel3a">Cash on Delivery</a></dd>
+                  </dl>
+                </div>
+                <div class="columns large-9">
+                  <div class="tabs-content vertical">
+                    <div id="panel1a" class="content active">
+                      <h4>Pay using your Visa/Master Card</h4>
+                      <form>
+                        <div class="row collapse">
                           <div class="large-4 columns">
+                            <label>Card Number:</label>
+                          </div>
+                          <div class="large-7 columns end">
                             <input type="text">
                           </div>
-                          <div class="large-8 columns">image will go here</div>
                         </div>
-                      </div>
+                        <div class="row collapse">
+                          <div class="large-4 columns">
+                            <label>Name on Card:</label>
+                          </div>
+                          <div class="large-7 columns end">
+                            <input type="text">
+                          </div>
+                        </div>
+                        <div class="row collapse">
+                          <div class="large-4 columns">
+                            <label>Expiry Date:</label>
+                          </div>
+                          <div class="large-7 columns end">
+                            <div class="row collapse">
+                              <div class="large-6 columns">
+                                <select>
+                                  <option>Select Month</option>
+                                </select>
+                              </div>
+                              <div class="large-1 columns separator">/</div>
+                              <div class="large-5 columns">
+                                <select>
+                                  <option>Select Year</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row collapse">
+                          <div class="large-4 columns">
+                            <label>CVV Number:</label>
+                          </div>
+                          <div class="large-7 columns end">
+                            <div class="row collapse">
+                              <div class="large-4 columns">
+                                <input type="text">
+                              </div>
+                              <div class="large-8 columns cvv"><img src="../imgs/cvv.png" alt="CVV number"><span>3 digit CVV number</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row collapse">
+                          <div class="large-7 columns large-offset-4"><span class="price">Amount Due: 305.000KD</span></div>
+                        </div>
+                      </form>
                     </div>
-                    <div class="row">
-                      <div class="large-8 columns large-offset-4"><span>Amount Due: 305.000KD</span></div>
+                    <div id="panel2a" class="content">
+                      <h4>Pay using your Debit Card</h4>
                     </div>
-                  </form>
-                </div>
-                <div id="panel2a" class="content">
-                  <p>Panel 2 content goes here.</p>
-                </div>
-                <div id="panel3a" class="content">
-                  <p>Panel 3 content goes here.</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-8 large-offset-4">
-                  <div class="row">
-                    <div class="large-8 columns">Note: Some note content</div>
-                    <div class="large-4 columns">
-                      <input type="submit" value="Continue" class="button primary">
+                    <div id="panel3a" class="content">
+                      <h4>Pay by Cash on Delivery</h4>
                     </div>
                   </div>
                 </div>
               </div>
+              <footer class="row collapse payment">
+                <div class="large-9 large-offset-3">
+                  <div class="row collapse">
+                    <div class="large-8 columns note"><strong>Note:</strong>&nbsp; On clicking 'Make Payment' you will be redirected to the payment gateway.
+                      Please do not close the browser window or press back button.
+                    </div>
+                    <div class="large-4 columns text-right">
+                      <input type="submit" value="Continue" class="button primary">
+                    </div>
+                  </div>
+                </div>
+              </footer>
             </div>
           </dd>
         </dl>

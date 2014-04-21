@@ -1,121 +1,342 @@
 section.checkout{
-	.accordion{
-		padding-right: 15px !important;
-		//Tabs
-		dd{
-			margin-bottom: 20px !important;
-			&:last-child{
-				margin-bottom: 0 !important;
-			}
-			// Tab content
-			.content{
-				padding: 10px 0;
+    .accordion{
+        padding-right: 15px !important;
+        //Tabs
+        & > dd{
+            margin-bottom: 20px !important;
 
-				&.active{
-					display: table;
-				}
-				// Divider (OR)
-				&.divider{
-					position: relative;
-					width: 100%;
+            // Accordion Heading
+            & > a{
+                font-size: 12px;
+                color: #47266a;
+                font-weight: bold;
+                padding: 10px;
+                background: #fff;
+                border: 1px solid #d3d2d2;
+            }
 
-					// Zero out padding of columns
-					.large-6{
-						&:first-child{
-							padding-left: 0;
-							padding-right: 25px;
-						}
-						&:last-child{
-							padding-right: 0;
-							padding-left: 25px;
-						}
-					}
+            &:last-child{
+                margin-bottom: 0 !important;
+            }
+            // Tab content
+            .content{
+                padding: 10px 0;
+                border: 1px solid #e3e3e3;
+                border-top: none;
 
-					&:after, &:before{
-						display: table-cell;
-						height: 100%;
-						position: relative;
-					}
+                //Links
+                a{
+                    text-decoration: underline;
+                    color: #333;
+                }
 
-					&:after{
-						content: '';
-						border-right: 1px solid #dddddd;
-						left: -48%;
-					}
+                // Font sizes
+                p, h4 small{
+                    font-size: 11px;
+                }
 
-					&:before{
-						content: url(../imgs/vdivider-text.png);
-						left: 50%;
-						vertical-align: middle;
-						z-index: 100;
-					}
-				}
-			}
-		}
-	}
+                form label, a{
+                    font-size: 12px;
+                }
+
+                // Forms
+                form{
+                    label{
+                        font-weight: bold;
+                        &[for=addressConfirmation]{
+                            font-size: 11px;
+                        }
+                    }
+
+                    .absoluteCenter{
+                        line-height: 72px;
+                        text-align: center;
+                    }
+
+                    //Textarea
+                    textarea{
+                        resize: none;
+                        height: 100px;
+                    }
+                }
+
+                // HR
+                hr.row{
+                    margin: 15px 25px;
+                }
+
+                &.divider{
+                    hr.row{
+                        margin: 15px 15px 15px 0;
+                    }
+                }
 
 
-	/* Cart Summary */
-	.cart-summary{
-		background-color: #fff;
-		border-left: 5px solid #d0cfcf;
+                //Buttons
+                .button.primary{
+                    font-size: 14px;
+                    font-weight: bold;
+                }
 
-		h4{
-			color: #47266a;
-			font-size: 14px;
-			text-transform: uppercase;
-			border: 1px solid #000;
-			border-right: none;
-			border-left-width: 5px;
-			margin: 0;
-			margin-left: -5px;
-			padding: 10px;
-		}
+                // Headings
+                h4{
+                    font-size: 14px;
+                    color: #333333;
+                    font-weight: bold;
+                    small{
+                        color: #333333;
+                        display: block;
+                        line-height: 2;
+                        font-weight: normal;
+                    }
+                }
 
-		.rowContainer{
-			padding: 10px;
-			a, h6{
-				font-size: 12px;
-			}
-			span{
-				font-size: 11px;
-				color: #757575;
-			}
+                &.active{
+                    display: table;
+                    width: 100%;
+                }
+                // Divider (OR)
+                &.divider{
+                    position: relative;
+                    width: 100%;
 
-			.row{
-				//Totals row
-				&.total{
-					h6, span{
-						font-weight: bold;
-						color: #47266a;
-					}
-				}
+                    // Zero out padding of columns
+                    .large-6{
+                        &:first-child{
+                            padding-left: 0;
+                            padding-right: 25px;
+                        }
+                        &:last-child{
+                            padding-right: 0;
+                            padding-left: 25px;
+                            .primary{
+                                margin-right: 15px;
+                            }
+                        }
+                    }
 
-				a{
-					display: block;
-					text-decoration: underline;
-					line-height: 1.5;
-				}
+                    &:after, &:before{
+                        display: table-cell;
+                        height: 100%;
+                        position: relative;
+                    }
 
-				.columns{
-					text-align: right;
-					&:first-child{
-						padding-right: 5px;
-					}
-					&:last-child span{
-						color: #47266a;
-						font-size: 12px;
-					}
-				}
-			}
+                    &:after{
+                        content: '';
+                        border-right: 1px solid #dddddd;
+                        left: -48%;
+                    }
 
-			& > .row{
-				border-top: 1px solid #ddd;
-				padding: 8px 0;
-				&:first-child{
-					border-top: none;
-				}
-			}
-		}
-	}
+                    &:before{
+                        content: url(../imgs/vdivider-text.png);
+                        left: 50%;
+                        vertical-align: middle;
+                        z-index: 100;
+                    }
+                }
+
+                // Match padding with divider
+                .large-6{
+                    &:first-child{
+                        padding-left: 25px;
+                    }
+                    &:last-child{
+                        padding-right: 25px;
+                    }
+                }
+
+
+                // Delivery details tweaks
+                &.deliveryDetails{
+                    padding-bottom: 75px;
+                    footer{
+                        position: absolute;
+                        width: 96%;
+                    }
+                }
+
+                // Vertical Tabs
+                .tabContainer{
+                    padding: 25px 25px 0px;
+
+                    .tabs.vertical{
+                        width: 100%;
+                        dd{
+
+                            margin-right: 6px;
+                            margin-bottom: 6px !important;
+                            & > a, &.active a{
+                                text-decoration: none;
+                                font-size: 14px;
+                                padding: 10px;
+                            }
+
+                            border: 1px solid #eeeeee;
+
+                            &.active{
+                                position: relative;
+                                border-right: none;
+                                a{
+                                    color: #47266a;
+                                    font-weight: bold;
+                                }
+
+                                &:after{
+                                    content: '';
+                                    width: 15px;
+                                    height: 42px;
+                                    position: absolute;
+                                    right: -7px;
+                                    top: -1px;
+                                    background-color: #fff;
+                                    border-top: 1px solid #eee;
+                                    border-bottom: 1px solid #eee;
+                                    z-index: 100;
+                                    box-sizing: content-box;
+                                }
+                            }
+                        }
+                    }
+                    .tabs-content.vertical{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        .content{
+                            padding: 10px 20px;
+                            min-height: 250px;
+
+                            //Heading
+                            h4{
+                                border-bottom: 1px solid #eee;
+                                padding-bottom: 5px;
+                                margin-bottom: 20px;
+                            }
+
+                            form{
+                                input[type=text], select{
+                                    height: 28px;
+                                    padding: 4px 8px;
+                                }
+                                label{
+                                    text-align: right;
+                                    padding-right: 10px;
+                                    line-height: 2;
+                                }
+                            }
+
+                            span{
+                                font-size: 11px;
+                                color: #aaaaaa;
+                                &.price{
+                                    color: #9e4827;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                }
+                            }
+
+                            .cvv{
+                                padding-left: 10px;
+                            }
+
+                            h4, label{
+                                font-weight: normal;
+                                font-size: 14px;
+                            }
+
+                            .separator{
+                                text-align: center;
+                                font-size: 30px;
+                                line-height: 1;
+                            }
+
+                            &.active{
+                                border: 1px solid #eeeeee;
+                            }
+
+                            .large-6{
+                                &:first-child, &:last-child{
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                footer.payment{
+                    padding: 0 25px;
+                    .note{
+                        font-size: 11px;
+                        background-color: #fffadc;
+                        color: #92938e;
+                        padding: 10px;
+                        line-height: 1.1;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* Cart Summary */
+    .cart-summary{
+        background-color: #fff;
+        border-left: 5px solid #d0cfcf;
+
+        h4{
+            color: #47266a;
+            font-size: 14px;
+            text-transform: uppercase;
+            border: 1px solid #000;
+            border-right: none;
+            border-left-width: 5px;
+            margin: 0;
+            margin-left: -5px;
+            padding: 10px;
+        }
+
+        .rowContainer{
+            padding: 10px;
+            a, h6{
+                font-size: 12px;
+            }
+            span{
+                font-size: 11px;
+                color: #757575;
+            }
+
+            .row{
+                //Totals row
+                &.total{
+                    h6, span{
+                        font-weight: bold;
+                        color: #47266a;
+                    }
+                }
+
+                a{
+                    display: block;
+                    text-decoration: underline;
+                    line-height: 1.5;
+                }
+
+                .columns{
+                    text-align: right;
+                    &:first-child{
+                        padding-right: 5px;
+                    }
+                    &:last-child span{
+                        color: #47266a;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            & > .row{
+                border-top: 1px solid #ddd;
+                padding: 8px 0;
+                &:first-child{
+                    border-top: none;
+                }
+            }
+        }
+    }
 }

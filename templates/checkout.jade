@@ -33,25 +33,25 @@ block content
                 input.button.primary(type="submit", value="Continue")
               div.columns.large-6
                 form
-                  .row
+                  .row.collapse
                     h4
                       | Returning Customer
                       small
                         | I am a returning customer
-                    .row
-                      .large-8.columns
+                    .row.collapse
+                      .large-7.columns
                         label
                           | Email:
                           input(type='email', placeholder='abcd@abcd.com')
-                    .row
-                      .large-8.columns
+                    .row.collapse
+                      .large-7.columns
                         label
                           | Password:
                           input(type='password', placeholder='password')
-                      .large-4.columns
+                      .large-5.columns.absoluteCenter
                         a(href='#') Forgot Password ?
-                    .row
-                      .large-4.columns.large-offset-4
+                    .row.collapse
+                      .large-12.columns
                         input.button.primary(type='submit', value='Continue')
         dd
           a(href='#panel2') Step 2: Account & Billing Details
@@ -61,7 +61,7 @@ block content
                 h4
                   | Your Personal Details
                 form
-                  .row
+                  .row.collapse
                     .large-12.columns
                       label
                         | First Name:
@@ -84,7 +84,7 @@ block content
                         input(type='text', placeholder='965-123-1010')
               div.columns.large-6
                 form
-                  .row
+                  .row.collapse
                     h4
                       | Your Address
                     .large-12.columns
@@ -108,21 +108,22 @@ block content
                         | Post Code:
                         input(type='text', placeholder='Kuwait')
                     .large-12.columns
-                      input(type='checkbox', id='addressConfirmation')
                       label(for='addressConfirmation')
+                        input(type='checkbox', id='addressConfirmation')
                         | My delivery address and billing addresses are the same.
+            hr.row
             .row
-              .large-2.columns.large-offset-10
+              .large-6.columns.large-offset-6.text-right
                 input.button.primary(type='submit', value='Continue')
         dd
           a(href='#panel3') Step 3: Delivery Details
-          #panel3.content.divider
+          #panel3.content.divider.deliveryDetails
             .row
               div.columns.large-6
                 h4
                   | Select an existing address
                 div
-                  input#shippingAddress1(type='radio', name='shippingAddress')
+                  input#shippingAddress1(type='radio', name='shippingAddress', checked='checked')
                   label(for='shippingAddress1') Address 1
                   address
                     |Fay Al Hassawi <br>
@@ -172,72 +173,84 @@ block content
                         select
                           option 12345
                           option 48220
-            .row
-              .large-2.columns.large-offset-10
-                input.button.primary(type='submit', value='Continue')
+            footer
+              hr.row
+              .row
+                .large-6.columns.large-offset-6.text-right
+                  input.button.primary(type='submit', value='Continue')
         dd
           a(href='#panel4') Step 4: Payment Method
           #panel4.content
-            dl.tabs.vertical(data-tab='')
-              dd.active
-                a(href='#panel1a') Credit Card
-              dd
-                a(href='#panel2a') Debit Card
-              dd
-                a(href='#panel3a') Cash on Delivery
-            .tabs-content.vertical
-              #panel1a.content.active
-                h4
-                  |Pay using your Visa/Master Card
-                form
-                  .row
-                    .large-4.columns
-                      label
-                        | Card Number:
-                    .large-8.columns
-                      input(type='text')
-                  .row
-                    .large-4.columns
-                      label
-                        | Name on Card:
-                    .large-8.columns
-                      input(type='text')
-                  .row
-                    .large-4.columns
-                      label
-                        | Expiry Date:
-                    .large-8.columns
-                      .row
-                        .large-6.columns
-                          select
-                            option Select Month
-                        .large-6.columns
-                          select
-                            option Select Year
-                  .row
-                    .large-4.columns
-                      label
-                        | CVV Number:
-                    .large-8.columns
-                      .row
+            .tabContainer.row.collapse
+              .columns.large-3
+                dl.tabs.vertical(data-tab='')
+                  dd.active
+                    a(href='#panel1a') Credit Card
+                  dd
+                    a(href='#panel2a') Debit Card
+                  dd
+                    a(href='#panel3a') Cash on Delivery
+              .columns.large-9
+                .tabs-content.vertical
+                  #panel1a.content.active
+                    h4
+                      |Pay using your Visa/Master Card
+                    form
+                      .row.collapse
                         .large-4.columns
+                          label
+                            | Card Number:
+                        .large-7.columns.end
                           input(type='text')
-                        .large-8.columns
-                          |image will go here
-                  .row
-                    .large-8.columns.large-offset-4
-                      span
-                        |Amount Due: 305.000KD
-              #panel2a.content
-                p Panel 2 content goes here.
-              #panel3a.content
-                p Panel 3 content goes here.
-            .row
-              .large-8.large-offset-4
-                .row
-                  .large-8.columns
-                    |Note: Some note content
-                  .large-4.columns
+                      .row.collapse
+                        .large-4.columns
+                          label
+                            | Name on Card:
+                        .large-7.columns.end
+                          input(type='text')
+                      .row.collapse
+                        .large-4.columns
+                          label
+                            | Expiry Date:
+                        .large-7.columns.end
+                          .row.collapse
+                            .large-6.columns
+                              select
+                                option Select Month
+                            .large-1.columns.separator
+                              | /
+                            .large-5.columns
+                              select
+                                option Select Year
+                      .row.collapse
+                        .large-4.columns
+                          label
+                            | CVV Number:
+                        .large-7.columns.end
+                          .row.collapse
+                            .large-4.columns
+                              input(type='text')
+                            .large-8.columns.cvv
+                              img(src="../imgs/cvv.png", alt="CVV number")
+                              span 3 digit CVV number
+                      .row.collapse
+                        .large-7.columns.large-offset-4
+                          span.price
+                            |Amount Due: 305.000KD
+                  #panel2a.content
+                    h4
+                      |Pay using your Debit Card
+                  #panel3a.content
+                    h4
+                      |Pay by Cash on Delivery
+            footer.row.collapse.payment
+              .large-9.large-offset-3
+                .row.collapse
+                  .large-8.columns.note
+                    strong Note:
+                    |&nbsp; On clicking 'Make Payment' you will be redirected to the payment gateway.
+                    | Please do not close the browser window or press back button.
+                  .large-4.columns.text-right
                     input.button.primary(type='submit', value='Continue')
       div.columns.large-3.cart-summary
         h4 CART SUMMARY / 2 ITEM
