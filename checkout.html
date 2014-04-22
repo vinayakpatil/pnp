@@ -185,28 +185,29 @@
               <div class="row">
                 <div class="columns large-6">
                   <h4>New Customer<small>Checkout Options:</small></h4>
-                  <form>
-                    <input id="register" type="radio" required>
-                    <label for="register">Register Account</label>
+                  <form data-abide="ajax">
+                    <label for="register">
+                      <input id="register" type="radio" name="register" required>Register Account
+                    </label>
                     <p>By creating an account you will be able to shop faster, be up tp date on an order’s status, and keep track of the orders you have previously made</p>
                     <input type="submit" value="Continue" class="button primary">
                   </form>
                 </div>
                 <div class="columns large-6">
-                  <form>
+                  <form data-abide="ajax">
                     <div class="row collapse">
                       <h4>Returning Customer<small>I am a returning customer</small></h4>
                       <div class="row collapse">
                         <div class="large-7 columns">
                           <label>Email:
-                            <input type="email" placeholder="abcd@abcd.com">
+                            <input type="email" name="email" placeholder="abcd@abcd.com" required><small class="error">Please enter valid email.</small>
                           </label>
                         </div>
                       </div>
                       <div class="row collapse">
                         <div class="large-7 columns">
                           <label>Password:
-                            <input type="password" placeholder="password">
+                            <input type="password" name="password" required><small class="error">Passwords must be at least 8 characters with 1 capital letter, 1 number, and one special character.</small>
                           </label>
                         </div>
                         <div class="large-5 columns absoluteCenter"><a href="#">Forgot Password ?</a></div>
@@ -224,66 +225,64 @@
           </dd>
           <dd><a href="#panel2">Step 2: Account & Billing Details</a>
             <div id="panel2" class="content">
-              <div class="row">
-                <div class="columns large-6">
-                  <h4>Your Personal Details</h4>
-                  <form>
+              <form data-abide="ajax">
+                <div class="row">
+                  <div class="columns large-6">
+                    <h4>Your Personal Details</h4>
                     <div class="row collapse">
                       <div class="large-12 columns">
-                        <label>First Name:
-                          <input type="text" placeholder="abcd">
+                        <label><span class="required">*</span>First Name:
+                          <input type="text" name="first_name" placeholder="abcd" required>
                         </label>
                       </div>
                       <div class="large-12 columns">
-                        <label>Last Name:
-                          <input type="text" placeholder="abcd">
+                        <label><span class="required">*</span>Last Name:
+                          <input type="text" name="last_name" placeholder="abcd" required>
                         </label>
                       </div>
                       <div class="large-12 columns">
-                        <label>Email:
-                          <input type="email" placeholder="abcd@abcd.com">
+                        <label><span class="required">*</span>Email:
+                          <input type="email" name="email" placeholder="abcd@abcd.com" required>
                         </label>
                       </div>
                       <div class="large-12 columns">
-                        <label>Telephone:
-                          <input type="text" placeholder="965-123-1010">
+                        <label><span class="required">*</span>Telephone:
+                          <input type="text" name="telephone" placeholder="965-123-1010" required pattern="\d{3}-\d{3}-\d{4}"><small class="error">A valid telephone number is required (965-123-1010)</small>
                         </label>
                       </div>
                       <div class="large-12 columns">
                         <label>Fax:
-                          <input type="text" placeholder="965-123-1010">
+                          <input type="text" name="fax" placeholder="965-123-1010">
                         </label>
                       </div>
                     </div>
-                  </form>
-                </div>
-                <div class="columns large-6">
-                  <form>
+                  </div>
+                  <div class="columns large-6">
                     <div class="row collapse">
                       <h4>Your Address</h4>
                       <div class="large-12 columns">
                         <label>Company:
-                          <input type="text" placeholder="abcd">
+                          <input type="text" name="company" placeholder="abcd">
                         </label>
                       </div>
                       <div class="large-12 columns">
-                        <label>Address:
-                          <textarea placeholder="abcd"></textarea>
+                        <label><span class="required">*</span>Address:
+                          <textarea placeholder="abcd" name="address" required></textarea>
                         </label>
                       </div>
                       <div class="large-12 columns">
-                        <label>City:
-                          <input type="text" placeholder="Kuwait">
+                        <label><span class="required">*</span>City:
+                          <input type="text" name="city" placeholder="Kuwait" required>
                         </label>
                       </div>
                       <div class="large-12 columns">
-                        <label>Country:
-                          <input type="text" placeholder="Kuwait">
+                        <label><span class="required">*</span>Country:
+                          <input type="text" name="country" placeholder="Kuwait" required>
                         </label>
                       </div>
                       <div class="large-12 columns">
-                        <label>Post Code:
-                          <input type="text" placeholder="Kuwait">
+                        <label><span class="required">*</span>Post Code:
+                          <input type="number" name="postal_code" placeholder="10023" required pattern="\d{5}"><small class="error">A valid 5 digit postal code is required</small>
                         </label>
                       </div>
                       <div class="large-12 columns">
@@ -292,96 +291,102 @@
                         </label>
                       </div>
                     </div>
-                  </form>
-                </div>
-              </div>
-              <hr class="row">
-              <div class="row">
-                <div class="large-6 columns large-offset-6 text-right">
-                  <input type="submit" value="Continue" class="button primary">
-                </div>
-              </div>
-            </div>
-          </dd>
-          <dd><a href="#panel3">Step 3: Delivery Details</a>
-            <div id="panel3" class="content divider deliveryDetails">
-              <div class="row">
-                <div class="columns large-6">
-                  <h4>Select an existing address</h4>
-                  <div>
-                    <input id="shippingAddress1" type="radio" name="shippingAddress" checked="checked">
-                    <label for="shippingAddress1">Address 1</label>
-                    <address>
-                      Fay Al Hassawi <br>
-                      Heba Al Homaizi Complex <br>
-                      Behind City Center & near Home Center <br>
-                      Industrial Shuwaikh <br>
-                      Kuwait <br>
-                      +965 6990 9463
-                    </address>
-                  </div>
-                  <div>
-                    <input id="shippingAddress2" type="radio" , name="shippingAddress">
-                    <label for="shippingAddress2">Address 2</label>
-                    <address>
-                      Fay Al Hassawi <br>
-                      Heba Al Homaizi Complex <br>
-                      Behind City Center & near Home Center <br>
-                      Industrial Shuwaikh <br>
-                      Kuwait <br>
-                      +965 6990 9463
-                    </address>
                   </div>
                 </div>
-                <div class="columns large-6">
-                  <form>
-                    <div class="row">
-                      <h4>Enter a new address</h4>
-                      <div class="large-12 columns">
-                        <label>Name:
-                          <input type="text" placeholder="abcd">
-                        </label>
-                      </div>
-                      <div class="large-12 columns">
-                        <label>Phone:
-                          <input type="text" placeholder="000-000-0000">
-                        </label>
-                      </div>
-                      <div class="large-12 columns">
-                        <label>Address:
-                          <textarea placeholder="abcd"></textarea>
-                        </label>
-                      </div>
-                      <div class="large-12 columns">
-                        <label>City:
-                          <input type="text" placeholder="Kuwait">
-                        </label>
-                      </div>
-                      <div class="large-12 columns">
-                        <label>Country:
-                          <input type="text" placeholder="Kuwait">
-                        </label>
-                      </div>
-                      <div class="large-12 columns">
-                        <label>Post Code:
-                          <select>
-                            <option>12345</option>
-                            <option>48220</option>
-                          </select>
-                        </label>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <footer>
                 <hr class="row">
                 <div class="row">
                   <div class="large-6 columns large-offset-6 text-right">
                     <input type="submit" value="Continue" class="button primary">
                   </div>
                 </div>
-              </footer>
+              </form>
+            </div>
+          </dd>
+          <dd><a href="#panel3">Step 3: Delivery Details</a>
+            <div id="panel3" class="content divider deliveryDetails">
+              <form data-abide="ajax" class="shippingAddress">
+                <div class="row">
+                  <div class="columns large-6">
+                    <h4>
+                      <label class="existingAddress">
+                        <input type="checkbox" checked="checked" name="existingAddress">Select an existing address
+                      </label>
+                    </h4>
+                    <div>
+                      <label for="shippingAddress1">
+                        <input id="shippingAddress1" type="radio" name="shippingAddress" required checked="checked">Address 1
+                      </label>
+                      <address>
+                        Fay Al Hassawi <br>
+                        Heba Al Homaizi Complex <br>
+                        Behind City Center & near Home Center <br>
+                        Industrial Shuwaikh <br>
+                        Kuwait <br>
+                        +965 6990 9463
+                      </address>
+                    </div>
+                    <div>
+                      <label for="shippingAddress2">
+                        <input id="shippingAddress2" type="radio" name="shippingAddress" required>Address 2
+                      </label>
+                      <address>
+                        Fay Al Hassawi <br>
+                        Heba Al Homaizi Complex <br>
+                        Behind City Center & near Home Center <br>
+                        Industrial Shuwaikh <br>
+                        Kuwait <br>
+                        +965 6990 9463
+                      </address>
+                    </div>
+                  </div>
+                  <div class="columns large-6">
+                    <div class="row">
+                      <h4>Enter a new address</h4>
+                      <div class="large-12 columns">
+                        <label><span class="required">*</span>Name:
+                          <input type="text" name="name" placeholder="abcd" required>
+                        </label>
+                      </div>
+                      <div class="large-12 columns">
+                        <label><span class="required">*</span>Phone:
+                          <input type="text" name="phone" placeholder="000-000-0000" required pattern="\d{3}-\d{3}-\d{4}"><small class="error">A valid phone number is required (965-123-1010)</small>
+                        </label>
+                      </div>
+                      <div class="large-12 columns">
+                        <label><span class="required">*</span>Address:
+                          <textarea placeholder="abcd" name="address" required></textarea>
+                        </label>
+                      </div>
+                      <div class="large-12 columns">
+                        <label><span class="required">*</span>City:
+                          <input type="text" name="city" placeholder="Kuwait" required>
+                        </label>
+                      </div>
+                      <div class="large-12 columns">
+                        <label><span class="required">*</span>Country:
+                          <input type="text" name="country" placeholder="Kuwait" required>
+                        </label>
+                      </div>
+                      <div class="large-12 columns">
+                        <label><span class="required">*</span>Post Code:
+                          <select name="postal_code" required>
+                            <option>12345</option>
+                            <option>48220</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <footer>
+                  <hr class="row">
+                  <div class="row">
+                    <div class="large-6 columns large-offset-6 text-right">
+                      <input type="submit" value="Continue" class="button primary">
+                    </div>
+                  </div>
+                </footer>
+              </form>
             </div>
           </dd>
           <dd><a href="#panel4">Step 4: Payment Method</a>
@@ -398,13 +403,13 @@
                   <div class="tabs-content vertical">
                     <div id="panel1a" class="content active">
                       <h4>Pay using your Visa/Master Card</h4>
-                      <form>
+                      <form data-abide="ajax" class="payment">
                         <div class="row collapse">
                           <div class="large-4 columns">
                             <label>Card Number:</label>
                           </div>
                           <div class="large-7 columns end">
-                            <input type="text">
+                            <input type="text" required pattern="card"><small class="error">Invalid card number</small>
                           </div>
                         </div>
                         <div class="row collapse">
@@ -412,7 +417,7 @@
                             <label>Name on Card:</label>
                           </div>
                           <div class="large-7 columns end">
-                            <input type="text">
+                            <input type="text" required><small class="error">Please enter card holder's name.</small>
                           </div>
                         </div>
                         <div class="row collapse">
@@ -422,15 +427,38 @@
                           <div class="large-7 columns end">
                             <div class="row collapse">
                               <div class="large-6 columns">
-                                <select>
-                                  <option>Select Month</option>
-                                </select>
+                                <select required>
+                                  <option value>Select Month</option>
+                                  <option value="Janurary">Janurary</option>
+                                  <option value="February">February</option>
+                                  <option value="March">March</option>
+                                  <option value="April">April</option>
+                                  <option value="May">May</option>
+                                  <option value="June">June</option>
+                                  <option value="July">July</option>
+                                  <option value="August">August</option>
+                                  <option value="September">September</option>
+                                  <option value="October">October</option>
+                                  <option value="November">November</option>
+                                  <option value="December">December</option>
+                                </select><small class="error">Invalid Month</small>
                               </div>
                               <div class="large-1 columns separator">/</div>
                               <div class="large-5 columns">
-                                <select>
-                                  <option>Select Year</option>
-                                </select>
+                                <select required>
+                                  <option value>Select Year</option>
+                                  <option value="2020">2020</option>
+                                  <option value="2019">2019</option>
+                                  <option value="2018">2018</option>
+                                  <option value="2017">2017</option>
+                                  <option value="2016">2016</option>
+                                  <option value="2015">2015</option>
+                                  <option value="2014">2014</option>
+                                  <option value="2013">2013</option>
+                                  <option value="2012">2012</option>
+                                  <option value="2011">2011</option>
+                                  <option value="2010">2010</option>
+                                </select><small class="error">Invalid Year</small>
                               </div>
                             </div>
                           </div>
@@ -442,7 +470,7 @@
                           <div class="large-7 columns end">
                             <div class="row collapse">
                               <div class="large-4 columns">
-                                <input type="text">
+                                <input type="text" required pattern="cvv"><small class="error">Invalid</small>
                               </div>
                               <div class="large-8 columns cvv"><img src="../imgs/cvv.png" alt="CVV number"><span>3 digit CVV number</span></div>
                             </div>
@@ -619,5 +647,6 @@
     <script src="js/libraries/jquery.tabSlideOut.js"></script>
     <script src="js/libraries/foundation/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/checkout.js"></script>
   </body>
 </html>

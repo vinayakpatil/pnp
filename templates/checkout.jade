@@ -26,14 +26,15 @@ block content
                   | New Customer
                   small
                     | Checkout Options:
-                form
-                  input#register(type='radio', required)
-                  label(for='register') Register Account
+                form(data-abide='ajax')
+                  label(for='register')
+                    input#register(type='radio', name='register', required)
+                    | Register Account
                   p
                    | By creating an account you will be able to shop faster, be up tp date on an order’s status, and keep track of the orders you have previously made
                   input.button.primary(type="submit", value="Continue")
               div.columns.large-6
-                form
+                form(data-abide='ajax')
                   .row.collapse
                     h4
                       | Returning Customer
@@ -43,12 +44,16 @@ block content
                       .large-7.columns
                         label
                           | Email:
-                          input(type='email', placeholder='abcd@abcd.com')
+                          input(type='email', name='email', placeholder='abcd@abcd.com', required)
+                          small.error
+                            | Please enter valid email.
                     .row.collapse
                       .large-7.columns
                         label
                           | Password:
-                          input(type='password', placeholder='password')
+                          input(type='password', name='password', required)
+                          small.error
+                            | Passwords must be at least 8 characters with 1 capital letter, 1 number, and one special character.
                       .large-5.columns.absoluteCenter
                         a(href='#') Forgot Password ?
                     .row.collapse
@@ -57,128 +62,151 @@ block content
         dd
           a(href='#panel2') Step 2: Account & Billing Details
           #panel2.content
-            .row
-              div.columns.large-6
-                h4
-                  | Your Personal Details
-                form
+            form(data-abide='ajax')
+              .row
+                div.columns.large-6
+                  h4
+                    | Your Personal Details
                   .row.collapse
                     .large-12.columns
                       label
+                        span.required *
                         | First Name:
-                        input(type='text', placeholder='abcd')
+                        input(type='text', name='first_name', placeholder='abcd', required)
                     .large-12.columns
                       label
+                        span.required *
                         | Last Name:
-                        input(type='text', placeholder='abcd')
+                        input(type='text', name='last_name', placeholder='abcd', required)
                     .large-12.columns
                       label
+                        span.required *
                         | Email:
-                        input(type='email', placeholder='abcd@abcd.com')
+                        input(type='email', name='email', placeholder='abcd@abcd.com', required)
                     .large-12.columns
                       label
+                        span.required *
                         | Telephone:
-                        input(type='text', placeholder='965-123-1010')
+                        input(type='text', name='telephone', placeholder='965-123-1010', required, pattern="\\d{3}-\\d{3}-\\d{4}")
+                        small.error
+                          |A valid telephone number is required (965-123-1010)
                     .large-12.columns
                       label
                         | Fax:
-                        input(type='text', placeholder='965-123-1010')
-              div.columns.large-6
-                form
+                        input(type='text', name='fax', placeholder='965-123-1010')
+                div.columns.large-6
                   .row.collapse
                     h4
                       | Your Address
                     .large-12.columns
                       label
                         | Company:
-                        input(type='text', placeholder='abcd')
+                        input(type='text', name='company', placeholder='abcd')
                     .large-12.columns
                       label
+                        span.required *
                         | Address:
-                        textarea(placeholder='abcd')
+                        textarea(placeholder='abcd', name='address', required)
                     .large-12.columns
                       label
+                        span.required *
                         | City:
-                        input(type='text', placeholder='Kuwait')
+                        input(type='text', name='city', placeholder='Kuwait', required)
                     .large-12.columns
                       label
+                        span.required *
                         | Country:
-                        input(type='text', placeholder='Kuwait')
+                        input(type='text', name='country', placeholder='Kuwait', required)
                     .large-12.columns
                       label
+                        span.required *
                         | Post Code:
-                        input(type='text', placeholder='Kuwait')
+                        input(type='number', name='postal_code', placeholder='10023', required, pattern='\\d{5}')
+                        small.error
+                          |A valid 5 digit postal code is required
                     .large-12.columns
                       label(for='addressConfirmation')
                         input(type='checkbox', id='addressConfirmation')
                         | My delivery address and billing addresses are the same.
-            hr.row
-            .row
-              .large-6.columns.large-offset-6.text-right
-                input.button.primary(type='submit', value='Continue')
+              hr.row
+              .row
+                .large-6.columns.large-offset-6.text-right
+                  input.button.primary(type='submit', value='Continue')
         dd
           a(href='#panel3') Step 3: Delivery Details
           #panel3.content.divider.deliveryDetails
-            .row
-              div.columns.large-6
-                h4
-                  | Select an existing address
-                div
-                  input#shippingAddress1(type='radio', name='shippingAddress', checked='checked')
-                  label(for='shippingAddress1') Address 1
-                  address
-                    |Fay Al Hassawi <br>
-                    |Heba Al Homaizi Complex <br>
-                    |Behind City Center & near Home Center <br>
-                    |Industrial Shuwaikh <br>
-                    |Kuwait <br>
-                    |+965 6990 9463
-                div
-                  input#shippingAddress2(type='radio', , name='shippingAddress')
-                  label(for='shippingAddress2') Address 2
-                  address
-                    |Fay Al Hassawi <br>
-                    |Heba Al Homaizi Complex <br>
-                    |Behind City Center & near Home Center <br>
-                    |Industrial Shuwaikh <br>
-                    |Kuwait <br>
-                    |+965 6990 9463
-              div.columns.large-6
-                form
+            form.shippingAddress(data-abide='ajax')
+              .row
+                div.columns.large-6
+                  h4
+                    label.existingAddress
+                      input(type='checkbox', checked='checked', name='existingAddress')
+                      | Select an existing address
+                  div
+                    label(for='shippingAddress1')
+                      input#shippingAddress1(type='radio', name='shippingAddress', required, checked='checked')
+                      | Address 1
+                    address
+                      |Fay Al Hassawi <br>
+                      |Heba Al Homaizi Complex <br>
+                      |Behind City Center & near Home Center <br>
+                      |Industrial Shuwaikh <br>
+                      |Kuwait <br>
+                      |+965 6990 9463
+                  div
+                    label(for='shippingAddress2')
+                      input#shippingAddress2(type='radio', name='shippingAddress', required)
+                      |Address 2
+                    address
+                      |Fay Al Hassawi <br>
+                      |Heba Al Homaizi Complex <br>
+                      |Behind City Center & near Home Center <br>
+                      |Industrial Shuwaikh <br>
+                      |Kuwait <br>
+                      |+965 6990 9463
+                div.columns.large-6
                   .row
                     h4
                       | Enter a new address
                     .large-12.columns
                       label
+                        span.required *
                         | Name:
-                        input(type='text', placeholder='abcd')
+                        input(type='text', name='name', placeholder='abcd', required)
                     .large-12.columns
                       label
+                        span.required *
                         | Phone:
-                        input(type='text', placeholder='000-000-0000')
+                        input(type='text', name='phone', placeholder='000-000-0000', required, pattern="\\d{3}-\\d{3}-\\d{4}")
+                        small.error
+                          |A valid phone number is required (965-123-1010)
                     .large-12.columns
                       label
+                        span.required *
                         | Address:
-                        textarea(placeholder='abcd')
+                        textarea(placeholder='abcd', name='address', required)
                     .large-12.columns
                       label
+                        span.required *
                         | City:
-                        input(type='text', placeholder='Kuwait')
+                        input(type='text', name='city', placeholder='Kuwait', required)
                     .large-12.columns
                       label
+                        span.required *
                         | Country:
-                        input(type='text', placeholder='Kuwait')
+                        input(type='text', name='country', placeholder='Kuwait', required)
                     .large-12.columns
                       label
+                        span.required *
                         | Post Code:
-                        select
+                        select(name='postal_code', required)
                           option 12345
                           option 48220
-            footer
-              hr.row
-              .row
-                .large-6.columns.large-offset-6.text-right
-                  input.button.primary(type='submit', value='Continue')
+              footer
+                hr.row
+                .row
+                  .large-6.columns.large-offset-6.text-right
+                    input.button.primary(type='submit', value='Continue')
         dd
           a(href='#panel4') Step 4: Payment Method
           #panel4.content
@@ -196,19 +224,23 @@ block content
                   #panel1a.content.active
                     h4
                       |Pay using your Visa/Master Card
-                    form
+                    form.payment(data-abide='ajax')
                       .row.collapse
                         .large-4.columns
                           label
                             | Card Number:
                         .large-7.columns.end
-                          input(type='text')
+                          input(type='text', required, pattern='card')
+                          small.error
+                            | Invalid card number
                       .row.collapse
                         .large-4.columns
                           label
                             | Name on Card:
                         .large-7.columns.end
-                          input(type='text')
+                          input(type='text', required)
+                          small.error
+                            | Please enter card holder's name.
                       .row.collapse
                         .large-4.columns
                           label
@@ -216,13 +248,21 @@ block content
                         .large-7.columns.end
                           .row.collapse
                             .large-6.columns
-                              select
-                                option Select Month
+                              select(required)
+                                option(value) Select Month
+                                each val in ["Janurary", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+                                  option(value=val)= val
+                              small.error
+                                | Invalid Month
                             .large-1.columns.separator
                               | /
                             .large-5.columns
-                              select
-                                option Select Year
+                              select(required)
+                                option(value) Select Year
+                                each val in ["2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010"]
+                                  option(value=val)= val
+                              small.error
+                                | Invalid Year
                       .row.collapse
                         .large-4.columns
                           label
@@ -230,7 +270,9 @@ block content
                         .large-7.columns.end
                           .row.collapse
                             .large-4.columns
-                              input(type='text')
+                              input(type='text', required, pattern='cvv')
+                              small.error
+                                | Invalid
                             .large-8.columns.cvv
                               img(src="../imgs/cvv.png", alt="CVV number")
                               span 3 digit CVV number
@@ -288,6 +330,10 @@ block content
               h6 Grand Total:
             .large-4.columns
               span 380.600KD
+
+block append scripts
+  script(src='js/checkout.js')
+
 
 
 

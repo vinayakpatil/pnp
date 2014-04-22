@@ -10,9 +10,23 @@ section.checkout{
                 font-size: 12px;
                 color: #47266a;
                 font-weight: bold;
-                padding: 10px;
+                padding: 2px 10px;
                 background: #fff;
                 border: 1px solid #d3d2d2;
+                line-height: 2.2;
+            }
+
+            &.complete{
+                & > a{
+                    color: #02924a;
+
+                    &:after{
+                        content: url(../imgs/edit-pencil.png);
+                        margin-left: 20px;
+                        position: relative;
+                        top: 5px;
+                    }
+                }
             }
 
             &:last-child{
@@ -61,7 +75,7 @@ section.checkout{
                 }
 
                 // HR
-                hr.row{
+                hr{
                     margin: 15px 25px;
                 }
 
@@ -83,6 +97,12 @@ section.checkout{
                     font-size: 14px;
                     color: #333333;
                     font-weight: bold;
+
+                    label{
+                        font-size: 14px;
+                        color: #333333;
+                    }
+
                     small{
                         color: #333333;
                         display: block;
@@ -94,6 +114,10 @@ section.checkout{
                 &.active{
                     display: table;
                     width: 100%;
+
+                    a{
+                        background: none;
+                    }
                 }
                 // Divider (OR)
                 &.divider{
@@ -112,6 +136,12 @@ section.checkout{
                             .primary{
                                 margin-right: 15px;
                             }
+                        }
+                    }
+
+                    form{
+                        .large-6:last-child{
+                            padding-right: 10px;
                         }
                     }
 

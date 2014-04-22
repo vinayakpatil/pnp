@@ -95,14 +95,7 @@ body{
 
 
 /* Form */
-form{
-    label{
-        margin-bottom: emCalc(3);
-    }
-    span.required{
-        color: red;
-    }
-}
+@import "forms";
 
 /* Button */
 
