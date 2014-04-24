@@ -57,31 +57,14 @@
         }
     }
 
-    /* Summary */
-    .summary{
-        padding-right: 0;
-        margin-top: 35px;
-
-        table{
-            background: #dfd4a1;
-
-            th, td{
-                text-align: right;
-            }
-            tbody{
-                td{
-                    font-weight: bold;
-                }
-            }
-            tfoot{
-                background: #dfd4a1;
-                td{
-                    font-size: emCalc(18);
-                    border-top: 1px solid #fff;
-                    font-weight: normal;
-                    padding: 15px;
-                }
+    /* Footer */
+    footer{
+        a{
+           font-weight: bold !important; //TODO- Remove important
+            &.secondary:hover{
+                color: #46166b;
             }
         }
     }
+
 }

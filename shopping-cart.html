@@ -173,7 +173,7 @@
     <section class="row">
       <ul class="breadcrumbs">
         <li><a href="index.html">Home</a></li>
-        <li class="current"><a href="#">Furniture</a></li>
+        <li class="current"><a href="#">Shopping Cart</a></li>
       </ul>
     </section>
     <section class="row cart">
@@ -182,92 +182,64 @@
         <thead>
           <tr>
             <th>Image</th>
-            <th>Product Name</th>
+            <th></th>
             <th>Color</th>
             <th>Quantity</th>
-            <th>Unit Price</th>
+            <th class="text-right">Unit Price</th>
             <th>Total</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><a href="" class="th th-mini"><img src="imgs/furniture/accent-tables/contemporary-side-mini.jpg" alt="contemporary-side-mini"></a></td>
-            <td>
-              <h6>Traditional Side Table</h6><small>Product code: PP234561F</small>
-            </td>
+            <td><a href="contemporary-table.html" class="th th-mini"><img src="imgs/furniture/accent-tables/contemporary-side-mini.jpg" alt="contemporary-side-mini"></a></td>
+            <td><a href="contemporary-table.html">Traditional Side Table</a><small>Product code: PP234561F</small></td>
             <td>Brown</td>
             <td>
               <form class="item">
-                <input type="text" value="1"><span class="controls"><span class="cart-refresh"></span><span class="cart-delete"></span></span>
+                <input type="text" value="1"><span class="controls"><span class="cart-refresh"></span></span>
               </form>
             </td>
+            <td class="text-right">185.300 KD</td>
             <td>185.300 KD</td>
-            <td>185.300 KD</td>
+            <td><span class="controls"><span class="cart-delete"></span></span></td>
           </tr>
           <tr>
-            <td><a href="" class="th th-mini"><img src="imgs/furniture/accent-tables/contemporary-side-mini.jpg" alt="contemporary-side-mini"></a></td>
-            <td>
-              <h6>Contemporary Side Table</h6><small>Product code: PP234561F</small>
-            </td>
+            <td><a href="contemporary-table.html" class="th th-mini"><img src="imgs/furniture/accent-tables/contemporary-side-mini.jpg" alt="contemporary-side-mini"></a></td>
+            <td><a href="contemporary-table.html">Contemporary Side Table</a><small>Product code: PP234561F</small></td>
             <td>Brown</td>
             <td>
               <form class="item">
-                <input type="text" value="1"><span class="controls"><span class="cart-refresh"></span><span class="cart-delete"></span></span>
+                <input type="text" value="1"><span class="controls"><span class="cart-refresh"></span></span>
               </form>
             </td>
+            <td class="text-right">185.300 KD</td>
             <td>185.300 KD</td>
-            <td>185.300 KD</td>
+            <td><span class="controls"><span class="cart-delete"></span></span></td>
           </tr>
         </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4" class="padded"></td>
+            <td class="text-right">Subtotal:</td>
+            <td>370.600 KD</td>
+          </tr>
+          <tr>
+            <td colspan="4" class="padded"></td>
+            <td class="text-right">Shipping:</td>
+            <td>10.000 KD</td>
+          </tr>
+          <tr class="total">
+            <td colspan="4" class="padded"></td>
+            <td class="text-right">Grand Total:</td>
+            <td>380.600 KD</td>
+            <td></td>
+          </tr>
+        </tfoot>
       </table>
-      <section class="row">
-        <div class="coupons columns large-6">
-          <h4>Gift Voucher & Discount Coupon</h4>
-          <table>
-            <tbody>
-              <tr>
-                <td><strong>Use Deal / Coupon Code:</strong></td>
-                <td>
-                  <input type="text" placeholder="Enter deal / coupon code">
-                </td>
-                <td>
-                  <button class="button secondary radius large">Apply</button>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Use Gift Voucher:</strong></td>
-                <td>
-                  <input type="text" placeholder="Enter gift voucher code">
-                </td>
-                <td>
-                  <button class="button secondary radius large">Apply</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="summary columns large-6">
-          <table>
-            <tbody>
-              <tr class="row">
-                <td class="large-8 columns">Sub-Total:</td>
-                <td class="large-4 columns">370.600 KD</td>
-              </tr>
-              <tr class="row">
-                <td class="large-8 columns">Shipping:</td>
-                <td class="large-4 columns">10.000 KD</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr class="row">
-                <td class="large-8 columns">Grand Total:</td>
-                <td class="large-4 columns">380.600 KD</td>
-              </tr>
-            </tfoot>
-          </table>
-          <button class="button secondary large">Continue Shopping</button><a href="checkout.html" class="button primary large right">Checkout</a>
-        </div>
-      </section>
+      <footer class="row collapse">
+        <div class="columns large-4 large-offset-8"><a class="button secondary large">Continue Shopping</a><a href="checkout.html" class="button primary large right">Checkout</a></div>
+      </footer>
     </section>
     <!-- Footer-->
     <footer class="row main-nav collapse">

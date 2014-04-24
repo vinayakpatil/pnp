@@ -26,7 +26,7 @@ $(function() {
             preventToggle || !(dd$.hasClass('active') || dd$.hasClass('complete'))
         ) {
             // prevent default action
-            // e.stopPropagation();
+            e.stopPropagation();
         } else {
 
             // Add active class to current editing tab
