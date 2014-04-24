@@ -1,0 +1,21 @@
+.button{
+    &.primary{
+        @include background(linear-gradient(bottom, #703baa, #51297b));
+        &:hover{
+            @include background(linear-gradient(top, #703baa, #51297b));
+        }
+        border: 1px solid #52297c;
+        padding-top: 1px ;
+        padding-bottom: 1px;
+    }
+    &.secondary{
+        @include background(linear-gradient(bottom, #ededed, #fff));
+        color: $primary-color;
+        &:hover{
+            @include background(linear-gradient(top, #ededed, #fff));
+        }
+        border: 1px solid #cccccc;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+}

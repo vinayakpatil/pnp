@@ -4,9 +4,10 @@
 
 
 /* Generic */
-body{
-}
+// body{
+// }
 
+/* Header */
 @import "header";
 
 /* Slider */
@@ -47,9 +48,6 @@ body{
         font-size: emCalc(13);
     }
 }
-
-/* Footer */
-@import "footer";
 
 /* Slide out tabs */
 .slide-out-div{
@@ -98,28 +96,7 @@ body{
 @import "forms";
 
 /* Button */
-
-.button{
-    &.primary{
-        @include background(linear-gradient(bottom, #703baa, #51297b));
-        &:hover{
-            @include background(linear-gradient(top, #703baa, #51297b));
-        }
-        border: 1px solid #52297c;
-        padding-top: 1px ;
-        padding-bottom: 1px;
-    }
-    &.secondary{
-        @include background(linear-gradient(bottom, #ededed, #fff));
-        color: $primary-color;
-        &:hover{
-            @include background(linear-gradient(top, #ededed, #fff));
-        }
-        border: 1px solid #cccccc;
-        padding-top: 1px;
-        padding-bottom: 1px;
-    }
-}
+@import "buttons";
 
 
 
@@ -156,42 +133,6 @@ body{
     }
 }
 
-
-
-/* FLyout */
-.flyout{
-    .f-dropdown {
-        .side-nav{
-            display: block;
-            padding-bottom: 0;
-            margin-bottom: 0;
-            li{
-                clear: left;
-                width: 100%;
-                a{
-                    color: #46166b;
-                    font-size: emCalc(13);
-                    text-transform: capitalize;
-                    display: block;
-                    padding: 0 20px !important;
-                    line-height: 30px !important;
-                    &:hover{
-                        background: transparent;
-                        color: $body-font-color;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-        &.small{
-            max-width: 220px;
-            padding: 20px 0 0;
-        }
-        &.content{
-            z-index: 999;
-        }
-    }
-}
 
 
 /* Grid */
@@ -306,74 +247,8 @@ body{
     }
 }
 
-
-
 /* JCarousel */
-
-/*
-This is the visible area of you carousel.
-Set a width here to define how much items are visible.
-The width can be either fixed in px or flexible in %.
-Position must be relative!
-*/
-.jcarousel {
-    position: relative;
-    overflow: hidden;
-}
-
-/*
-This is the container of the carousel items.
-You must ensure that the position is relative or absolute and
-that the width is big enough to contain all items.
-*/
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-
-    /* Optional, required in this case since it's a <ul> element */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/*
-These are the item elements. jCarousel works best, if the items
-have a fixed width and height (but it's not required).
-*/
-.jcarousel li {
-    /* Required only for block elements like <li>'s */
-    float: left;
-
-    .th{
-        border-bottom: none;
-    }
-}
-
-
-
-/* Carousel controls prev-next */
-
-.jcarousel-prev, .jcarousel-next{
-    position: absolute;
-    width: 27px;
-    height: 25px;
-}
-.jcarousel-prev{
-    left: 0;
-    background: transparent url(../imgs/carousel-controls.png) no-repeat;
-    &.disabled{
-        background: transparent url(../imgs/carousel-controls.png) no-repeat -27px 0;
-    }
-}
-.jcarousel-next{
-    right: 0;
-    background: transparent url(../imgs/carousel-controls.png) no-repeat 0 -25px;
-    &.disabled{
-        background: transparent url(../imgs/carousel-controls.png) no-repeat -27px -25px;
-    }
-}
-
-
+@import "jcarousel";
 
 /* Product */
 .product{
@@ -621,60 +496,8 @@ have a fixed width and height (but it's not required).
 
 
 /* Social Icons - mini */
+@import "icons";
 
-.social {
-    list-style-type: none;
-    @extend .clearfix;
-    margin: 0;
-    li{
-        float: left;
-        margin-right: 5px;
-        a i{
-            display: inline-block;
-        }
-    }
-}
-
-.social-medium {
-    li{
-        margin-right: 7px;
-    }
-    a i{
-        width: 37px;
-        height: 37px;
-        transition: opacity 0.2s;
-        &.social-facebook{
-            background:transparent url('../imgs/social-sprite-new.png') no-repeat 0 0;
-        }
-        &.social-twitter{
-            background:transparent url('../imgs/social-sprite-new.png') no-repeat -37px 0;
-        }
-        &.social-instagram{
-            background:transparent url('../imgs/social-sprite-new.png') no-repeat -74px 0;
-        }
-        &:hover{
-            opacity: 0.8;
-        }
-    }
-}
-
-.social-mini {
-    li{
-        a i{
-            width: 17px;
-            height: 17px;
-            &.social-facebook{
-                background:transparent url('../imgs/social-sprite-mini.png') no-repeat 0 0;
-            }
-            &.social-twitter{
-                background:transparent url('../imgs/social-sprite-mini.png') no-repeat -17px 0;
-            }
-            &.social-instagram{
-                background:transparent url('../imgs/social-sprite-mini.png') no-repeat -34px 0;
-            }
-        }
-    }
-}
 
 
 /* BreadCrumbs */
@@ -698,113 +521,13 @@ have a fixed width and height (but it's not required).
 
 
 /* Shopping cart */
-.cart {
-    .button{
-        font-size: emCalc(14);
-        padding-top: 8px;
-        padding-bottom: 9px;
-    }
-
-    h1{
-        border-bottom: none;
-    }
-
-    h4{
-        color: $primary-color;
-    }
-
-    .cart-refresh{
-        background: transparent url(../imgs/cart-sprite.png) no-repeat;
-    }
-
-    .cart-delete{
-        background: transparent url(../imgs/cart-sprite.png) no-repeat -24px;
-    }
-    .cart-refresh, .cart-delete{
-        display: inline-block;
-        width: 24px;
-        height: 25px;
-        cursor: pointer;
-    }
-
-    form.item{
-        input{
-            display: inline-block;
-            width: 60px;
-            text-align: center;
-            margin: 0;
-        }
-
-        .controls{
-            display: inline-block;
-            height: 30px;
-            vertical-align: middle;
-            margin-left: 5px;
-        }
-    }
-
-    /* Coupons */
-    .coupons{
-        padding-left: 0;
-        table{
-            td{
-                padding: 12px 9px;
-            }
-
-            input, .button{
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    /* Summary */
-    .summary{
-        padding-right: 0;
-        margin-top: 35px;
-
-        table{
-            background: #dfd4a1;
-
-            th, td{
-                text-align: right;
-            }
-            tbody{
-                td{
-                    font-weight: bold;
-                }
-            }
-            tfoot{
-                background: #dfd4a1;
-                td{
-                    font-size: emCalc(18);
-                    border-top: 1px solid #fff;
-                    font-weight: normal;
-                    padding: 15px;
-                }
-            }
-        }
-    }
-}
-
-
+@import "cart";
 
 /* Tables */
-table{
-    border-spacing: 0;
-    width: 100%;
-
-    &.products tbody{
-        background: rgba(255, 255, 255, 0.63);
-        h6{
-            text-decoration: underline;
-            margin-bottom: 0;
-        }
-        small{
-            display: block;
-            font-size: emCalc(10);
-        }
-    }
-}
+@import "tables";
 
 /* Checkout */
 @import "checkout";
+
+/* Footer */
+@import "footer";

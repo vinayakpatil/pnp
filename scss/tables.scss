@@ -1,0 +1,16 @@
+table{
+    border-spacing: 0;
+    width: 100%;
+
+    &.products tbody{
+        background: rgba(255, 255, 255, 0.63);
+        h6{
+            text-decoration: underline;
+            margin-bottom: 0;
+        }
+        small{
+            display: block;
+            font-size: emCalc(10);
+        }
+    }
+}

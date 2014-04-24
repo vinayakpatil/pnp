@@ -1,0 +1,87 @@
+.cart {
+    .button{
+        font-size: emCalc(14);
+        padding-top: 8px;
+        padding-bottom: 9px;
+    }
+
+    h1{
+        border-bottom: none;
+    }
+
+    h4{
+        color: $primary-color;
+    }
+
+    .cart-refresh{
+        background: transparent url(../imgs/cart-sprite.png) no-repeat;
+    }
+
+    .cart-delete{
+        background: transparent url(../imgs/cart-sprite.png) no-repeat -24px;
+    }
+    .cart-refresh, .cart-delete{
+        display: inline-block;
+        width: 24px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    form.item{
+        input{
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .controls{
+            display: inline-block;
+            height: 30px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    }
+
+    /* Coupons */
+    .coupons{
+        padding-left: 0;
+        table{
+            td{
+                padding: 12px 9px;
+            }
+
+            input, .button{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    /* Summary */
+    .summary{
+        padding-right: 0;
+        margin-top: 35px;
+
+        table{
+            background: #dfd4a1;
+
+            th, td{
+                text-align: right;
+            }
+            tbody{
+                td{
+                    font-weight: bold;
+                }
+            }
+            tfoot{
+                background: #dfd4a1;
+                td{
+                    font-size: emCalc(18);
+                    border-top: 1px solid #fff;
+                    font-weight: normal;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}

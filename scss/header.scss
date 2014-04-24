@@ -175,3 +175,38 @@
         }
     }
 }
+
+/* FLyout */
+.flyout{
+    .f-dropdown {
+        .side-nav{
+            display: block;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            li{
+                clear: left;
+                width: 100%;
+                a{
+                    color: #46166b;
+                    font-size: emCalc(13);
+                    text-transform: capitalize;
+                    display: block;
+                    padding: 0 20px !important;
+                    line-height: 30px !important;
+                    &:hover{
+                        background: transparent;
+                        color: $body-font-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &.small{
+            max-width: 220px;
+            padding: 20px 0 0;
+        }
+        &.content{
+            z-index: 999;
+        }
+    }
+}
