@@ -1,0 +1,117 @@
+// Extend Default page layout
+extends layout
+// Change title of page
+block prepend headTag
+  title Peacocks and Paisleys | Register
+// Change page content
+block content
+  section.row
+    ul.breadcrumbs
+      li
+        a(href='index.html') Home
+      li
+        a(href='#') Shopping Cart
+      li.current
+        a(href='#') Checkout
+  section.row.signin
+    h1 Register
+    .registerContainer.row.collapse
+      .large-12.columns
+        form(data-abide, action='checkout.html')
+          .row
+            fieldset
+              legend Account Details
+              .row.collapse
+                .row.collapse
+                  .large-5.columns
+                    label
+                      | Name*:
+                      input(type='text', name='name', required)
+                .row.collapse
+                  .large-5.columns
+                    label
+                      | Email Address*:
+                      input(type='email', name='email', required)
+                .row.collapse
+                  .large-5.columns
+                    label
+                      | Confirm Email Address*:
+                      input(type='email', name='confirmEmail', required)
+                .row.collapse
+                  .large-5.columns
+                    label
+                      | Phone:
+                      input(type='text', name='phone', placeholder='965-123-1010', pattern="\\d{3}-\\d{3}-\\d{4}")
+                      small.error
+                        |A valid phone number is required (965-123-1010)
+                .row.collapse
+                  .large-5.columns
+                    label
+                      | Password*:
+                      input(type='password', id='password', required)
+                      small.error
+                        | Passwords must be at least 8 characters with 1 capital letter, 1 number, and one special character.
+                .row.collapse
+                  .large-5.columns
+                    label
+                      | Confirm Password*:
+                      input(type='password', name='confirmPassword', required, data-equalto="password")
+                      small.error
+                        | Passwords must match.
+            fieldset
+              legend Billing Address
+              .row.collapse
+                .row.collapse
+                  .large-5.columns
+                    label
+                      | Name*:
+                      input(type='text', name='nameBilling', required)
+                .row.collapse
+                  .large-5.columns
+                      label
+                        | Address*:
+                        textarea(name='address', required)
+                .row.collapse
+                  .large-5.columns
+                    label
+                      | Phone:
+                      input(type='text', name='phoneBilling', placeholder='965-123-1010', pattern="\\d{3}-\\d{3}-\\d{4}")
+                      small.error
+                        |A valid phone number is required (965-123-1010)
+                .row.collapse
+                  .large-5.columns
+                    label
+                      | City*:
+                      select(name='city', required)
+                        option(value='')
+                        option Kuwait
+                        option Kuwait
+                .row.collapse
+                  .large-5.columns
+                    label
+                      | Country*:
+                      select(name='country', required)
+                        option(value='')
+                        option Kuwait
+                        option Kuwait
+                .row.collapse
+                  .large-5.columns
+                    label(for='addressConfirmation')
+                        input(type='checkbox', id='addressConfirmation')
+                        | Shipping address is the same as billing address
+                .row.collapse
+                  .large-5.columns
+                    input.button.primary.large(type="submit", value="register")
+                    |&nbsp;
+                    input.button.secondary.large(type="reset", value="reset")
+
+
+
+
+
+
+
+
+
+
+

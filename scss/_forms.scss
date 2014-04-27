@@ -1,6 +1,9 @@
 form{
     label{
         margin-bottom: emCalc(3);
+        input, select, textarea {
+            margin-top: 8px !important;
+        }
     }
     span.required{
         color: red;
@@ -17,4 +20,22 @@ label{
         position: relative;
         top: 2px;
     }
+}
+
+fieldset{
+    border: none;
+    legend{
+        width: 100%;
+        padding: 10px 0;
+        border: 1px solid #d3d3d3;
+        border-left: none;
+        border-right: none;
+    }
+    &:first-child legend{
+        border-top: none;
+    }
+}
+
+form input.button{
+    margin-top: 20px !important;
 }

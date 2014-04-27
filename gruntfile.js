@@ -20,6 +20,7 @@ module.exports = function(grunt) {
                     "shopping-cart.html": ["templates/shopping-cart.jade"],
                     "checkout.html": ["templates/checkout.jade"],
                     "signin.html": ["templates/signin.jade"],
+                    "register.html": ["templates/register.jade"]
                 }]
             }
         },
