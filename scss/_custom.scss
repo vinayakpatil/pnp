@@ -98,9 +98,7 @@
 /* Button */
 @import "buttons";
 
-
-
-.cart h1, .categories h1, .checkout h1{
+section h1 {
     font-family: $body-font-family;
     text-align: center;
     color: #47266a;
@@ -528,6 +526,9 @@
 
 /* Checkout */
 @import "checkout";
+
+/* Sign In */
+@import "signin";
 
 /* Footer */
 @import "footer";

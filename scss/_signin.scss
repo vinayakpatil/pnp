@@ -1,0 +1,56 @@
+.signInContainer{
+	border: 1px solid #434343;
+	border-right: none;
+	border-left: none;
+	background-color: #fff;
+	padding: 40px 20px;
+
+	display: table;
+	position: relative;
+
+	.columns{
+		display: table-cell;
+	}
+
+	//TODO- Component
+	.divider{
+		position: absolute !important;
+		height: 80%;
+		left: 50%;
+		background-color: #dddddd;
+		width: 1px;
+		top: 10%;
+	}
+
+	a, p{
+		font-size: rem-calc(12);
+	}
+
+	h4{
+		font-size: rem-calc(18);
+	}
+
+	a, p, h4{
+		color: #333333;
+	}
+
+	a{
+		text-decoration: underline;
+	}
+
+	form {
+		input{
+			margin-top: 10px;
+		}
+	}
+
+	.primary{
+		margin: 20px 0 0;
+	}
+
+	.registerInfo{
+		display: table-cell;
+		vertical-align: middle;
+		height: 270px;
+	}
+}

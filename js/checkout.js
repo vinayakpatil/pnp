@@ -18,6 +18,10 @@ $(function() {
         var dd$ = $(e.target).closest('dd');
         var preventToggle = false;
 
+        if(dd$.parent('dl').hasClass('tabs')){
+            return;
+        }
+
         preventToggle = (
             dd$.siblings('dd.invalid').length !== 0
         );
@@ -69,7 +73,7 @@ $(function() {
         }
 
         // Next tab in workflow
-        dd$.next('dd').addClass('active').find('a').click();
+        dd$.next('dd').addClass('active').children('a').click();
     }
 
     function onInvalid(e) {

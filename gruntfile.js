@@ -19,6 +19,7 @@ module.exports = function(grunt) {
                     "contemporary-table.html": ["templates/contemporary-table.jade"],
                     "shopping-cart.html": ["templates/shopping-cart.jade"],
                     "checkout.html": ["templates/checkout.jade"],
+                    "signin.html": ["templates/signin.jade"],
                 }]
             }
         },
