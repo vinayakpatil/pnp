@@ -1,48 +1,48 @@
 .signInContainer{
-	border: 1px solid #434343;
-	border-right: none;
-	border-left: none;
-	background-color: #fff;
-	padding: 40px 20px;
+    border: 1px solid #434343;
+    border-right: none;
+    border-left: none;
+    background-color: #fff;
+    padding: 40px 20px;
 
-	display: table;
-	position: relative;
+    display: table;
+    position: relative;
 
-	.columns{
-		display: table-cell;
-	}
+    .columns{
+        display: table-cell;
+    }
 
-	//TODO- Component
-	.divider{
-		position: absolute !important;
-		height: 80%;
-		left: 50%;
-		background-color: #dddddd;
-		width: 1px;
-		top: 10%;
-	}
+    //TODO- Component
+    .divider{
+        position: absolute !important;
+        height: 80%;
+        left: 50%;
+        background-color: #dddddd;
+        width: 1px;
+        top: 10%;
+    }
 
-	p{
-		font-size: rem-calc(12);
-	}
+    p{
+        font-size: rem-calc(12);
+    }
 
-	form a{
-		font-size: rem-calc(12);
-		color: #333333;
-		text-decoration: underline;
-	}
+    form a{
+        font-size: rem-calc(12);
+        color: #333333;
+        text-decoration: underline;
+    }
 
-	h4{
-		font-size: rem-calc(18);
-	}
+    h4{
+        font-size: rem-calc(18);
+    }
 
-	p, h4{
-		color: #333333;
-	}
+    p, h4{
+        color: #333333;
+    }
 
-	.registerInfo{
-		display: table-cell;
-		vertical-align: middle;
-		height: 300px;
-	}
+    .registerInfo{
+        display: table-cell;
+        vertical-align: middle;
+        height: 255px;
+    }
 }

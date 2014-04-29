@@ -54,7 +54,8 @@ block content
                           input(type='password', name='password', required)
                           small.error
                             | Passwords must be at least 8 characters with 1 capital letter, 1 number, and one special character.
-                      .large-5.columns.absoluteCenter
+                    .row.collapse
+                      .large-7.columns.pullUp
                         a(href='#') Forgot Password ?
                     .row.collapse
                       .large-12.columns
@@ -70,23 +71,19 @@ block content
                   .row.collapse
                     .large-12.columns
                       label
-                        span.required *
-                        | First Name:
+                        | First Name*:
                         input(type='text', name='first_name', placeholder='abcd', required)
                     .large-12.columns
                       label
-                        span.required *
-                        | Last Name:
+                        | Last Name*:
                         input(type='text', name='last_name', placeholder='abcd', required)
                     .large-12.columns
                       label
-                        span.required *
-                        | Email:
+                        | Email*:
                         input(type='email', name='email', placeholder='abcd@abcd.com', required)
                     .large-12.columns
                       label
-                        span.required *
-                        | Telephone:
+                        | Telephone*:
                         input(type='text', name='telephone', placeholder='965-123-1010', required, pattern="\\d{3}-\\d{3}-\\d{4}")
                         small.error
                           |A valid telephone number is required (965-123-1010)
@@ -104,23 +101,19 @@ block content
                         input(type='text', name='company', placeholder='abcd')
                     .large-12.columns
                       label
-                        span.required *
-                        | Address:
+                        | Address*:
                         textarea(placeholder='abcd', name='address', required)
                     .large-12.columns
                       label
-                        span.required *
-                        | City:
+                        | City*:
                         input(type='text', name='city', placeholder='Kuwait', required)
                     .large-12.columns
                       label
-                        span.required *
-                        | Country:
+                        | Country*:
                         input(type='text', name='country', placeholder='Kuwait', required)
                     .large-12.columns
                       label
-                        span.required *
-                        | Post Code:
+                        | Post Code*:
                         input(type='number', name='postal_code', placeholder='10023', required, pattern='\\d{5}')
                         small.error
                           |A valid 5 digit postal code is required
@@ -129,7 +122,7 @@ block content
                         input(type='checkbox', id='addressConfirmation')
                         | My delivery address and billing addresses are the same.
               hr.row
-              .row
+              footer.row
                 .large-6.columns.large-offset-6.text-right
                   input.button.primary(type='submit', value='Continue')
         dd
@@ -170,35 +163,29 @@ block content
                       | Enter a new address
                     .large-12.columns
                       label
-                        span.required *
-                        | Name:
+                        | Name*:
                         input(type='text', name='name', placeholder='abcd', required)
                     .large-12.columns
                       label
-                        span.required *
-                        | Phone:
+                        | Phone*:
                         input(type='text', name='phone', placeholder='000-000-0000', required, pattern="\\d{3}-\\d{3}-\\d{4}")
                         small.error
                           |A valid phone number is required (965-123-1010)
                     .large-12.columns
                       label
-                        span.required *
-                        | Address:
+                        | Address*:
                         textarea(placeholder='abcd', name='address', required)
                     .large-12.columns
                       label
-                        span.required *
-                        | City:
+                        | City*:
                         input(type='text', name='city', placeholder='Kuwait', required)
                     .large-12.columns
                       label
-                        span.required *
-                        | Country:
+                        | Country*:
                         input(type='text', name='country', placeholder='Kuwait', required)
                     .large-12.columns
                       label
-                        span.required *
-                        | Post Code:
+                        | Post Code*:
                         select(name='postal_code', required)
                           option 12345
                           option 48220
@@ -299,36 +286,36 @@ block content
         h4 CART SUMMARY / 2 ITEM
         .rowContainer
           .row.collapse
-            .large-8.columns
+            .large-7.columns
               a(href='contemporary-table.html')
                 |Traditional Side Table
               span
                 | Colour: Brown &nbsp; QTY:1
-            .large-4.columns
+            .large-5.columns
               span 185.300KD
           .row.collapse
-            .large-8.columns
+            .large-7.columns
               a(href='contemporary-table.html')
                |Traditional Side Table
               span
                 | Colour: Brown &nbsp; QTY:1
-            .large-4.columns
+            .large-5.columns
               span 185.300KD
           .row.collapse
-            .row.collapse
-              .large-8.columns
+            .row.collapse.attrs
+              .large-7.columns
                 h6 Sub-Total:
-              .large-4.columns
+              .large-5.columns
                 span 370.600KD
-            .row.collapse
-              .large-8.columns
+            .row.collapse.attrs
+              .large-7.columns
                 h6 Shipping:
-              .large-4.columns
+              .large-5.columns
                 span 10.000KD
           .row.collapse.total
-            .large-8.columns
+            .large-7.columns
               h6 Grand Total:
-            .large-4.columns
+            .large-5.columns
               span 380.600KD
 
 block append scripts

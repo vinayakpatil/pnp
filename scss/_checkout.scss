@@ -1,4 +1,12 @@
 section.checkout{
+    //TODO- Abstract
+    address{
+        font-size: rem-calc(13);
+        font-style: normal;
+        padding-left: 15px;
+    }
+
+    /* Accordion */
     .accordion{
         padding-right: 15px !important;
         //Tabs
@@ -7,7 +15,7 @@ section.checkout{
 
             // Accordion Heading
             & > a{
-                font-size: 12px;
+                font-size: 14px;
                 color: #47266a;
                 font-weight: bold;
                 padding: 2px 10px;
@@ -49,16 +57,16 @@ section.checkout{
                     font-size: 11px;
                 }
 
-                form label, a{
+                form a{
                     font-size: 12px;
                 }
 
                 // Forms
                 form{
                     label{
-                        font-weight: bold;
                         &[for=addressConfirmation]{
-                            font-size: 11px;
+                            font-size: 12px;
+                            font-weight: bolder;
                         }
                     }
 
@@ -99,7 +107,6 @@ section.checkout{
                     font-weight: bold;
 
                     label{
-                        font-size: 14px;
                         color: #333333;
                     }
 
@@ -134,7 +141,7 @@ section.checkout{
                             padding-right: 0;
                             padding-left: 25px;
                             .primary{
-                                margin-right: 15px;
+                                margin-right: 5px;
                             }
                         }
                     }
@@ -275,8 +282,7 @@ section.checkout{
                                 padding-left: 10px;
                             }
 
-                            h4, label{
-                                font-weight: normal;
+                            h4{
                                 font-size: 14px;
                             }
 
@@ -318,7 +324,6 @@ section.checkout{
         }
     }
 
-
     /* Cart Summary */
     .cart-summary{
         background-color: #fff;
@@ -351,7 +356,23 @@ section.checkout{
                 &.total{
                     h6, span{
                         font-weight: bold;
+                        margin: 0;
+                        line-height: 16px;
+                        vertical-align: text-top;
                         color: #47266a;
+                        font-size: 14px;
+                    }
+
+                    .columns{
+                        &:last-child span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                &.attrs{
+                    h6 {
+                        font-weight: bold;
                     }
                 }
 
@@ -359,6 +380,7 @@ section.checkout{
                     display: block;
                     text-decoration: underline;
                     line-height: 1.5;
+                    color: #464646;
                 }
 
                 .columns{

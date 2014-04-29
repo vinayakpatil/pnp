@@ -2,7 +2,7 @@ form{
     label{
         margin-bottom: emCalc(3);
         input, select, textarea {
-            margin-top: 8px !important;
+            margin-top: 5px !important;
         }
     }
     span.required{
@@ -36,6 +36,7 @@ fieldset{
     }
 }
 
-form input.button{
-    margin-top: 20px !important;
+
+form .pullUp{
+    margin: -10px 0 10px 0;
 }
