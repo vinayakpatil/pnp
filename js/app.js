@@ -52,6 +52,13 @@ $(function() {
 
     // Flyout menu
     (function($) {
+        //Mark active first
+        var currentPath = window.location.pathname;
+        var currentPage = currentPath.slice(currentPath.lastIndexOf('/')+1, currentPath.indexOf('.'));
+        if(currentPage !== 'index'){
+            $('.left li[data-name=' + currentPage + ']').addClass('active');
+        }
+
         var isActivePage = false;
         $('.flyout').hover(function(e) {
             isActivePage = $(this).hasClass('active');
