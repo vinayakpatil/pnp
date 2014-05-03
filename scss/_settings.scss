@@ -7,7 +7,8 @@
 
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
-@import "http://fonts.googleapis.com/css?family=Open+Sans";
+// @import "http://fonts.googleapis.com/css?family=Open+Sans";
+@import "fonts";
 // @import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,700";
 // $experimental: true;
 
@@ -1096,7 +1097,7 @@ $header-line-height: 1.125;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(48);
+$h1-font-size: rem-calc(40);
 // $h2-font-size: rem-calc(37);
 // $h3-font-size: rem-calc(27);
 $h4-font-size: rem-calc(22);
