@@ -1,0 +1,99 @@
+// Extend Default page layout
+extends layout
+// Change title of page
+block prepend headTag
+  title Peacocks and Paisleys | My Orders
+// Change page content
+block content
+  section.row
+    ul.breadcrumbs
+      li
+        a(href='index.html') Home
+      li
+        a(href='#') My Account
+      li.current
+        a(href='#') My Orders
+  section.row.myOrders
+    h1 My Orders
+    table.large-12
+      thead
+        tr
+          th Order No.
+          th Order Date
+          th Order Status
+          th Tracking No.
+          th Order Amount
+          th Action
+      tbody
+        tr
+          td PP1205243718233
+          td 07/03/2014 00:36
+          td Under Process
+          td 123456789
+          td 180.000 KD
+          td
+            a(href='#') View Order
+        tr
+          td PP1205243718233
+          td 07/03/2014 00:36
+          td Under Process
+          td 123456789
+          td 180.000 KD
+          td
+            a(href='#') View Order
+        tr
+          td PP1205243718233
+          td 07/03/2014 00:36
+          td Under Process
+          td 123456789
+          td 180.000 KD
+          td
+            a(href='#') View Order
+        tr
+          td PP1205243718233
+          td 07/03/2014 00:36
+          td Under Process
+          td 123456789
+          td 180.000 KD
+          td
+            a(href='#') View Order
+        tr
+          td PP1205243718233
+          td 07/03/2014 00:36
+          td Under Process
+          td 123456789
+          td 180.000 KD
+          td
+            a(href='#') View Order
+        tr
+          td PP1205243718233
+          td 07/03/2014 00:36
+          td Under Process
+          td 123456789
+          td 180.000 KD
+          td
+            a(href='#') View Order
+        tr
+          td PP1205243718233
+          td 07/03/2014 00:36
+          td Under Process
+          td 123456789
+          td 180.000 KD
+          td
+            a(href='#') View Order
+      tfoot
+        tr
+          td(colspan='6')
+            p
+              | <strong>Note:</strong> You can track your order by copying the tracking number and paste it on &nbsp;
+              a(href='www.fedex.com/tracking') http://www.fedex.com/tracking page.
+
+
+
+
+
+
+
+
+
+

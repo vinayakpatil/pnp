@@ -34,9 +34,23 @@ fieldset{
     &:first-child legend{
         border-top: none;
     }
+    margin-top: 0;
+}
+
+fieldset.columns {
+    legend {
+        border-top: 1px solid #d3d3d3;
+    }
 }
 
 
 form .pullUp{
     margin: -10px 0 10px 0;
+}
+
+
+address{
+    font-size: rem-calc(13);
+    font-style: normal;
+    padding-left: 15px;
 }

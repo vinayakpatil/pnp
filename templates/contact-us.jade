@@ -1,0 +1,73 @@
+// Extend Default page layout
+extends layout
+// Change title of page
+block prepend headTag
+  title Peacocks and Paisleys | Contact Us
+// Change page content
+block content
+  section.row
+    ul.breadcrumbs
+      li
+        a(href='index.html') Home
+      li
+        a(href='#') Shopping Cart
+      li.current
+        a(href='#') Checkout
+  section.row.signin
+    h1 Contact Us
+    .box.contactusContainer.row.collapse
+      .large-7.columns
+        ul
+          li
+            h4
+              |We're Here To Help
+            p
+              |Have a question about an item or delivery timeframe? Need a swatch? Please contact us if you need design advice, or have any questions about the products on our site, or your order.
+          li
+            h4
+              |By Phone
+            p
+              |Call us toll-free at 965-121-1010. Our customer service hours are from 8:30-5:30 central time <br>
+              | Monday - Friday.
+          li
+            h4
+              |By Email
+            p
+              |Drop us a line any time at
+              a(href='mailto:info@peacocksandpaisleys.com') info@peacocksandpaisleys.com. <br>
+              |We'd love your feedback on our products and site!.
+      .large-5.columns
+        .row.collapse
+          form(data-abide='ajax')
+            .large-12.columns
+              label
+                | Name*:
+                input(type='text', name='name', required)
+            .large-12.columns
+              label
+                | Email*:
+                input(type='email', name='email', required)
+            .large-12.columns
+              label
+                | Phone:
+                input(type='text', name='phone', placeholder='965-123-1010', pattern="\\d{3}-\\d{3}-\\d{4}")
+                small.error
+                  |A valid phone number is required (965-123-1010)
+            .large-12.columns
+              label
+                | Message:
+                textarea(name='message')
+            .large-6.columns.end
+              input.button.primary.large(type='submit', value='submit')
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,7 +15,7 @@ block content
         a(href='#') Checkout
   section.row.signin
     h1 Register
-    .registerContainer.row.collapse
+    .box.registerContainer.row.collapse
       .large-12.columns
         form(data-abide, action='checkout.html')
           .row
@@ -99,7 +99,7 @@ block content
                     label(for='addressConfirmation')
                         input(type='checkbox', id='addressConfirmation')
                         | Shipping address is the same as billing address
-                .row.collapse
+                footer.row.collapse
                   .large-5.columns
                     input.button.primary.large(type="submit", value="register")
                     |&nbsp;

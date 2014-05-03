@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
-    <title>Peacocks and Paisleys | Accent Tables</title>
+    <title>Peacocks and Paisleys | Account Information</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/app.css">
@@ -172,82 +172,201 @@
     <section class="row">
       <ul class="breadcrumbs">
         <li><a href="index.html">Home</a></li>
-        <li><a href="furniture.html">Furniture</a></li>
-        <li class="current"><a href="#">Accent Tables</a></li>
+        <li><a href="#">My Account</a></li>
+        <li class="current"><a href="#">Account Information</a></li>
       </ul>
     </section>
-    <section class="row categories">
-      <h1>Accent Tables</h1>
-      <!-- Thumb Controls Top-->
-      <section class="thumb-controls row"><span class="columns large-1 optionTitle">Sort By :</span>
-        <ul class="sub-nav columns large-5">
-          <li><a href="#">Populatiry</a></li>
-          <li><a href="#">What's New</a></li>
-          <li><a href="#">Price</a></li>
-        </ul>
-        <div class="columns large-7 pagination-container">
-          <ul class="pagination right">
-            <li class="arrow unavailable"><a href=""><<</a></li>
-            <li class="arrow"><a href=""><</a></li>
-            <li><a href="">1</a></li>
-            <li class="current"><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li class="unavailable"><a href="">…</a></li>
-            <li><a href="">12</a></li>
-            <li><a href="">13</a></li>
-            <li class="arrow"><a href="">></a></li>
-            <li class="arrow unavailable"><a href="">>></a></li>
-            <li class="unavailable all"><a href="">View All</a></li>
-          </ul>
+    <section class="row signin">
+      <h1>Account Information</h1>
+      <div class="box accountInfoContainer row collapse">
+        <div class="large-12 columns">
+          <form data-abide action="checkout.html">
+            <div class="row">
+              <fieldset>
+                <legend>Account Details<a href="#" class="edit">Edit</a></legend>
+                <div class="row collapse">
+                  <div class="row collapse">
+                    <div class="large-2 columns">
+                      <label for="name" class="inline">Name*:</label>
+                    </div>
+                    <div class="large-4 columns end"><span>Anish Chief</span>
+                    </div>
+                  </div>
+                  <div class="row collapse">
+                    <div class="large-2 columns">
+                      <label for="email" class="inline">Email Address*:</label>
+                    </div>
+                    <div class="large-4 columns end"><span>anish@chiefsons.com</span>
+                    </div>
+                  </div>
+                  <div class="row collapse">
+                    <div class="large-2 columns">
+                      <label for="phone" class="inline">Phone:</label>
+                    </div>
+                    <div class="large-4 columns end"><span>965-121-1010</span>
+                    </div>
+                  </div>
+                  <div class="row collapse">
+                    <div class="large-2 columns">
+                      <label for="gender" class="inline">Gender:</label>
+                    </div>
+                    <div class="large-4 columns end"><span>Male</span>
+                    </div>
+                  </div>
+                  <div class="row collapse">
+                    <div class="large-2 columns">
+                      <label class="inline">Password*:</label>
+                    </div>
+                    <div class="large-4 columns end"><span>********** &nbsp;</span><a href="change-password.html">Change Password</a>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="row">
+                <fieldset class="columns large-6">
+                  <legend>Billing Address<a href="#" class="edit">Edit</a></legend>
+                  <address class="row collapse">
+                    Fay Al Hassawi <br>
+                    Heba Al Homaizi Complex <br>
+                    Behind City Center & near Home Center <br>
+                    Industrial Shuwaikh <br>
+                    Kuwait <br>
+                    +965 6990 9463
+                  </address>
+                  <div class="row collapse hide">
+                    <div class="row collapse">
+                      <div class="large-3 columns">
+                        <label for="nameBilling" class="inline">Name*:</label>
+                      </div>
+                      <div class="large-5 columns end">
+                        <input type="text" id="nameBilling" name="nameBilling" required>
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="large-3 columns">
+                        <label for="billingAddress" class="inline">Address*:</label>
+                      </div>
+                      <div class="large-5 columns end">
+                        <textarea name="billingAddress" id="billingAddress" required></textarea>
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="large-3 columns">
+                        <label for="phoneBilling" class="inline">Phone:</label>
+                      </div>
+                      <div class="large-5 columns end">
+                        <input type="text" id="phoneBilling" name="phoneBilling" placeholder="965-123-1010" pattern="\d{3}-\d{3}-\d{4}"><small class="error">A valid phone number is required (965-123-1010)</small>
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="large-3 columns">
+                        <label for="city" class="inline">City*:</label>
+                      </div>
+                      <div class="large-5 columns end">
+                        <select name="city" id="city" required>
+                          <option value=""></option>
+                          <option>Kuwait</option>
+                          <option>Kuwait</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="large-3 columns">
+                        <label for="country" class="inline">Country*:</label>
+                      </div>
+                      <div class="large-5 columns end">
+                        <select name="country" id="country" required>
+                          <option>Kuwait</option>
+                          <option>India</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="large-12 columns">
+                        <label for="addressConfirmation">
+                          <input type="checkbox" id="addressConfirmation">Shipping address is the same as billing address
+                        </label>
+                      </div>
+                    </div>
+                    <footer class="row collapse">
+                      <div class="large-12 columns">
+                        <input type="submit" value="save" class="button primary large">&nbsp;
+                        <input type="reset" value="reset" class="button secondary large">
+                      </div>
+                    </footer>
+                  </div>
+                </fieldset>
+                <fieldset class="columns large-6">
+                  <legend>Shipping Address<a href="#" class="edit">Edit</a></legend>
+                  <address class="row collapse">
+                    Fay Al Hassawi <br>
+                    Heba Al Homaizi Complex <br>
+                    Behind City Center & near Home Center <br>
+                    Industrial Shuwaikh <br>
+                    Kuwait <br>
+                    +965 6990 9463
+                  </address>
+                  <div class="row collapse hide">
+                    <div class="row collapse">
+                      <div class="large-3 columns">
+                        <label for="nameBilling" class="inline">Name*:</label>
+                      </div>
+                      <div class="large-5 columns end">
+                        <input type="text" id="nameBilling" name="nameBilling" required>
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="large-3 columns">
+                        <label for="billingAddress" class="inline">Address*:</label>
+                      </div>
+                      <div class="large-5 columns end">
+                        <textarea name="billingAddress" id="billingAddress" required></textarea>
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="large-3 columns">
+                        <label for="phoneBilling" class="inline">Phone:</label>
+                      </div>
+                      <div class="large-5 columns end">
+                        <input type="text" id="phoneBilling" name="phoneBilling" placeholder="965-123-1010" pattern="\d{3}-\d{3}-\d{4}"><small class="error">A valid phone number is required (965-123-1010)</small>
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="large-3 columns">
+                        <label for="city" class="inline">City*:</label>
+                      </div>
+                      <div class="large-5 columns end">
+                        <select name="city" id="city" required>
+                          <option value=""></option>
+                          <option>Kuwait</option>
+                          <option>Kuwait</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="large-3 columns">
+                        <label for="country" class="inline">Country*:</label>
+                      </div>
+                      <div class="large-5 columns end">
+                        <select name="country" id="country" required>
+                          <option>Kuwait</option>
+                          <option>India</option>
+                        </select>
+                      </div>
+                    </div>
+                    <footer class="row collapse">
+                      <div class="large-12 columns">
+                        <input type="submit" value="save" class="button primary large">&nbsp;
+                        <input type="reset" value="reset" class="button secondary large">
+                      </div>
+                    </footer>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </form>
         </div>
-      </section>
-      <!-- Thumbnails-->
-      <ul class="large-block-grid-3 thumbs-container">
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables/baldwin-solid-wood-sofa.jpg" alt="Baldwin Solid Wood Sofa Table">
-            <h4>Baldwin Solid Wood Sofa Table</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables.jpg" alt="beds">
-            <h4>Traditional Side Table</h4></a></li>
-        <li><a href="contemporary-table.html" class="th"><img src="imgs/furniture/accent-tables/contemporary-side.jpg" alt="Contemporary Side Table">
-            <h4>Contemporary Side Table</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables/baldwin-solid-wood-sofa2.jpg" alt="Baldwin Solid Wood Sofa Table">
-            <h4>Baldwin Solid Wood Sofa Table</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables/traditional-side.jpg" alt="Traditional Side Table">
-            <h4>Traditional Side Table</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables/contemporary-side2.jpg" alt="Contemporary Side Table">
-            <h4>Contemporary Side Table</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables/baldwin-solid-wood-sofa3.jpg" alt="Baldwin Solid Wood Sofa Table">
-            <h4>Baldwin Solid Wood Sofa Table</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables/traditional-side2.jpg" alt="Traditional Side Table">
-            <h4>Traditional Side Table</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables/contemporary-side3.jpg" alt="Contemporary Side Table">
-            <h4>Contemporary Side Table</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables/baldwin-solid-wood-sofa4.jpg" alt="Baldwin Solid Wood Sofa Table">
-            <h4>Baldwin Solid Wood Sofa Table</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables/traditional-side3.jpg" alt="Traditional Side Table">
-            <h4>Traditional Side Table</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/furniture/accent-tables.jpg" alt="Contemporary Side Table">
-            <h4>Contemporary Side Table</h4></a></li>
-      </ul>
-      <!-- Thumb controls bottom-->
-      <section class="thumb-controls row">
-        <div class="pagination-container columns large-offset-5 large-7">
-          <ul class="pagination right">
-            <li class="arrow unavailable"><a href=""><<</a></li>
-            <li class="arrow"><a href=""><</a></li>
-            <li><a href="">1</a></li>
-            <li class="current"><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li class="unavailable"><a href="">…</a></li>
-            <li><a href="">12</a></li>
-            <li><a href="">13</a></li>
-            <li class="arrow"><a href="">></a></li>
-            <li class="arrow unavailable"><a href="">>></a></li>
-            <li class="unavailable all"><a href="">View All</a></li>
-          </ul>
-        </div>
-      </section>
+      </div>
     </section>
     <!-- Footer-->
     <footer class="row main-nav collapse">

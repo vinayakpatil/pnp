@@ -516,6 +516,16 @@ section h1 {
     }
 }
 
+/* Box */
+.box {
+    border: 1px solid #434343;
+    border-right: none;
+    border-left: none;
+    background-color: #fff;
+    padding: 20px;
+}
+
+
 
 
 /* Shopping cart */
@@ -532,6 +542,15 @@ section h1 {
 
 /* Register */
 @import "register";
+
+/* Account Info */
+@import "accountInfo";
+
+/* Contact Us */
+@import "contactus";
+
+/* Contact Us */
+@import "myOrders";
 
 /* Footer */
 @import "footer";

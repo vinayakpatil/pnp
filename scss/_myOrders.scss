@@ -1,0 +1,17 @@
+.myOrders{
+    a{
+        text-decoration: underline;
+    }
+    p{
+        font-size: rem-cal(12);
+        color: #464646;
+    }
+    table{
+        tfoot{
+            a{
+                color: #0088c9;
+                text-decoration: none;
+            }
+        }
+    }
+}
