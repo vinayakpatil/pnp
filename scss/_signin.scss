@@ -1,20 +1,9 @@
 .signInContainer{
     padding: 40px 20px;
 
-    display: table;
-    position: relative;
-
-    .columns{
-        display: table-cell;
-    }
-
     //TODO- Component
     .divider{
-        position: absolute !important;
         height: 80%;
-        left: 50%;
-        background-color: #dddddd;
-        width: 1px;
         top: 10%;
     }
 

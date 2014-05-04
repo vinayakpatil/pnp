@@ -35,7 +35,7 @@ section.checkout{
             }
             // Tab content
             .content{
-                padding: 10px 0;
+                padding: 20px 0;
                 border: 1px solid #e3e3e3;
                 border-top: none;
 
@@ -77,15 +77,8 @@ section.checkout{
 
                 // HR
                 hr{
-                    margin: 15px 25px;
+                    margin: 15px 20px;
                 }
-
-                &.divider{
-                    hr.row{
-                        margin: 15px 15px 15px 0;
-                    }
-                }
-
 
                 //Buttons
                 .button.primary{
@@ -119,59 +112,14 @@ section.checkout{
                         background: none;
                     }
                 }
-                // Divider (OR)
-                &.divider{
-                    position: relative;
-                    width: 100%;
-
-                    // Zero out padding of columns
-                    .large-6{
-                        &:first-child{
-                            padding-left: 0;
-                            padding-right: 25px;
-                        }
-                        &:last-child{
-                            padding-right: 0;
-                            padding-left: 25px;
-                            .primary{
-                                margin-right: 5px;
-                            }
-                        }
-                    }
-
-                    form{
-                        .large-6:last-child{
-                            padding-right: 10px;
-                        }
-                    }
-
-                    &:after, &:before{
-                        display: table-cell;
-                        height: 100%;
-                        position: relative;
-                    }
-
-                    &:after{
-                        content: '';
-                        border-right: 1px solid #dddddd;
-                        left: -48%;
-                    }
-
-                    &:before{
-                        content: url(../imgs/vdivider-text.png);
-                        left: 50%;
-                        vertical-align: middle;
-                        z-index: 100;
-                    }
-                }
 
                 // Match padding with divider
-                .large-6{
+                .row > .large-6 {
                     &:first-child{
-                        padding-left: 25px;
+                        padding-left: 20px;
                     }
                     &:last-child{
-                        padding-right: 25px;
+                        padding-right: 20px;
                     }
                 }
 
@@ -181,13 +129,13 @@ section.checkout{
                     padding-bottom: 75px;
                     footer{
                         position: absolute;
-                        width: 96%;
+                        width: 97%;
                     }
                 }
 
                 // Vertical Tabs
                 .tabContainer{
-                    padding: 25px 25px 0px;
+                    padding: 20px 20px 0px;
 
                     .tabs.vertical{
                         width: 100%;
@@ -299,7 +247,7 @@ section.checkout{
                 }
 
                 footer.payment{
-                    padding: 0 25px;
+                    padding: 0 20px;
 
                     .button.primary{
                         padding: 5px 16px;

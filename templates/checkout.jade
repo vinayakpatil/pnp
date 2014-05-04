@@ -19,9 +19,9 @@ block content
       dl.accordion.columns.large-9(data-accordion='')
         dd
           a(href='#panel1') Step 1: Checkout Options
-          #panel1.content.active.divider
-            .row
-              div.columns.large-6
+          #panel1.content.active
+            .row.dividerContainer.collapse
+              div.columns.large-5
                 h4
                   | New Customer
                   small
@@ -33,7 +33,8 @@ block content
                   p
                    | By creating an account you will be able to shop faster, be up tp date on an order’s status, and keep track of the orders you have previously made
                   input.button.primary(type="submit", value="Continue")
-              div.columns.large-6
+              .large-2.columns.divider
+              div.columns.large-5
                 form(data-abide='ajax')
                   .row.collapse
                     h4
@@ -127,10 +128,10 @@ block content
                   input.button.primary(type='submit', value='Continue')
         dd
           a(href='#panel3') Step 3: Delivery Details
-          #panel3.content.divider.deliveryDetails
+          #panel3.content.deliveryDetails
             form.shippingAddress(data-abide='ajax')
-              .row
-                div.columns.large-6
+              .row.dividerContainer.collapse
+                div.columns.large-5
                   h4
                     label.existingAddress
                       input(type='checkbox', checked='checked', name='existingAddress')
@@ -157,7 +158,8 @@ block content
                       |Industrial Shuwaikh <br>
                       |Kuwait <br>
                       |+965 6990 9463
-                div.columns.large-6
+                .large-2.columns.divider
+                div.columns.large-5
                   .row
                     h4
                       | Enter a new address

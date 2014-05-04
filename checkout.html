@@ -181,9 +181,9 @@
       <div class="row collapse">
         <dl data-accordion="" class="accordion columns large-9">
           <dd><a href="#panel1">Step 1: Checkout Options</a>
-            <div id="panel1" class="content active divider">
-              <div class="row">
-                <div class="columns large-6">
+            <div id="panel1" class="content active">
+              <div class="row dividerContainer collapse">
+                <div class="columns large-5">
                   <h4>New Customer<small>Checkout Options:</small></h4>
                   <form data-abide="ajax">
                     <label for="register">
@@ -193,7 +193,8 @@
                     <input type="submit" value="Continue" class="button primary">
                   </form>
                 </div>
-                <div class="columns large-6">
+                <div class="large-2 columns divider"></div>
+                <div class="columns large-5">
                   <form data-abide="ajax">
                     <div class="row collapse">
                       <h4>Returning Customer<small>I am a returning customer</small></h4>
@@ -305,10 +306,10 @@
             </div>
           </dd>
           <dd><a href="#panel3">Step 3: Delivery Details</a>
-            <div id="panel3" class="content divider deliveryDetails">
+            <div id="panel3" class="content deliveryDetails">
               <form data-abide="ajax" class="shippingAddress">
-                <div class="row">
-                  <div class="columns large-6">
+                <div class="row dividerContainer collapse">
+                  <div class="columns large-5">
                     <h4>
                       <label class="existingAddress">
                         <input type="checkbox" checked="checked" name="existingAddress">Select an existing address
@@ -341,7 +342,8 @@
                       </address>
                     </div>
                   </div>
-                  <div class="columns large-6">
+                  <div class="large-2 columns divider"></div>
+                  <div class="columns large-5">
                     <div class="row">
                       <h4>Enter a new address</h4>
                       <div class="large-12 columns">

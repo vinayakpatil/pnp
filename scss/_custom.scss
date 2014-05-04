@@ -284,6 +284,26 @@ section h1 {
     padding: 20px;
 }
 
+/* Dividers */
+.dividerContainer{
+    padding: 0 20px;
+    display: table;
+    position: relative;
+
+    & > .columns{
+        display: table-cell;
+    }
+
+    .divider{
+        position: absolute !important;
+        height: 100%;
+        left: 50%;
+        background-color: #dddddd;
+        width: 1px;
+    }
+}
+
+
 
 
 
