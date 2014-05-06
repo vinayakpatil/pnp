@@ -2,7 +2,7 @@
 // TODO: Remove timeout
 $(function() {
     var accordion$ = $('.checkout .accordion');
-    var cartSummary$ = accordion$.next('.cart-summary');
+    var cartSummary$ = accordion$.next('.cart-summary').find('.summaryBox:first-child');
 
     // Initial states for accordion
     accordion$.children('dd').first().addClass('active').end().addClass('disabled');
@@ -68,7 +68,7 @@ $(function() {
 
         if ($(this).hasClass('payment')) {
             // Payment form valid
-            alert('Ready to navigate to payment gateway');
+            window.location = 'order-confirmation.html';
             return;
         }
 

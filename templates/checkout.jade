@@ -285,40 +285,41 @@ block content
                   .large-4.columns.text-right
                     input.button.primary.large(type='submit', value='Make Payment')
       div.columns.large-3.cart-summary
-        h4 CART SUMMARY / 2 ITEM
-        .rowContainer
-          .row.collapse
-            .large-7.columns
-              a(href='contemporary-table.html')
-                |Traditional Side Table
-              span
-                | Colour: Brown &nbsp; QTY:1
-            .large-5.columns
-              span 185.300KD
-          .row.collapse
-            .large-7.columns
-              a(href='contemporary-table.html')
-               |Traditional Side Table
-              span
-                | Colour: Brown &nbsp; QTY:1
-            .large-5.columns
-              span 185.300KD
-          .row.collapse
-            .row.collapse.attrs
+        .summaryBox
+          h4 CART SUMMARY / 2 ITEM
+          .rowContainer
+            .row.collapse
               .large-7.columns
-                h6 Sub-Total:
+                a(href='contemporary-table.html')
+                  |Traditional Side Table
+                span.sub
+                  | Colour: Brown &nbsp; QTY:1
               .large-5.columns
-                span 370.600KD
-            .row.collapse.attrs
+                span 185.300KD
+            .row.collapse
               .large-7.columns
-                h6 Shipping:
+                a(href='contemporary-table.html')
+                 |Traditional Side Table
+                span.sub
+                  | Colour: Brown &nbsp; QTY:1
               .large-5.columns
-                span 10.000KD
-          .row.collapse.total
-            .large-7.columns
-              h6 Grand Total:
-            .large-5.columns
-              span 380.600KD
+                span 185.300KD
+            .row.collapse
+              .row.collapse.attrs
+                .large-7.columns
+                  span Sub-Total
+                .large-5.columns
+                  span 370.600KD
+              .row.collapse.attrs
+                .large-7.columns
+                  span Shipping
+                .large-5.columns
+                  span 10.000KD
+            .row.collapse.total
+              .large-7.columns
+                span Grand Total
+              .large-5.columns
+                span 380.600KD
 
 block append scripts
   script(src='js/checkout.js')

@@ -61,44 +61,45 @@ block content
             tfoot
               tr
                 td(colspan='3')
-                  |If you have questions, please do not hesitate to contact us on sales@peacocksandpaisleys.com OR +965 22241055.
+                  |If you have questions, please do not hesitate to contact us on &nbsp;
+                  a(href="mailto:sales@peacocksandpaisleys.com") sales@peacocksandpaisleys.com
+                  | &nbsp; OR +965 22241055.
         p.text-center
           input.primary.button.large(type='button', value='Continue Shopping')
       div.columns.large-3.cart-summary
-        h4 Order Summary
-        .rowContainer
-          .row.collapse
-            .large-7.columns
-              a(href='contemporary-table.html')
-                |Traditional Side Table
-              span
-                | Colour: Brown &nbsp; QTY:1
-            .large-5.columns
-              span 185.300KD
-          .row.collapse
-            .large-7.columns
-              a(href='contemporary-table.html')
-               |Traditional Side Table
-              span
-                | Colour: Brown &nbsp; QTY:1
-            .large-5.columns
-              span 185.300KD
-          .row.collapse
-            .row.collapse.attrs
+        div.summaryBox
+          h4 Order Summary
+          .rowContainer
+            .row.collapse
+              .row.collapse.attrs
+                .large-7.columns
+                  span Items
+                .large-5.columns
+                  span 2
+              .row.collapse.attrs
+                .large-7.columns
+                  span Subtotal
+                .large-5.columns
+                  span 370.600 KD
+              .row.collapse.attrs
+                .large-7.columns
+                  span Shipping
+                .large-5.columns
+                  span 15.000 KD
+            .row.collapse.total
               .large-7.columns
-                h6 Sub-Total:
+                span Grand Total
               .large-5.columns
-                span 370.600KD
-            .row.collapse.attrs
-              .large-7.columns
-                h6 Shipping:
-              .large-5.columns
-                span 10.000KD
-          .row.collapse.total
-            .large-7.columns
-              h6 Grand Total:
-            .large-5.columns
-              span 380.600KD
+                span 380.600KD
+        div.summaryBox
+          h4 Shipping Address
+          address
+            |Anish Chief <br>
+            |Sanabil Tower,<br>
+            |Ahmad Al Abdullah Street,<br>
+            |Sharq, Kuwait City,<br>
+            |Kuwait.<br>
+            |+(965) 2292 2035<br>
 
 block append scripts
   script(src='js/checkout.js')

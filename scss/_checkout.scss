@@ -317,6 +317,10 @@ section.checkout{
                     border-bottom: none;
                     font-size: rem-calc(11);
                 }
+                a{
+                    text-decoration: underline;
+                    color: #353535;
+                }
             }
         }
     }
@@ -327,12 +331,17 @@ section.checkout{
         // border-left: 5px solid #d0cfcf;
         padding-right: 0;
 
-        h4, .rowContainer{
+        h4, .summaryBox{
             border: 1px solid #d0cfcf;
             border-right: none;
             background-color: #fff;
-            border-left-width: 5px;
+        }
+
+        .summaryBox{
+            border-top: none;
             border-bottom: none;
+            margin-bottom: 30px;
+            border-left-width: 5px;
         }
 
         h4{
@@ -341,16 +350,26 @@ section.checkout{
             text-transform: uppercase;
             margin: 0;
             padding: 10px;
+            border-left: none;
+        }
+
+        address{
+            line-height: 1.5;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 
         .rowContainer{
             padding: 10px;
-            a, h6{
+            &, a, h6{
                 font-size: 12px;
             }
             span{
                 font-size: 11px;
-                color: #757575;
+                color: #464646;
+                &.sub{
+                    color: #757575;
+                }
             }
 
             .row{
@@ -372,9 +391,16 @@ section.checkout{
                     }
                 }
 
+                &.attrs .large-7:after, &.total .large-7:after{
+                    content: ':';
+                    position: absolute;
+                    right: 5px;
+                }
+
                 &.attrs{
-                    h6 {
-                        font-weight: bold;
+                    margin-top: 5px;
+                    span{
+                        font-size: 12px;
                     }
                 }
 
@@ -383,10 +409,11 @@ section.checkout{
                     text-decoration: underline;
                     line-height: 1.5;
                     color: #464646;
+                    margin-top: -3px;
                 }
 
                 .columns{
-                    text-align: right;
+                    text-align: left;
                     &:first-child{
                         padding-right: 5px;
                     }
