@@ -30,7 +30,8 @@ module.exports = function(grunt) {
                     "walls-floors.html": ["templates/walls-floors.jade"],
                     "kitchen.html": ["templates/kitchen.jade"],
                     "bed-bath.html": ["templates/bed-bath.jade"],
-                    "peachicks.html": ["templates/peachicks.jade"]
+                    "peachicks.html": ["templates/peachicks.jade"],
+                    "order-confirmation.html": ["templates/order-confirmation.jade"]
                 }]
             }
         },

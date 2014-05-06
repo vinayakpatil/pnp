@@ -1,0 +1,115 @@
+// Extend Default page layout
+extends layout
+// Change title of page
+block prepend headTag
+  title Peacocks and Paisleys | Order Confirmation
+// Change page content
+block content
+  section.row
+    ul.breadcrumbs
+      li
+        a(href='index.html') Home
+      li
+        a(href='shopping-cart.html') Shopping Cart
+      li.current
+        a(href='#') Order Confirmation
+  section.row.checkout
+    h1 Order Confirmation
+    div.row
+      .large-9.columns.orderContainer
+        p.greeting.text-center
+          |Thank you for shopping with us!
+        h3.text-center
+          |Order ID: PP-AC-103253254
+        p.text-center
+          |Please use your order number for future reference.
+        .row.paymentInfo.collapse
+          .large-4.columns
+            p
+              |KNET TRANSREF:&nbsp;
+              strong KT12345
+          .large-4.columns
+            p
+              |KNET AUTHCODE:&nbsp;
+              strong 123456
+          .large-4.columns
+            p
+              |KNET ORDER STATUS:&nbsp;
+              strong SUCCESS
+        .row
+          table
+            thead
+              tr
+                th Item
+                th Price
+                th Quantity
+            tbody
+              tr
+                td
+                  |Contemporary Table
+                td
+                  |185.300 KD
+                td
+                  |1
+              tr
+                td
+                  |Contemporary Table
+                td
+                  |185.300 KD
+                td
+                  |1
+            tfoot
+              tr
+                td(colspan='3')
+                  |If you have questions, please do not hesitate to contact us on sales@peacocksandpaisleys.com OR +965 22241055.
+        p.text-center
+          input.primary.button.large(type='button', value='Continue Shopping')
+      div.columns.large-3.cart-summary
+        h4 Order Summary
+        .rowContainer
+          .row.collapse
+            .large-7.columns
+              a(href='contemporary-table.html')
+                |Traditional Side Table
+              span
+                | Colour: Brown &nbsp; QTY:1
+            .large-5.columns
+              span 185.300KD
+          .row.collapse
+            .large-7.columns
+              a(href='contemporary-table.html')
+               |Traditional Side Table
+              span
+                | Colour: Brown &nbsp; QTY:1
+            .large-5.columns
+              span 185.300KD
+          .row.collapse
+            .row.collapse.attrs
+              .large-7.columns
+                h6 Sub-Total:
+              .large-5.columns
+                span 370.600KD
+            .row.collapse.attrs
+              .large-7.columns
+                h6 Shipping:
+              .large-5.columns
+                span 10.000KD
+          .row.collapse.total
+            .large-7.columns
+              h6 Grand Total:
+            .large-5.columns
+              span 380.600KD
+
+block append scripts
+  script(src='js/checkout.js')
+
+
+
+
+
+
+
+
+
+
+
