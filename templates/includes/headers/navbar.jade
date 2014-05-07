@@ -4,8 +4,8 @@ header.row
     div.top-bar-section.clearfix
       // Left Nav Section
       ul.left
-        li
-          a(href='#') What's New
+        li.flyout(data-name='whatsnew')
+          a(href='whatsnew.html') What's New
         li.flyout(data-name='furniture')
           a(href='furniture.html', data-dropdown='furnitureCategories', data-options='is_hover:true') Furniture
           #furnitureCategories.f-dropdown.content.small(data-dropdown-content='')
@@ -55,8 +55,8 @@ header.row
               each val in ["furniture", "bedding", "decor", "gifts"].sort()
                 li
                   a(href='#')= val
-        li.flyout
-          a(href='#', data-dropdown='giftsCategories', data-options='is_hover:true') Gifts
+        li.flyout(data-name='gifts')
+          a(href='gifts.html', data-dropdown='giftsCategories', data-options='is_hover:true') Gifts
           #giftsCategories.f-dropdown.content.small(data-dropdown-content='')
             ul.side-nav.clearfix
               each val in ["under 50kd", "under 100kd", "under 200kd", "seasonal gifts", "gift certificate "].sort()
@@ -65,5 +65,5 @@ header.row
       // Right Nav Section
       ul.right
         li
-          a(href='#')
+          a(href='sale.html')
             img(src='imgs/sale.png', alt='Sale')

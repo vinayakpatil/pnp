@@ -29,9 +29,12 @@ module.exports = function(grunt) {
                     "decor.html": ["templates/decor.jade"],
                     "walls-floors.html": ["templates/walls-floors.jade"],
                     "kitchen.html": ["templates/kitchen.jade"],
+                    "gifts.html": ["templates/gifts.jade"],
+                    "whatsnew.html": ["templates/whatsnew.jade"],
                     "bed-bath.html": ["templates/bed-bath.jade"],
                     "peachicks.html": ["templates/peachicks.jade"],
-                    "order-confirmation.html": ["templates/order-confirmation.jade"]
+                    "order-confirmation.html": ["templates/order-confirmation.jade"],
+                    "blog.html": ["templates/blog.jade"]
                 }]
             }
         },

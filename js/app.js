@@ -50,6 +50,12 @@ $(function() {
         $(document).trigger('click');
     });
 
+    // Redirect to blog
+    $('.handleBlog').on('click', function(e) {
+        e.preventDefault();
+        window.location = 'blog.html';
+    });
+
     // Flyout menu
     (function($) {
         //Mark active first

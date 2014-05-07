@@ -275,6 +275,52 @@ section h1 {
     }
 }
 
+/* Share Post */
+/* Promote */
+.promote{
+    ul{
+        list-style-type: none;
+        @extend .clearfix;
+        margin-left: 0;
+        line-height: 1.5;
+        li{
+            color: #666666;
+            float: left;
+            font-size: emCalc(12);
+
+            &.fb-like{
+                a{
+                    margin-right: 10px;
+                }
+            }
+
+            &:before{
+                content: '|';
+                float: left;
+                margin: 0 10px;
+            }
+            &:first-child:before{
+                content: '';
+                display: none;
+            }
+        }
+
+        ul{
+            li{
+                &:before{
+                    content: '';
+                    display: none;
+                }
+            }
+            &.social{
+                line-height: 2;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+
 /* Box */
 .box {
     border: 1px solid #434343;
@@ -330,6 +376,9 @@ section h1 {
 
 /* Contact Us */
 @import "myOrders";
+
+/* Blog */
+@import "blog";
 
 /* Footer */
 @import "footer";

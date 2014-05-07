@@ -1,0 +1,146 @@
+// Extend Default page layout
+extends layout
+// Change title of page
+block prepend headTag
+  title Peacocks and Paisleys | PNP Blog
+// Change page content
+block content
+  section.row
+    ul.breadcrumbs
+      li
+        a(href='index.html') Home
+      li
+        a(href='blog.html') PNP Blog
+      li.current
+        a(href='#') Page 1 of 9
+  section.row.blog.collapse
+    h1 PNP Blog
+    div.row.collapse
+      .columns.large-7
+        article
+          h3 Meet Lorem Ipsum
+          aside
+            p
+              | Posted On &nbsp;
+              span.date May 7'th 2014
+              | &nbsp; by &nbsp;
+              cite Lorem Ipsum &nbsp;
+              a.comments(href='#') 0 comments
+          a.th(href='#')
+            img(src='imgs/placehold-blog-article.gif')
+          p.post
+            |An an valley indeed so no wonder future nature vanity.
+            |Debating all she mistaken indulged believed provided declared.
+            |He many kept on draw lain song as same. Whether at dearest certain spirits
+            |An an valley indeed so no wonder future nature vanity.
+            |Debating all she mistaken indulged believed provided declared.
+            |He many kept on draw lain song as same. Whether at dearest certain spirits
+          footer
+            .row.collapse
+              section.promote.columns.large-7.large-offset-5
+                ul
+                  li(class="fb-like")
+                    a(href='#')
+                      img(src='imgs/fb-like.png', alt='FB Like Button')
+                    | 7 people like this
+                  li
+                    strong.left Share On:
+                    ul.social.social-mini.left
+                      li
+                        a(href='#', title='facebook')
+                          i.social-facebook
+                      li
+                        a(href='#', title='twitter')
+                          i.social-twitter
+                      li
+                        a(href='#', title='instagram')
+                          i.social-instagram
+        article
+          h3 Meet Lorem Ipsum2
+          aside
+            p
+              | Posted On &nbsp;
+              span.date May 7'th 2014
+              | &nbsp; by &nbsp;
+              cite Lorem Ipsum2 &nbsp;
+              a.comments(href='#') 0 comments
+          a.th(href='#')
+            img(src='imgs/placehold-blog-article.gif')
+          p.post
+            |An an valley indeed so no wonder future nature vanity.
+            |Debating all she mistaken indulged believed provided declared.
+            |He many kept on draw lain song as same. Whether at dearest certain spirits
+            |An an valley indeed so no wonder future nature vanity.
+            |Debating all she mistaken indulged believed provided declared.
+            |He many kept on draw lain song as same. Whether at dearest certain spirits
+          footer
+            .row.collapse
+              section.promote.columns.large-7.large-offset-5
+                ul
+                  li(class="fb-like")
+                    a(href='#')
+                      img(src='imgs/fb-like.png', alt='FB Like Button')
+                    | 7 people like this
+                  li
+                    strong.left Share On:
+                    ul.social.social-mini.left
+                      li
+                        a(href='#', title='facebook')
+                          i.social-facebook
+                      li
+                        a(href='#', title='twitter')
+                          i.social-twitter
+                      li
+                        a(href='#', title='instagram')
+                          i.social-instagram
+
+      aside.components.columns.large-4
+        ul.sub-nav
+          li
+            a.rss(href='#') Subscribe
+          li
+            a.follow(href='#') Follow Us
+        .component
+          h5 Recent Articles
+          ul.side-nav
+            li
+              a(href='#') Lorem Impsum
+              span.date May 03, 2014
+            li
+              a(href='#') Lorem Impsum
+              span.date May 03, 2014
+            li
+              a(href='#') Lorem Impsum
+              span.date May 03, 2014
+            li
+              a(href='#') Lorem Impsum
+              span.date May 03, 2014
+        .component
+          h5 Tags
+          ul.side-nav.tags
+            li
+              a(href='#') Furniture
+              | &nbsp; (6)
+            li
+              a(href='#') Lighting
+              | &nbsp; (5)
+            li
+              a(href='#') Decor
+              | &nbsp; (2)
+            li
+              a(href='#') Kitchen
+              | &nbsp; (1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

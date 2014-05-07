@@ -1,0 +1,250 @@
+section.blog{
+    /* Articles */
+    article{
+        padding: 20px 10px;
+
+        p{
+            font-size: 13px;
+        }
+
+        h3{
+            font-weight: 400;
+            font-size: 25px;
+            color: #47266a;
+            text-transform: uppercase;
+            border: 1px solid #d3d2d2;
+            border-left: none;
+            border-right: none;
+            padding: 10px 0;
+        }
+
+        &:first-child {
+            padding-top: 0;
+            h3{
+                border-top: none;
+            }
+        }
+
+        aside{
+            margin-top: 15px;
+            p {
+                font-style: italic;
+                margin-bottom: 5px;
+            }
+
+            .date{
+                color: #47266a;
+                font-style: normal;
+            }
+
+            .comments{
+                border-left: 1px solid #47266a;
+                padding-left: 5px;
+                font-style: normal;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        a.th{
+            border-bottom: none;
+        }
+
+        // p.post{
+        // }
+
+        footer{
+            .promote ul{
+                float: right;
+            }
+        }
+    }
+
+    .components{
+        .sub-nav{
+            margin-left: 0;
+            border-bottom: 1px solid #d3d2d2;
+            padding-top: 15px;
+            margin-bottom: 15px;
+            li{
+                &:before, &:after{
+                    display: none;
+                }
+                margin-right: 10px;
+                a{
+                    padding: 5px 10px 5px 32px;
+                    font-size: 18px;
+                    &.rss{
+                        background: url(../imgs/rss-icon.png) no-repeat 0 4px;
+                    }
+
+                    &.follow{
+                        background: url(../imgs/twitter-icon.png) no-repeat 0 4px;
+                    }
+
+                    &:hover{
+                        background-position: 0 -121px;
+                        color: #47266a;
+                    }
+                }
+            }
+        }
+        .component{
+            margin-bottom: 30px;
+            h5{
+                font-size: 20px;
+                font-weight: 400;
+                color: #47266a;
+                border-bottom: 1px solid #d3d2d2;
+                padding: 10px 0;
+            }
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            .side-nav{
+                padding: 0;
+                a{
+                    text-transform: uppercase;
+                    color: #47266a;
+                }
+
+                li{
+                    padding: 5px 0;
+                    border-bottom: 1px dotted #9a9a9a;
+                    &:last-child{
+                        border-bottom: none;
+                    }
+
+                    a{
+                        font-size: 13px;
+                    }
+                }
+
+                .date{
+                    font-style: italic;
+                    font-size: 13px;
+                }
+
+                &.tags{
+                    li{
+                        a{
+                            display: inline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Cart Summary */
+    .cart-summary{
+        // background-color: #fff;
+        // border-left: 5px solid #d0cfcf;
+        padding-right: 0;
+
+        h4, .summaryBox{
+            border: 1px solid #d0cfcf;
+            border-right: none;
+            background-color: #fff;
+        }
+
+        .summaryBox{
+            border-top: none;
+            border-bottom: none;
+            margin-bottom: 30px;
+            border-left-width: 5px;
+        }
+
+        h4{
+            color: #47266a;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 10px;
+            border-left: none;
+        }
+
+        address{
+            line-height: 1.5;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .rowContainer{
+            padding: 10px;
+            &, a, h6{
+                font-size: 12px;
+            }
+            span{
+                font-size: 11px;
+                color: #464646;
+                &.sub{
+                    color: #757575;
+                }
+            }
+
+            .row{
+                //Totals row
+                &.total{
+                    h6, span{
+                        font-weight: bold;
+                        margin: 0;
+                        line-height: 16px;
+                        vertical-align: text-top;
+                        color: #47266a;
+                        font-size: 14px;
+                    }
+
+                    .columns{
+                        &:last-child span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                &.attrs .large-7:after, &.total .large-7:after{
+                    content: ':';
+                    position: absolute;
+                    right: 5px;
+                }
+
+                &.attrs{
+                    margin-top: 5px;
+                    span{
+                        font-size: 12px;
+                    }
+                }
+
+                a{
+                    display: block;
+                    text-decoration: underline;
+                    line-height: 1.5;
+                    color: #464646;
+                    margin-top: -3px;
+                }
+
+                .columns{
+                    text-align: left;
+                    &:first-child{
+                        padding-right: 5px;
+                    }
+                    &:last-child span{
+                        color: #47266a;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            & > .row{
+                border-top: 1px solid #ddd;
+                padding: 8px 0;
+                &:first-child{
+                    border-top: none;
+                }
+            }
+        }
+    }
+}
