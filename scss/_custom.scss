@@ -62,12 +62,12 @@
     padding: 20px;
     width: 390px;
     border: 1px solid #fff;
-    z-index: 100;
     font-size:emCalc(12);
     font-family: $body-font-family;
+    z-index: 100;
     // Css3 mixins
     //For IE<10
-    @include filter-gradient(#fff, #e3e3e3);
+    // @include filter-gradient(#fff, #e3e3e3);
     /* Fallback: */
     background: #e3e3e3;
     @include background(linear-gradient(right, #fff, #e3e3e3));
