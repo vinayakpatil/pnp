@@ -7,11 +7,8 @@
         color: #464646;
     }
     table{
-        tfoot{
-            a{
-                color: #0088c9;
-                text-decoration: none;
-            }
+        tbody tr:last-child td{
+            border-bottom: none;
         }
     }
 }

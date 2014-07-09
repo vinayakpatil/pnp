@@ -14,6 +14,9 @@ $(document).foundation({
 $(function() {
     'use strict';
 
+    // Placeholder shim
+    $('input, textarea').placeholder();
+
     // Hack to force navigation. Need to clean this up
     $('.flyout>a').on('click', function(e) {
         window.location = $(this).attr('href');

@@ -1,0 +1,15 @@
+// Extend Default category layout
+extends _category
+
+// Change title of page
+block prepend headTag
+  title Peacocks and Paisleys | Sale
+
+//Change current in breadcrumbs
+block append current
+  li.current
+    a(href='#') Sale
+
+//Change page heading
+block append heading
+  h1 Sale

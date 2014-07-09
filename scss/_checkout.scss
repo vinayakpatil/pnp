@@ -50,6 +50,12 @@ section.checkout{
                     font-size: 11px;
                 }
 
+                p.note {
+                    font-size: rem-calc(12);
+                    color: #999;
+                    text-align: justify;
+                }
+
                 form a{
                     font-size: 12px;
                 }

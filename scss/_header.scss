@@ -18,10 +18,11 @@
         height: emCalc(28);
         position: relative;
     }
-    input{
+    input[type=text]{
         border-left: none;
-        margin-bottom: 0;
         border-right: none;
+        margin-bottom: 0;
+        padding-left: 15px;
         &:focus{
             border-color: #cccccc;
         }
@@ -29,15 +30,15 @@
     .search-button{
         border: 1px solid #cccccc;
         background: #fff url('../imgs/search-icon-new.png') no-repeat 6px center;
-        border-right: none;
-        left: 1px;
-    }
-    .microphone-button{
-        border: 1px solid #cccccc;
-        background: #fff url('../imgs/search-microphone.png') no-repeat 6px center;
         border-left: none;
-        right: 1px;
+        // left: 1px;
     }
+    // .microphone-button{
+    //     border: 1px solid #cccccc;
+    //     background: #fff url('../imgs/search-microphone.png') no-repeat 6px center;
+    //     border-left: none;
+    //     right: 1px;
+    // }
 }
 
 /* Top right Sub-nav  */

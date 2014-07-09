@@ -34,7 +34,15 @@ module.exports = function(grunt) {
                     "bed-bath.html": ["templates/bed-bath.jade"],
                     "peachicks.html": ["templates/peachicks.jade"],
                     "order-confirmation.html": ["templates/order-confirmation.jade"],
-                    "blog.html": ["templates/blog.jade"]
+                    "blog.html": ["templates/blog.jade"],
+                    "gift-certificate.html": ["templates/gift-certificate.jade"],
+                    "who-we-are.html": ["templates/who-we-are.jade"],
+                    "terms.html": ["templates/terms.jade"],
+                    "privacy.html": ["templates/privacy.jade"],
+                    "shipping.html": ["templates/shipping.jade"],
+                    "return.html": ["templates/return.jade"],
+                    "faq.html": ["templates/faq.jade"],
+                    "sale.html": ["templates/sale.jade"]
                 }]
             }
         },
@@ -69,7 +77,8 @@ module.exports = function(grunt) {
                     'jquery/jquery.js': 'jquery/jquery.js',
                     'jcarousel/jquery.jcarousel.js': 'jcarousel/dist/jquery.jcarousel.js',
                     'foundation/foundation.js': 'foundation/js/foundation.js',
-                    'jqzoom/jquery.jqzoom.js': 'jqzoom/js/jquery.jqzoom-core.js'
+                    'jqzoom/jquery.jqzoom.js': 'jqzoom/js/jquery.jqzoom-core.js',
+                    'jquery-placeholder/jquery.placeholder.js': 'jquery-placeholder/jquery.placeholder.js'
                 }
             }
         },

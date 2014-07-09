@@ -42,19 +42,22 @@ block content
                       small
                         | I am a returning customer
                     .row.collapse
-                      .large-7.columns
+                      .large-9.columns
                         label
                           | Email:
                           input(type='email', name='email', placeholder='abcd@abcd.com', required)
                           small.error
                             | Please enter valid email.
                     .row.collapse
-                      .large-7.columns
+                      .large-9.columns
                         label
                           | Password:
                           input(type='password', name='password', required)
-                          small.error
-                            | Passwords must be at least 8 characters with 1 capital letter, 1 number, and one special character.
+                          //- small.error
+                          //-   | Passwords must be at least 8 characters with 1 capital letter, 1 number, and one special character.
+                    .row.collapse
+                      p.note
+                       |Passwords must be at least 8 characters with 1 capital letter, 1 number and one special character.
                     .row.collapse
                       .large-7.columns.pullUp
                         a(href='#') Forgot Password ?
@@ -85,9 +88,9 @@ block content
                     .large-12.columns
                       label
                         | Telephone*:
-                        input(type='text', name='telephone', placeholder='965-123-1010', required, pattern="\\d{3}-\\d{3}-\\d{4}")
+                        input(type='text', name='telephone', placeholder='965-123-1010', required, pattern="\\d{10}")
                         small.error
-                          |A valid telephone number is required (965-123-1010)
+                          |A valid 10 digit telephone number is required
                     .large-12.columns
                       label
                         | Fax:
@@ -174,9 +177,9 @@ block content
                     .large-12.columns
                       label
                         | Phone*:
-                        input(type='text', name='phone', placeholder='000-000-0000', required, pattern="\\d{3}-\\d{3}-\\d{4}")
+                        input(type='text', name='phone', placeholder='000-000-0000', required, pattern="\\d{10}")
                         small.error
-                          |A valid phone number is required (965-123-1010)
+                          |A valid 10 digit phone number is required
                     .large-12.columns
                       label
                         | Address*:
@@ -210,17 +213,17 @@ block content
             .tabContainer.row.collapse
               .columns.large-3
                 dl.tabs.vertical(data-tab='')
+                  //- dd.active
+                  //-   a(href='#panel1a') Credit Card
                   dd.active
-                    a(href='#panel1a') Credit Card
-                  dd
-                    a(href='#panel2a') Debit Card
-                  dd
-                    a(href='#panel3a') Cash on Delivery
+                    a(href='#panel1a') KNET
+                  //- dd
+                  //-   a(href='#panel3a') Cash on Delivery
               .columns.large-9
                 .tabs-content.vertical
                   #panel1a.content.active
                     h4
-                      |Pay using your Visa/Master Card
+                      |Pay using your KNET Card
                     form.payment(data-abide='ajax')
                       .row.collapse
                         .large-4.columns

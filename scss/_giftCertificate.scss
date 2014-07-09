@@ -1,0 +1,44 @@
+section.giftCertificate{
+    h1 {
+        border-bottom: 1px solid #d9d9d9;
+        margin-bottom: 0;
+    }
+    h4 {
+        text-transform: uppercase;
+        font-size: rem-calc(18);
+        border-bottom: 1px dotted #464646;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }
+    p {
+        font-size: rem-calc(14);
+    }
+
+    span, p.note {
+        font-size: rem-calc(11);
+        color: #999;
+    }
+    .container {
+        background-color: #fff;
+        padding-top: 20px;
+
+        form {
+            textarea {
+                resize: vertical;
+                height: 80px;
+                max-height: 120px;
+            }
+
+            .end {
+                span {
+                    line-height: 3;
+                }
+                text-align: right;
+            }
+
+            .button.primary {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

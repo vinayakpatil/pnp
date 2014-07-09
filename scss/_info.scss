@@ -1,0 +1,33 @@
+section.info{
+    h1 {
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    .collapse .columns {
+        &:first-child {
+            padding-right: 20px;
+        }
+
+        &.large-12 {
+            padding-right: 0;
+        }
+
+        &.end {
+            text-align: right;
+        }
+    }
+
+    p {
+        font-size: rem-calc(12);
+        text-align: justify;
+    }
+
+    li {
+        font-size: rem-calc(12);
+    }
+
+    address {
+        padding-left: 0;
+        line-height: 1.5;
+    }
+}
