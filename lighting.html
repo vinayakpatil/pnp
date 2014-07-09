@@ -3,315 +3,316 @@
   <head>
     <title>Peacocks and Paisleys | Lighting</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/app.css">
   </head>
   <body>
-    <!-- Headers-->
-    <header class="top-nav-container">
-      <h5 class="hide">Top Banner</h5>
-      <div class="row top-search-bar">
-        <form action="#" class="medium-4 columns search-container">
-          <div class="row collapse">
-            <div class="medium-11 columns">
-              <input type="text" placeholder="Search...">
+    <div class="fixed-container">
+      <!-- Headers-->
+      <header class="top-nav-container">
+        <h5 class="hide">Top Banner</h5>
+        <div class="row top-search-bar">
+          <form action="#" class="small-4 columns search-container">
+            <div class="row collapse">
+              <div class="small-11 columns">
+                <input type="text" placeholder="Search...">
+              </div>
+              <div class="small-1 columns"><a href="#" class="prefix search-button"></a></div>
             </div>
-            <div class="medium-1 columns"><a href="#" class="prefix search-button"></a></div>
+          </form>
+          <nav class="small-4 columns top-side-nav-container">
+            <h5 class="hide">Quick access menu</h5>
+            <ul class="sub-nav right">
+              <li><a href="signin.html">Sign In</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="#" data-dropdown="drop" class="dropdown">My Account</a><br>
+                <ul id="drop" data-dropdown-content="" class="f-dropdown">
+                  <li><a href="account-information.html">Account Information</a></li>
+                  <li><a href="my-orders.html">My Orders</a></li>
+                  <li><a href="change-password.html">Change Password</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span class="notifications">2</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="row logo-container">
+        <h1 class="small-3 columns small-centered logo">Peacocks and Paisleys</h1>
+      </div>
+      <header class="row">
+        <nav class="top-bar small-12 columns">
+          <h3 class="hide">Main Site Navigation</h3>
+          <div class="top-bar-section clearfix">
+            <!-- Left Nav Section-->
+            <ul class="left">
+              <li data-name="whatsnew" class="flyout"><a href="whatsnew.html">What's New</a></li>
+              <li data-name="furniture" class="flyout"><a href="furniture.html" data-dropdown="furnitureCategories" data-options="is_hover:true">Furniture</a>
+                <div id="furnitureCategories" data-dropdown-content="" class="f-dropdown content small">
+                  <ul class="side-nav clearfix">
+                    <li><a href="accent-tables.html">accent-tables</a></li>
+                    <li><a href="beds.html">beds</a></li>
+                    <li><a href="buffets.html">buffets</a></li>
+                    <li><a href="cabinets.html">cabinets</a></li>
+                    <li><a href="chairs.html">chairs</a></li>
+                    <li><a href="desks.html">desks</a></li>
+                    <li><a href="dining tables.html">dining tables</a></li>
+                    <li><a href="media center.html">media center</a></li>
+                    <li><a href="night stands.html">night stands</a></li>
+                    <li><a href="outdoor furniture.html">outdoor furniture</a></li>
+                    <li><a href="screens.html">screens</a></li>
+                    <li><a href="shelving.html">shelving</a></li>
+                    <li><a href="sofas.html">sofas</a></li>
+                    <li><a href="stools &amp; poufs.html">stools &amp; poufs</a></li>
+                    <li><a href="trolleys.html">trolleys</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li data-name="lighting" class="flyout"><a href="lighting.html" data-dropdown="lightingCategories" data-options="is_hover:true">Lighting</a>
+                <div id="lightingCategories" data-dropdown-content="" class="f-dropdown content small">
+                  <ul class="side-nav clearfix">
+                    <li><a href="#">ceiling mounts</a></li>
+                    <li><a href="#">chandeliers</a></li>
+                    <li><a href="#">floor lamps</a></li>
+                    <li><a href="#">lanterns</a></li>
+                    <li><a href="#">pendants</a></li>
+                    <li><a href="#">sconces</a></li>
+                    <li><a href="#">shades</a></li>
+                    <li><a href="#">table lamps</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li data-name="decor" class="flyout"><a href="decor.html" data-dropdown="decorCategories" data-options="is_hover:true">Decor</a>
+                <div id="decorCategories" data-dropdown-content="" class="f-dropdown content small">
+                  <ul class="side-nav clearfix">
+                    <li><a href="#">Candle holders</a></li>
+                    <li><a href="#">bins &amp; boxes</a></li>
+                    <li><a href="#">decorative objects</a></li>
+                    <li><a href="#">decorative pillows</a></li>
+                    <li><a href="#">frames</a></li>
+                    <li><a href="#">hardware</a></li>
+                    <li><a href="#">home fragrance</a></li>
+                    <li><a href="#">trays</a></li>
+                    <li><a href="#">vases &amp; bowls</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li data-name="walls-floors" class="flyout"><a href="walls-floors.html" data-dropdown="wallFloorsCategories" data-options="is_hover:true">Walls & Floors</a>
+                <div id="wallFloorsCategories" data-dropdown-content="" class="f-dropdown content small">
+                  <ul class="side-nav clearfix">
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">mirrors</a></li>
+                    <li><a href="#">rug pads</a></li>
+                    <li><a href="#">rugs</a></li>
+                    <li><a href="#">shelves</a></li>
+                    <li><a href="#">wall decor</a></li>
+                    <li><a href="#">wallpaper</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li data-name="kitchen" class="flyout"><a href="kitchen.html" data-dropdown="kitchenCategories" data-options="is_hover:true">Kitchen</a>
+                <div id="kitchenCategories" data-dropdown-content="" class="f-dropdown content small">
+                  <ul class="side-nav clearfix">
+                    <li><a href="#">dinnerware</a></li>
+                    <li><a href="#">flatware &amp; utensils</a></li>
+                    <li><a href="#">glassware</a></li>
+                    <li><a href="#">mugs &amp; cups</a></li>
+                    <li><a href="#">serving sets</a></li>
+                    <li><a href="#">table accessories</a></li>
+                    <li><a href="#">table linens</a></li>
+                    <li><a href="#">trays</a></li>
+                    <li><a href="#">trolleys</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li data-name="bed-bath" class="flyout"><a href="bed-bath.html" data-dropdown="bedBathCategories" data-options="is_hover:true">Bed & Bath</a>
+                <div id="bedBathCategories" data-dropdown-content="" class="f-dropdown content small">
+                  <ul class="side-nav clearfix">
+                    <li><a href="#">bath accessories </a></li>
+                    <li><a href="#">bedding sets</a></li>
+                    <li><a href="#">decorative pillows</a></li>
+                    <li><a href="#">throws &amp; blankets</a></li>
+                    <li><a href="#">toiletry bags</a></li>
+                    <li><a href="#">towels</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li data-name="peachicks" class="flyout"><a href="peachicks.html" data-dropdown="peachicksCategories" data-options="is_hover:true">Peachicks</a>
+                <div id="peachicksCategories" data-dropdown-content="" class="f-dropdown content small">
+                  <ul class="side-nav clearfix">
+                    <li><a href="#">bedding</a></li>
+                    <li><a href="#">decor</a></li>
+                    <li><a href="#">furniture</a></li>
+                    <li><a href="#">gifts</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li data-name="gifts" class="flyout"><a href="gifts.html" data-dropdown="giftsCategories" data-options="is_hover:true">Gifts</a>
+                <div id="giftsCategories" data-dropdown-content="" class="f-dropdown content small">
+                  <ul class="side-nav clearfix">
+                    <li><a href="gift-certificate.html">gift certificate </a></li>
+                    <li><a href="gift-certificate.html">seasonal gifts</a></li>
+                    <li><a href="gift-certificate.html">under 100kd</a></li>
+                    <li><a href="gift-certificate.html">under 200kd</a></li>
+                    <li><a href="gift-certificate.html">under 50kd</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <!-- Right Nav Section-->
+            <ul class="right">
+              <li><a href="sale.html"><img src="imgs/sale.png" alt="Sale"></a></li>
+            </ul>
           </div>
-        </form>
-        <nav class="medium-4 columns top-side-nav-container">
-          <h5 class="hide">Quick access menu</h5>
-          <ul class="sub-nav right">
-            <li><a href="signin.html">Sign In</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="#" data-dropdown="drop" class="dropdown">My Account</a><br>
-              <ul id="drop" data-dropdown-content="" class="f-dropdown">
-                <li><a href="account-information.html">Account Information</a></li>
-                <li><a href="my-orders.html">My Orders</a></li>
-                <li><a href="change-password.html">Change Password</a></li>
-              </ul>
-            </li>
-            <li><a href="#"><span class="notifications">2</span></a></li>
-          </ul>
         </nav>
-      </div>
-    </header>
-    <div class="row logo-container">
-      <h1 class="medium-3 columns medium-centered logo">Peacocks and Paisleys</h1>
-    </div>
-    <header class="row">
-      <nav class="top-bar large-12 columns">
-        <h3 class="hide">Main Site Navigation</h3>
-        <div class="top-bar-section clearfix">
-          <!-- Left Nav Section-->
-          <ul class="left">
-            <li data-name="whatsnew" class="flyout"><a href="whatsnew.html">What's New</a></li>
-            <li data-name="furniture" class="flyout"><a href="furniture.html" data-dropdown="furnitureCategories" data-options="is_hover:true">Furniture</a>
-              <div id="furnitureCategories" data-dropdown-content="" class="f-dropdown content small">
-                <ul class="side-nav clearfix">
-                  <li><a href="accent-tables.html">accent-tables</a></li>
-                  <li><a href="beds.html">beds</a></li>
-                  <li><a href="buffets.html">buffets</a></li>
-                  <li><a href="cabinets.html">cabinets</a></li>
-                  <li><a href="chairs.html">chairs</a></li>
-                  <li><a href="desks.html">desks</a></li>
-                  <li><a href="dining tables.html">dining tables</a></li>
-                  <li><a href="media center.html">media center</a></li>
-                  <li><a href="night stands.html">night stands</a></li>
-                  <li><a href="outdoor furniture.html">outdoor furniture</a></li>
-                  <li><a href="screens.html">screens</a></li>
-                  <li><a href="shelving.html">shelving</a></li>
-                  <li><a href="sofas.html">sofas</a></li>
-                  <li><a href="stools &amp; poufs.html">stools &amp; poufs</a></li>
-                  <li><a href="trolleys.html">trolleys</a></li>
-                </ul>
-              </div>
-            </li>
-            <li data-name="lighting" class="flyout"><a href="lighting.html" data-dropdown="lightingCategories" data-options="is_hover:true">Lighting</a>
-              <div id="lightingCategories" data-dropdown-content="" class="f-dropdown content small">
-                <ul class="side-nav clearfix">
-                  <li><a href="#">ceiling mounts</a></li>
-                  <li><a href="#">chandeliers</a></li>
-                  <li><a href="#">floor lamps</a></li>
-                  <li><a href="#">lanterns</a></li>
-                  <li><a href="#">pendants</a></li>
-                  <li><a href="#">sconces</a></li>
-                  <li><a href="#">shades</a></li>
-                  <li><a href="#">table lamps</a></li>
-                </ul>
-              </div>
-            </li>
-            <li data-name="decor" class="flyout"><a href="decor.html" data-dropdown="decorCategories" data-options="is_hover:true">Decor</a>
-              <div id="decorCategories" data-dropdown-content="" class="f-dropdown content small">
-                <ul class="side-nav clearfix">
-                  <li><a href="#">Candle holders</a></li>
-                  <li><a href="#">bins &amp; boxes</a></li>
-                  <li><a href="#">decorative objects</a></li>
-                  <li><a href="#">decorative pillows</a></li>
-                  <li><a href="#">frames</a></li>
-                  <li><a href="#">hardware</a></li>
-                  <li><a href="#">home fragrance</a></li>
-                  <li><a href="#">trays</a></li>
-                  <li><a href="#">vases &amp; bowls</a></li>
-                </ul>
-              </div>
-            </li>
-            <li data-name="walls-floors" class="flyout"><a href="walls-floors.html" data-dropdown="wallFloorsCategories" data-options="is_hover:true">Walls & Floors</a>
-              <div id="wallFloorsCategories" data-dropdown-content="" class="f-dropdown content small">
-                <ul class="side-nav clearfix">
-                  <li><a href="#">Art</a></li>
-                  <li><a href="#">mirrors</a></li>
-                  <li><a href="#">rug pads</a></li>
-                  <li><a href="#">rugs</a></li>
-                  <li><a href="#">shelves</a></li>
-                  <li><a href="#">wall decor</a></li>
-                  <li><a href="#">wallpaper</a></li>
-                </ul>
-              </div>
-            </li>
-            <li data-name="kitchen" class="flyout"><a href="kitchen.html" data-dropdown="kitchenCategories" data-options="is_hover:true">Kitchen</a>
-              <div id="kitchenCategories" data-dropdown-content="" class="f-dropdown content small">
-                <ul class="side-nav clearfix">
-                  <li><a href="#">dinnerware</a></li>
-                  <li><a href="#">flatware &amp; utensils</a></li>
-                  <li><a href="#">glassware</a></li>
-                  <li><a href="#">mugs &amp; cups</a></li>
-                  <li><a href="#">serving sets</a></li>
-                  <li><a href="#">table accessories</a></li>
-                  <li><a href="#">table linens</a></li>
-                  <li><a href="#">trays</a></li>
-                  <li><a href="#">trolleys</a></li>
-                </ul>
-              </div>
-            </li>
-            <li data-name="bed-bath" class="flyout"><a href="bed-bath.html" data-dropdown="bedBathCategories" data-options="is_hover:true">Bed & Bath</a>
-              <div id="bedBathCategories" data-dropdown-content="" class="f-dropdown content small">
-                <ul class="side-nav clearfix">
-                  <li><a href="#">bath accessories </a></li>
-                  <li><a href="#">bedding sets</a></li>
-                  <li><a href="#">decorative pillows</a></li>
-                  <li><a href="#">throws &amp; blankets</a></li>
-                  <li><a href="#">toiletry bags</a></li>
-                  <li><a href="#">towels</a></li>
-                </ul>
-              </div>
-            </li>
-            <li data-name="peachicks" class="flyout"><a href="peachicks.html" data-dropdown="peachicksCategories" data-options="is_hover:true">Peachicks</a>
-              <div id="peachicksCategories" data-dropdown-content="" class="f-dropdown content small">
-                <ul class="side-nav clearfix">
-                  <li><a href="#">bedding</a></li>
-                  <li><a href="#">decor</a></li>
-                  <li><a href="#">furniture</a></li>
-                  <li><a href="#">gifts</a></li>
-                </ul>
-              </div>
-            </li>
-            <li data-name="gifts" class="flyout"><a href="gifts.html" data-dropdown="giftsCategories" data-options="is_hover:true">Gifts</a>
-              <div id="giftsCategories" data-dropdown-content="" class="f-dropdown content small">
-                <ul class="side-nav clearfix">
-                  <li><a href="gift-certificate.html">gift certificate </a></li>
-                  <li><a href="gift-certificate.html">seasonal gifts</a></li>
-                  <li><a href="gift-certificate.html">under 100kd</a></li>
-                  <li><a href="gift-certificate.html">under 200kd</a></li>
-                  <li><a href="gift-certificate.html">under 50kd</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <!-- Right Nav Section-->
-          <ul class="right">
-            <li><a href="sale.html"><img src="imgs/sale.png" alt="Sale"></a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- Actual page content-->
-    <section class="row">
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Home</a></li>
-        <li class="current"><a href="#">Lighting</a></li>
-      </ul>
-    </section>
-    <section class="row categories">
-      <h1>Lighting</h1>
-      <ul class="large-block-grid-3 thumbs-container">
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-        <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
-            <h4>Sub-Category</h4></a></li>
-      </ul>
-    </section>
-    <!-- Footer-->
-    <footer class="row main-nav collapse">
-      <div class="large-3 columns">
-        <h6>Peacocks & Paisleys</h6>
-        <ul class="side-nav pnp">
-          <li><a href="who-we-are.html">Who we are</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="terms.html">Terms</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
+      </header>
+      <!-- Actual page content-->
+      <section class="row">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="#">Lighting</a></li>
         </ul>
-      </div>
-      <div class="large-5 columns">
-        <div class="row">
-          <div class="large-6 columns">
-            <h6>Customer Care</h6>
-            <ul class="side-nav">
-              <li><a href="shipping.html">Shipping</a></li>
-              <li><a href="return.html">Return and Exchange</a></li>
-              <li><a href="faq.html">FAQs</a></li>
-            </ul>
-          </div>
-          <div class="large-6 columns">
-            <h6>Payment options</h6>
-            <ul class="sub-nav payment">
-              <li><a href="http://www.knet.com.kw/" title="KNET" target="_blank"><i class="other"></i></a></li>
-            </ul>
+      </section>
+      <section class="row categories">
+        <h1>Lighting</h1>
+        <ul class="large-block-grid-3 thumbs-container">
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+          <li><a href="#" class="th"><img src="imgs/placehold-sub-category.gif" alt="sub-category">
+              <h4>Sub-Category</h4></a></li>
+        </ul>
+      </section>
+      <!-- Footer-->
+      <footer class="row main-nav collapse">
+        <div class="small-3 columns">
+          <h6>Peacocks & Paisleys</h6>
+          <ul class="side-nav pnp">
+            <li><a href="who-we-are.html">Who we are</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="small-5 columns">
+          <div class="row">
+            <div class="small-6 columns">
+              <h6>Customer Care</h6>
+              <ul class="side-nav">
+                <li><a href="shipping.html">Shipping</a></li>
+                <li><a href="return.html">Return and Exchange</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="small-6 columns">
+              <h6>Payment options</h6>
+              <ul class="sub-nav payment">
+                <li><a href="http://www.knet.com.kw/" title="KNET" target="_blank"><i class="other"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="large-4 columns">
-        <h6>to receive exclusive offers!</h6>
-        <form class="row collapse">
-          <div class="large-9 columns">
-            <input type="text" placeholder="Enter email address" class="subscribe">
+        <div class="small-4 columns">
+          <h6>to receive exclusive offers!</h6>
+          <form class="row collapse">
+            <div class="small-9 columns">
+              <input type="text" placeholder="Enter email address" class="subscribe">
+            </div>
+            <input type="submit" value="Sign Up" class="button primary medium small-3 columns">
+          </form>
+          <h6>Be Social</h6>
+          <ul class="social social-medium">
+            <li><a href="#" title="facebook"><i class="social-facebook"></i></a></li>
+            <li><a href="#" title="twitter"><i class="social-twitter"></i></a></li>
+            <li><a href="#" title="instagram"><i class="social-instagram"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+      <footer class="row copyright">
+        <p>Copyright © 2014 Peacocks & Paisleys, All rights reserved. Site by Chiefsons</p>
+        <h6 class="compact">Secured by: &nbsp;<a href="http://geotrust.com" target="_blank"><img src="imgs/geotrust.jpg" alt="Geotrust logo"></a></h6>
+      </footer>
+      <!-- Slide out tabs mark up-->
+      <div class="slide-out-div feedback"><a href="http://link-for-non-js-users.html" class="handle handleFeedback">Feedback</a>
+        <form action="#">
+          <div class="row">
+            <div class="small-12 columns">
+              <label>Name<span class="required">*</span></label>
+              <input type="text">
+            </div>
           </div>
-          <input type="submit" value="Sign Up" class="button primary medium large-3 columns">
+          <div class="row">
+            <div class="small-12 columns">
+              <label>Email<span class="required">*</span></label>
+              <input type="email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <label>Category<span class="required">*</span></label>
+              <select>
+                <option>Select category</option>
+                <option value="">Category1</option>
+                <option value="">Category2</option>
+                <option value="">Category3</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <label>Message<span class="required">*</span></label>
+              <textarea></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns agreement">
+              <input type="checkbox">Click to automatically attach a screenshot of this page
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <input type="submit" value="Submit" class="button primary small radius">
+              <input type="button" value="Cancel" class="cancel button secondary small radius">
+            </div>
+          </div>
         </form>
-        <h6>Be Social</h6>
-        <ul class="social social-medium">
-          <li><a href="#" title="facebook"><i class="social-facebook"></i></a></li>
-          <li><a href="#" title="twitter"><i class="social-twitter"></i></a></li>
-          <li><a href="#" title="instagram"><i class="social-instagram"></i></a></li>
-        </ul>
       </div>
-    </footer>
-    <footer class="row copyright">
-      <p>Copyright © 2014 Peacocks & Paisleys, All rights reserved. Site by Chiefsons</p>
-      <h6 class="compact">Secured by: &nbsp;<a href="http://geotrust.com" target="_blank"><img src="imgs/geotrust.jpg" alt="Geotrust logo"></a></h6>
-    </footer>
-    <!-- Slide out tabs mark up-->
-    <div class="slide-out-div feedback"><a href="http://link-for-non-js-users.html" class="handle handleFeedback">Feedback</a>
-      <form action="#">
-        <div class="row">
-          <div class="large-12 columns">
-            <label>Name<span class="required">*</span></label>
-            <input type="text">
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns">
-            <label>Email<span class="required">*</span></label>
-            <input type="email">
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns">
-            <label>Category<span class="required">*</span></label>
-            <select>
-              <option>Select category</option>
-              <option value="">Category1</option>
-              <option value="">Category2</option>
-              <option value="">Category3</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns">
-            <label>Message<span class="required">*</span></label>
-            <textarea></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns agreement">
-            <input type="checkbox">Click to automatically attach a screenshot of this page
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns">
-            <input type="submit" value="Submit" class="button primary large radius">
-            <input type="button" value="Cancel" class="cancel button secondary large radius">
-          </div>
-        </div>
-      </form>
+      <div class="slide-out-div blog"><a href="http://link-for-non-js-users.html" class="handle handleBlog">Blog</a>
+        <h3>Contact me</h3>
+        <p>Thanks for checking out my jQuery plugin, I hope you find this useful.</p>
+        <p>This can be a form to submit feedback, or contact info</p>
+      </div>
+      <!-- Scripts-->
+      <script src="js/libraries/jquery/jquery.js"></script>
+      <script src="js/libraries/jquery-placeholder/jquery.placeholder.js"></script>
+      <script src="js/libraries/jquery.tabSlideOut.js"></script>
+      <script src="js/libraries/foundation/foundation.js"></script>
+      <script src="js/app.js"></script>
     </div>
-    <div class="slide-out-div blog"><a href="http://link-for-non-js-users.html" class="handle handleBlog">Blog</a>
-      <h3>Contact me</h3>
-      <p>Thanks for checking out my jQuery plugin, I hope you find this useful.</p>
-      <p>This can be a form to submit feedback, or contact info</p>
-    </div>
-    <!-- Scripts-->
-    <script src="js/libraries/jquery/jquery.js"></script>
-    <script src="js/libraries/jquery-placeholder/jquery.placeholder.js"></script>
-    <script src="js/libraries/jquery.tabSlideOut.js"></script>
-    <script src="js/libraries/foundation/foundation.js"></script>
-    <script src="js/app.js"></script>
   </body>
 </html>

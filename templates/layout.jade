@@ -3,12 +3,12 @@ html(class="no-js",lang="en")
   head
     block headTag
       meta(charset='utf-8')
-      meta(name='viewport', content='width=device-width, initial-scale=1.0')
       link(rel='stylesheet', href='stylesheets/app.css')
   body
-    // Headers
-    include includes/headers/header
-    // Actual page content
-    block content
-    // Footer
-    include includes/footer
+    .fixed-container
+      // Headers
+      include includes/headers/header
+      // Actual page content
+      block content
+      // Footer
+      include includes/footer

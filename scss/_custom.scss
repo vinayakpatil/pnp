@@ -4,8 +4,11 @@
 
 
 /* Generic */
-// body{
-// }
+.fixed-container {
+    width: 1024px;
+    max-width: none;
+    margin: 0 auto;
+}
 
 /* Header */
 @import "header";
