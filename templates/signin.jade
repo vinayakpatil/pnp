@@ -16,30 +16,30 @@ block content
   section.row.signin
     h1 Sign In
     .box.signInContainer.dividerContainer.row.collapse
-      .large-5.columns
+      .small-5.columns
         form(data-abide, action='checkout.html')
           .row.collapse
-            .large-9.columns
+            .small-9.columns
               label
                 | Email Address:
                 input(type='email', name='email', placeholder='abcd@abcd.com', required)
                 small.error
                   | Please enter valid email.
           .row.collapse
-            .large-9.columns
+            .small-9.columns
               label
                 | Password:
                 input(type='password', name='password', required)
                 small.error
                   | Passwords must be at least 8 characters with 1 capital letter, 1 number, and one special character.
           .row.collapse
-            .large-9.columns.pullUp
+            .small-9.columns.pullUp
               a(href='#') Forgot Password ?
           .row.collapse
-            .large-9.columns
+            .small-9.columns
               input.button.primary(type='submit', value='sign in')
-      .large-2.columns.divider
-      .large-5.columns
+      .small-2.columns.divider
+      .small-5.columns
         .registerInfo
           h4
             | New to P&P, register now!

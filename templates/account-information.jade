@@ -16,7 +16,7 @@ block content
   section.row.signin
     h1 Account Information
     .box.accountInfoContainer.row.collapse
-      .large-12.columns
+      .small-12.columns
         form(data-abide, action='checkout.html')
           .row
             fieldset
@@ -25,51 +25,51 @@ block content
                 a(href='#').edit Edit
               .row.collapse
                 .row.collapse
-                  .large-2.columns
+                  .small-2.columns
                     label.inline(for='name')
                       | Name*:
-                  .large-4.columns.end
+                  .small-4.columns.end
                     //- input(type='text', name='name', id='name', required)
                     span Anish Chief
                 .row.collapse
-                  .large-2.columns
+                  .small-2.columns
                     label.inline(for='email')
                       | Email Address*:
-                  .large-4.columns.end
+                  .small-4.columns.end
                     //- input(type='email',id='email', name='email', required)
                     span anish@chiefsons.com
                 //- .row.collapse
-                //-   .large-5.columns
+                //-   .small-5.columns
                 //-     label
                 //-       | Confirm Email Address*:
                 //-       input(type='email', name='confirmEmail', required)
                 .row.collapse
-                  .large-2.columns
+                  .small-2.columns
                     label.inline(for='phone')
                       | Phone:
-                  .large-4.columns.end
+                  .small-4.columns.end
                       //- input(type='text',id='phone', name='phone', placeholder='965-123-1010', pattern="\\d{3}-\\d{3}-\\d{4}")
                       //- small.error
                       //-   |A valid phone number is required (965-123-1010)
                       span 965-121-1010
                 .row.collapse
-                  .large-2.columns
+                  .small-2.columns
                     label.inline(for='gender')
                       | Gender:
-                  .large-4.columns.end
+                  .small-4.columns.end
                       //- .row
-                      //-   label.columns.large-2
+                      //-   label.columns.small-2
                       //-     input(type='radio',id='gender', name='gender',value='male', required)
                       //-     | Male
-                      //-   label.columns.large-3.end
+                      //-   label.columns.small-3.end
                       //-     input(type='radio',id='gender', name='gender',value='female', required)
                       //-     | Female
                       span Male
                 .row.collapse
-                  .large-2.columns
+                  .small-2.columns
                     label.inline
                       | Password*:
-                  .large-4.columns.end
+                  .small-4.columns.end
                       //- input(type='password', id='password', required)
                       //- small.error
                       //-   | Passwords must be at least 8 characters with 1 capital letter, 1 number, and one special character.
@@ -77,14 +77,14 @@ block content
                         | ********** &nbsp;
                       a(href='change-password.html') Change Password
                 //- .row.collapse
-                //-   .large-5.columns
+                //-   .small-5.columns
                 //-     label
                 //-       | Confirm Password*:
                 //-       input(type='password', name='confirmPassword', required, data-equalto="password")
                 //-       small.error
                 //-         | Passwords must match.
             .row
-              fieldset.columns.large-6
+              fieldset.columns.small-6
                 legend
                   |Billing Address
                   a(href='#').edit Edit
@@ -97,53 +97,53 @@ block content
                   |+965 6990 9463
                 .row.collapse.hide
                   .row.collapse
-                    .large-3.columns
+                    .small-3.columns
                       label.inline(for='nameBilling')
                         | Name*:
-                    .large-5.columns.end
+                    .small-5.columns.end
                       input(type='text',id='nameBilling', name='nameBilling', required)
                   .row.collapse
-                    .large-3.columns
+                    .small-3.columns
                       label.inline(for='billingAddress')
                           | Address*:
-                    .large-5.columns.end
+                    .small-5.columns.end
                       textarea(name='billingAddress',id='billingAddress', required)
                   .row.collapse
-                    .large-3.columns
+                    .small-3.columns
                       label.inline(for='phoneBilling')
                         | Phone:
-                    .large-5.columns.end
+                    .small-5.columns.end
                       input(type='text', id='phoneBilling', name='phoneBilling', placeholder='965-123-1010', pattern="\\d{3}-\\d{3}-\\d{4}")
                       small.error
                         |A valid phone number is required (965-123-1010)
                   .row.collapse
-                    .large-3.columns
+                    .small-3.columns
                       label.inline(for='city')
                         | City*:
-                    .large-5.columns.end
+                    .small-5.columns.end
                       select(name='city',id='city', required)
                         option(value='')
                         option Kuwait
                         option Kuwait
                   .row.collapse
-                    .large-3.columns
+                    .small-3.columns
                       label.inline(for='country')
                         | Country*:
-                    .large-5.columns.end
+                    .small-5.columns.end
                       select(name='country',id='country' required)
                         option Kuwait
                         option India
                   .row.collapse
-                    .large-12.columns
+                    .small-12.columns
                       label(for='addressConfirmation')
                           input(type='checkbox', id='addressConfirmation')
                           | Shipping address is the same as billing address
                   footer.row.collapse
-                    .large-12.columns
+                    .small-12.columns
                       input.button.primary.large(type="submit", value="save")
                       |&nbsp;
                       input.button.secondary.large(type="reset", value="reset")
-              fieldset.columns.large-6
+              fieldset.columns.small-6
                 legend
                   | Shipping Address
                   a(href='#').edit Edit
@@ -156,49 +156,49 @@ block content
                   |+965 6990 9463
                 .row.collapse.hide
                   .row.collapse
-                    .large-3.columns
+                    .small-3.columns
                       label.inline(for='nameBilling')
                         | Name*:
-                    .large-5.columns.end
+                    .small-5.columns.end
                       input(type='text',id='nameBilling', name='nameBilling', required)
                   .row.collapse
-                    .large-3.columns
+                    .small-3.columns
                       label.inline(for='billingAddress')
                           | Address*:
-                    .large-5.columns.end
+                    .small-5.columns.end
                       textarea(name='billingAddress',id='billingAddress', required)
                   .row.collapse
-                    .large-3.columns
+                    .small-3.columns
                       label.inline(for='phoneBilling')
                         | Phone:
-                    .large-5.columns.end
+                    .small-5.columns.end
                       input(type='text', id='phoneBilling', name='phoneBilling', placeholder='965-123-1010', pattern="\\d{3}-\\d{3}-\\d{4}")
                       small.error
                         |A valid phone number is required (965-123-1010)
                   .row.collapse
-                    .large-3.columns
+                    .small-3.columns
                       label.inline(for='city')
                         | City*:
-                    .large-5.columns.end
+                    .small-5.columns.end
                       select(name='city',id='city', required)
                         option(value='')
                         option Kuwait
                         option Kuwait
                   .row.collapse
-                    .large-3.columns
+                    .small-3.columns
                       label.inline(for='country')
                         | Country*:
-                    .large-5.columns.end
+                    .small-5.columns.end
                       select(name='country',id='country' required)
                         option Kuwait
                         option India
                   //- .row.collapse
-                  //-   .large-12.columns
+                  //-   .small-12.columns
                   //-     label(for='addressConfirmation')
                   //-         input(type='checkbox', id='addressConfirmation')
                   //-         | Shipping address is the same as billing address
                   footer.row.collapse
-                    .large-12.columns
+                    .small-12.columns
                       input.button.primary.large(type="submit", value="save")
                       |&nbsp;
                       input.button.secondary.large(type="reset", value="reset")

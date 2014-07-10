@@ -14,19 +14,19 @@ block content
   section.row.giftCertificate.collapse
     h1 Gift Voucher
     div.row.container
-      .columns.large-6
+      .columns.small-6
         p
          |Give someone the ultimate present by purchasing one of our gift voucher online. This allows the lucky recipient to spend it on any of her Serene favourite collections.
         img(src="imgs/giftVoucher.jpg", alt="Gift Voucher")
-      .columns.large-6
+      .columns.small-6
         h4
           |Add a gift voucher to your bag
         form(data-abide, action='#', method='POST')
           .row.collapse
-            .large-4.columns
+            .small-4.columns
               label.inline(for='voucherValue')
                 | Gift Voucher Value*:
-            .large-4.columns
+            .small-4.columns
               select(name='voucherValue', id='voucherValue', required)
                 option(value='') ...Please Select
                 option(value='5') KD 5.000
@@ -34,23 +34,23 @@ block content
                 option(value='15') KD 15.000
                 option(value='20') KD 20.000
                 option(value='25') KD 25.000
-            .large-4.columns.end
+            .small-4.columns.end
               span Min KD 5 - Max KD 100
           .row.collapse
-            .large-4.columns
+            .small-4.columns
               label.inline(for='name')
                 | Recipients Name*:
-            .large-8.columns
+            .small-8.columns
               input(type='text', name='name', id='name', required)
           .row.collapse
-            .large-12.columns
+            .small-12.columns
               label
                 | Personal Message:
                 textarea(name='message', id='message', maxlength='250')
           .row.collapse
-            .large-8.columns
+            .small-8.columns
               input.button.primary(type='submit', value='Add To My Bag')
-            .large-4.columns.end
+            .small-4.columns.end
               span Max 250 charectors
           .row
             p.note

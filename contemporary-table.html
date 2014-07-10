@@ -8,34 +8,36 @@
   <body>
     <div class="fixed-container">
       <!-- Headers-->
-      <header class="top-nav-container">
-        <h5 class="hide">Top Banner</h5>
-        <div class="row top-search-bar">
-          <form action="#" class="small-4 columns search-container">
-            <div class="row collapse">
-              <div class="small-11 columns">
-                <input type="text" placeholder="Search...">
+      <div class="top-nav-container">
+        <header>
+          <h5 class="hide">Top Banner</h5>
+          <div class="row top-search-bar">
+            <form action="#" class="small-4 columns search-container">
+              <div class="row collapse">
+                <div class="small-11 columns">
+                  <input type="text" placeholder="Search...">
+                </div>
+                <div class="small-1 columns"><a href="#" class="prefix search-button"></a></div>
               </div>
-              <div class="small-1 columns"><a href="#" class="prefix search-button"></a></div>
-            </div>
-          </form>
-          <nav class="small-4 columns top-side-nav-container">
-            <h5 class="hide">Quick access menu</h5>
-            <ul class="sub-nav right">
-              <li><a href="signin.html">Sign In</a></li>
-              <li><a href="register.html">Register</a></li>
-              <li><a href="#" data-dropdown="drop" class="dropdown">My Account</a><br>
-                <ul id="drop" data-dropdown-content="" class="f-dropdown">
-                  <li><a href="account-information.html">Account Information</a></li>
-                  <li><a href="my-orders.html">My Orders</a></li>
-                  <li><a href="change-password.html">Change Password</a></li>
-                </ul>
-              </li>
-              <li><a href="#"><span class="notifications">2</span></a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+            </form>
+            <nav class="small-4 columns top-side-nav-container">
+              <h5 class="hide">Quick access menu</h5>
+              <ul class="sub-nav right">
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#" data-dropdown="drop" class="dropdown">My Account</a><br>
+                  <ul id="drop" data-dropdown-content="" class="f-dropdown">
+                    <li><a href="account-information.html">Account Information</a></li>
+                    <li><a href="my-orders.html">My Orders</a></li>
+                    <li><a href="change-password.html">Change Password</a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><span class="notifications">2</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
       <div class="row logo-container">
         <h1 class="small-3 columns small-centered logo">Peacocks and Paisleys</h1>
       </div>
@@ -175,7 +177,7 @@
         </ul>
       </section>
       <section class="row product">
-        <section class="columns large-6"><a href="./imgs/furniture/accent-tables/contemporary-side-large.jpg" title="contemporary-side-large" rel="productGallery" class="th th-large"><img src="./imgs/furniture/accent-tables/contemporary-side-large.jpg" alt="contemporary-side-large"></a>
+        <section class="columns small-6"><a href="./imgs/furniture/accent-tables/contemporary-side-large.jpg" title="contemporary-side-large" rel="productGallery" class="th th-large"><img src="./imgs/furniture/accent-tables/contemporary-side-large.jpg" alt="contemporary-side-large"></a>
           <section class="productCarousel row">
             <div class="jcarousel">
               <ul>
@@ -201,22 +203,22 @@
             </ul>
           </section>
         </section>
-        <section class="columns large-6 info">
+        <section class="columns small-6 info">
           <h3>Contemporary Table</h3>
           <p>Product code: PP234561F</p>
           <h3 class="highlight">185.300 KD<small class="instock">In Stock</small></h3>
           <form action="shopping-cart.html" class="row">
-            <div class="large-4 columns">
+            <div class="small-4 columns">
               <div class="row">
-                <div class="large-1 columns">
+                <div class="small-1 columns">
                   <label for="qty" class="right inline">QTY:</label>
                 </div>
-                <div class="large-9 columns end">
+                <div class="small-9 columns end">
                   <input id="qty" type="text" value="1" class="text-center">
                 </div>
               </div>
             </div>
-            <div class="large-5 columns end">
+            <div class="small-5 columns end">
               <button type="submit" class="button primary large">Add To Cart</button>
             </div>
           </form>

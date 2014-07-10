@@ -8,34 +8,36 @@
   <body>
     <div class="fixed-container">
       <!-- Headers-->
-      <header class="top-nav-container">
-        <h5 class="hide">Top Banner</h5>
-        <div class="row top-search-bar">
-          <form action="#" class="small-4 columns search-container">
-            <div class="row collapse">
-              <div class="small-11 columns">
-                <input type="text" placeholder="Search...">
+      <div class="top-nav-container">
+        <header>
+          <h5 class="hide">Top Banner</h5>
+          <div class="row top-search-bar">
+            <form action="#" class="small-4 columns search-container">
+              <div class="row collapse">
+                <div class="small-11 columns">
+                  <input type="text" placeholder="Search...">
+                </div>
+                <div class="small-1 columns"><a href="#" class="prefix search-button"></a></div>
               </div>
-              <div class="small-1 columns"><a href="#" class="prefix search-button"></a></div>
-            </div>
-          </form>
-          <nav class="small-4 columns top-side-nav-container">
-            <h5 class="hide">Quick access menu</h5>
-            <ul class="sub-nav right">
-              <li><a href="signin.html">Sign In</a></li>
-              <li><a href="register.html">Register</a></li>
-              <li><a href="#" data-dropdown="drop" class="dropdown">My Account</a><br>
-                <ul id="drop" data-dropdown-content="" class="f-dropdown">
-                  <li><a href="account-information.html">Account Information</a></li>
-                  <li><a href="my-orders.html">My Orders</a></li>
-                  <li><a href="change-password.html">Change Password</a></li>
-                </ul>
-              </li>
-              <li><a href="#"><span class="notifications">2</span></a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+            </form>
+            <nav class="small-4 columns top-side-nav-container">
+              <h5 class="hide">Quick access menu</h5>
+              <ul class="sub-nav right">
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#" data-dropdown="drop" class="dropdown">My Account</a><br>
+                  <ul id="drop" data-dropdown-content="" class="f-dropdown">
+                    <li><a href="account-information.html">Account Information</a></li>
+                    <li><a href="my-orders.html">My Orders</a></li>
+                    <li><a href="change-password.html">Change Password</a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><span class="notifications">2</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
       <div class="row logo-container">
         <h1 class="small-3 columns small-centered logo">Peacocks and Paisleys</h1>
       </div>
@@ -176,11 +178,11 @@
       <section class="row checkout collapse">
         <h1>Checkout</h1>
         <div class="row collapse">
-          <dl data-accordion="" class="accordion columns large-9">
+          <dl data-accordion="" class="accordion columns small-9">
             <dd><a href="#panel1">Step 1: Checkout Options</a>
               <div id="panel1" class="content active">
                 <div class="row dividerContainer collapse">
-                  <div class="columns large-5">
+                  <div class="columns small-5">
                     <h4>New Customer<small>Checkout Options:</small></h4>
                     <form data-abide="ajax">
                       <label for="register">
@@ -190,20 +192,20 @@
                       <input type="submit" value="Continue" class="button primary">
                     </form>
                   </div>
-                  <div class="large-2 columns divider"></div>
-                  <div class="columns large-5">
+                  <div class="small-2 columns divider"></div>
+                  <div class="columns small-5">
                     <form data-abide="ajax">
                       <div class="row collapse">
                         <h4>Returning Customer<small>I am a returning customer</small></h4>
                         <div class="row collapse">
-                          <div class="large-9 columns">
+                          <div class="small-9 columns">
                             <label>Email:
                               <input type="email" name="email" placeholder="abcd@abcd.com" required><small class="error">Please enter valid email.</small>
                             </label>
                           </div>
                         </div>
                         <div class="row collapse">
-                          <div class="large-9 columns">
+                          <div class="small-9 columns">
                             <label>Password:
                               <input type="password" name="password" required>
                             </label>
@@ -213,10 +215,10 @@
                           <p class="note">Passwords must be at least 8 characters with 1 capital letter, 1 number and one special character.</p>
                         </div>
                         <div class="row collapse">
-                          <div class="large-7 columns pullUp"><a href="#">Forgot Password ?</a></div>
+                          <div class="small-7 columns pullUp"><a href="#">Forgot Password ?</a></div>
                         </div>
                         <div class="row collapse">
-                          <div class="large-12 columns">
+                          <div class="small-12 columns">
                             <input type="submit" value="Continue" class="button primary">
                           </div>
                         </div>
@@ -230,50 +232,50 @@
               <div id="panel2" class="content">
                 <form data-abide="ajax">
                   <div class="row">
-                    <div class="columns large-6">
+                    <div class="columns small-6">
                       <h4>Your Personal Details</h4>
                       <div class="row collapse">
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>First Name*:
                             <input type="text" name="first_name" placeholder="abcd" required>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Last Name*:
                             <input type="text" name="last_name" placeholder="abcd" required>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Email*:
                             <input type="email" name="email" placeholder="abcd@abcd.com" required>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Telephone*:
                             <input type="text" name="telephone" placeholder="965-123-1010" required pattern="\d{10}"><small class="error">A valid 10 digit telephone number is required</small>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Fax:
                             <input type="text" name="fax" placeholder="965-123-1010">
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="columns large-6">
+                    <div class="columns small-6">
                       <div class="row collapse">
                         <h4>Your Address</h4>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Company:
                             <input type="text" name="company" placeholder="abcd">
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Address*:
                             <textarea placeholder="abcd" name="address" required></textarea>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>City*:
                             <select name="city" required>
                               <option>Kuwait</option>
@@ -281,7 +283,7 @@
                             </select>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Country*:
                             <select name="country" required>
                               <option>Kuwait</option>
@@ -289,12 +291,12 @@
                             </select>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Post Code*:
                             <input type="number" name="postal_code" placeholder="10023" required pattern="\d{5}"><small class="error">A valid 5 digit postal code is required</small>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label for="addressConfirmation">
                             <input type="checkbox" id="addressConfirmation">My delivery address and billing addresses are the same.
                           </label>
@@ -304,7 +306,7 @@
                   </div>
                   <hr class="row">
                   <footer class="row">
-                    <div class="large-6 columns large-offset-6 text-right">
+                    <div class="small-6 columns small-offset-6 text-right">
                       <input type="submit" value="Continue" class="button primary">
                     </div>
                   </footer>
@@ -315,7 +317,7 @@
               <div id="panel3" class="content deliveryDetails">
                 <form data-abide="ajax" class="shippingAddress">
                   <div class="row dividerContainer collapse">
-                    <div class="columns large-5">
+                    <div class="columns small-5">
                       <h4>
                         <label class="existingAddress">
                           <input type="checkbox" checked="checked" name="existingAddress">Select an existing address
@@ -348,26 +350,26 @@
                         </address>
                       </div>
                     </div>
-                    <div class="large-2 columns divider"></div>
-                    <div class="columns large-5">
+                    <div class="small-2 columns divider"></div>
+                    <div class="columns small-5">
                       <div class="row">
                         <h4>Enter a new address</h4>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Name*:
                             <input type="text" name="name" placeholder="abcd" required>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Phone*:
                             <input type="text" name="phone" placeholder="000-000-0000" required pattern="\d{10}"><small class="error">A valid 10 digit phone number is required</small>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Address*:
                             <textarea placeholder="abcd" name="address" required></textarea>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>City*:
                             <select name="city" required>
                               <option>Kuwait</option>
@@ -375,7 +377,7 @@
                             </select>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Country*:
                             <select name="country" required>
                               <option>Kuwait</option>
@@ -383,7 +385,7 @@
                             </select>
                           </label>
                         </div>
-                        <div class="large-12 columns">
+                        <div class="small-12 columns">
                           <label>Post Code*:
                             <select name="postal_code" required>
                               <option>12345</option>
@@ -397,7 +399,7 @@
                   <footer>
                     <hr class="row">
                     <div class="row">
-                      <div class="large-6 columns large-offset-6 text-right">
+                      <div class="small-6 columns small-offset-6 text-right">
                         <input type="submit" value="Continue" class="button primary">
                       </div>
                     </div>
@@ -408,39 +410,39 @@
             <dd><a href="#panel4">Step 4: Payment Method</a>
               <div id="panel4" class="content">
                 <div class="tabContainer row collapse">
-                  <div class="columns large-3">
+                  <div class="columns small-3">
                     <dl data-tab="" class="tabs vertical">
                       <dd class="active"><a href="#panel1a">KNET</a></dd>
                     </dl>
                   </div>
-                  <div class="columns large-9">
+                  <div class="columns small-9">
                     <div class="tabs-content vertical">
                       <div id="panel1a" class="content active">
                         <h4>Pay using your KNET Card</h4>
                         <form data-abide="ajax" class="payment">
                           <div class="row collapse">
-                            <div class="large-4 columns">
+                            <div class="small-4 columns">
                               <label>Card Number:</label>
                             </div>
-                            <div class="large-7 columns end">
+                            <div class="small-7 columns end">
                               <input type="text" required pattern="card"><small class="error">Invalid card number</small>
                             </div>
                           </div>
                           <div class="row collapse">
-                            <div class="large-4 columns">
+                            <div class="small-4 columns">
                               <label>Name on Card:</label>
                             </div>
-                            <div class="large-7 columns end">
+                            <div class="small-7 columns end">
                               <input type="text" required><small class="error">Please enter card holder's name.</small>
                             </div>
                           </div>
                           <div class="row collapse">
-                            <div class="large-4 columns">
+                            <div class="small-4 columns">
                               <label>Expiry Date:</label>
                             </div>
-                            <div class="large-7 columns end">
+                            <div class="small-7 columns end">
                               <div class="row collapse">
-                                <div class="large-6 columns">
+                                <div class="small-6 columns">
                                   <select required>
                                     <option value>Select Month</option>
                                     <option value="Janurary">Janurary</option>
@@ -457,8 +459,8 @@
                                     <option value="December">December</option>
                                   </select><small class="error">Invalid Month</small>
                                 </div>
-                                <div class="large-1 columns separator">/</div>
-                                <div class="large-5 columns">
+                                <div class="small-1 columns separator">/</div>
+                                <div class="small-5 columns">
                                   <select required>
                                     <option value>Select Year</option>
                                     <option value="2020">2020</option>
@@ -478,20 +480,20 @@
                             </div>
                           </div>
                           <div class="row collapse">
-                            <div class="large-4 columns">
+                            <div class="small-4 columns">
                               <label>CVV Number:</label>
                             </div>
-                            <div class="large-7 columns end">
+                            <div class="small-7 columns end">
                               <div class="row collapse">
-                                <div class="large-4 columns">
+                                <div class="small-4 columns">
                                   <input type="text" required pattern="cvv"><small class="error">Invalid</small>
                                 </div>
-                                <div class="large-8 columns cvv"><img src="imgs/cvv.png" alt="CVV number"><span>3 digit CVV number</span></div>
+                                <div class="small-8 columns cvv"><img src="imgs/cvv.png" alt="CVV number"><span>3 digit CVV number</span></div>
                               </div>
                             </div>
                           </div>
                           <div class="row collapse">
-                            <div class="large-7 columns large-offset-4"><span class="price">Amount Due: 305.000KD</span></div>
+                            <div class="small-7 columns small-offset-4"><span class="price">Amount Due: 305.000KD</span></div>
                           </div>
                         </form>
                       </div>
@@ -505,12 +507,12 @@
                   </div>
                 </div>
                 <footer class="row collapse payment">
-                  <div class="large-9 large-offset-3">
+                  <div class="small-9 small-offset-3">
                     <div class="row collapse">
-                      <div class="large-8 columns note"><strong>Note:</strong>&nbsp; On clicking 'Make Payment' you will be redirected to the payment gateway.
+                      <div class="small-8 columns note"><strong>Note:</strong>&nbsp; On clicking 'Make Payment' you will be redirected to the payment gateway.
                         Please do not close the browser window or press back button.
                       </div>
-                      <div class="large-4 columns text-right">
+                      <div class="small-4 columns text-right">
                         <input type="submit" value="Make Payment" class="button primary large">
                       </div>
                     </div>
@@ -519,31 +521,31 @@
               </div>
             </dd>
           </dl>
-          <div class="columns large-3 cart-summary">
+          <div class="columns small-3 cart-summary">
             <div class="summaryBox">
               <h4>CART SUMMARY / 2 ITEM</h4>
               <div class="rowContainer">
                 <div class="row collapse">
-                  <div class="large-7 columns"><a href="contemporary-table.html">Traditional Side Table</a><span class="sub">Colour: Brown &nbsp; QTY:1</span></div>
-                  <div class="large-5 columns"><span>185.300KD</span></div>
+                  <div class="small-7 columns"><a href="contemporary-table.html">Traditional Side Table</a><span class="sub">Colour: Brown &nbsp; QTY:1</span></div>
+                  <div class="small-5 columns"><span>185.300KD</span></div>
                 </div>
                 <div class="row collapse">
-                  <div class="large-7 columns"><a href="contemporary-table.html">Traditional Side Table</a><span class="sub">Colour: Brown &nbsp; QTY:1</span></div>
-                  <div class="large-5 columns"><span>185.300KD</span></div>
+                  <div class="small-7 columns"><a href="contemporary-table.html">Traditional Side Table</a><span class="sub">Colour: Brown &nbsp; QTY:1</span></div>
+                  <div class="small-5 columns"><span>185.300KD</span></div>
                 </div>
                 <div class="row collapse">
                   <div class="row collapse attrs">
-                    <div class="large-7 columns"><span>Sub-Total</span></div>
-                    <div class="large-5 columns"><span>370.600KD</span></div>
+                    <div class="small-7 columns"><span>Sub-Total</span></div>
+                    <div class="small-5 columns"><span>370.600KD</span></div>
                   </div>
                   <div class="row collapse attrs">
-                    <div class="large-7 columns"><span>Shipping</span></div>
-                    <div class="large-5 columns"><span>10.000KD</span></div>
+                    <div class="small-7 columns"><span>Shipping</span></div>
+                    <div class="small-5 columns"><span>10.000KD</span></div>
                   </div>
                 </div>
                 <div class="row collapse total">
-                  <div class="large-7 columns"><span>Grand Total</span></div>
-                  <div class="large-5 columns"><span>380.600KD</span></div>
+                  <div class="small-7 columns"><span>Grand Total</span></div>
+                  <div class="small-5 columns"><span>380.600KD</span></div>
                 </div>
               </div>
             </div>

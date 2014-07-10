@@ -16,12 +16,12 @@ block content
   section.row.checkout.collapse
     h1 Checkout
     div.row.collapse
-      dl.accordion.columns.large-9(data-accordion='')
+      dl.accordion.columns.small-9(data-accordion='')
         dd
           a(href='#panel1') Step 1: Checkout Options
           #panel1.content.active
             .row.dividerContainer.collapse
-              div.columns.large-5
+              div.columns.small-5
                 h4
                   | New Customer
                   small
@@ -33,8 +33,8 @@ block content
                   p
                    | By creating an account you will be able to shop faster, be up tp date on an order’s status, and keep track of the orders you have previously made
                   input.button.primary(type="submit", value="Continue")
-              .large-2.columns.divider
-              div.columns.large-5
+              .small-2.columns.divider
+              div.columns.small-5
                 form(data-abide='ajax')
                   .row.collapse
                     h4
@@ -42,14 +42,14 @@ block content
                       small
                         | I am a returning customer
                     .row.collapse
-                      .large-9.columns
+                      .small-9.columns
                         label
                           | Email:
                           input(type='email', name='email', placeholder='abcd@abcd.com', required)
                           small.error
                             | Please enter valid email.
                     .row.collapse
-                      .large-9.columns
+                      .small-9.columns
                         label
                           | Password:
                           input(type='password', name='password', required)
@@ -59,86 +59,86 @@ block content
                       p.note
                        |Passwords must be at least 8 characters with 1 capital letter, 1 number and one special character.
                     .row.collapse
-                      .large-7.columns.pullUp
+                      .small-7.columns.pullUp
                         a(href='#') Forgot Password ?
                     .row.collapse
-                      .large-12.columns
+                      .small-12.columns
                         input.button.primary(type='submit', value='Continue')
         dd
           a(href='#panel2') Step 2: Account & Billing Details
           #panel2.content
             form(data-abide='ajax')
               .row
-                div.columns.large-6
+                div.columns.small-6
                   h4
                     | Your Personal Details
                   .row.collapse
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | First Name*:
                         input(type='text', name='first_name', placeholder='abcd', required)
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Last Name*:
                         input(type='text', name='last_name', placeholder='abcd', required)
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Email*:
                         input(type='email', name='email', placeholder='abcd@abcd.com', required)
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Telephone*:
                         input(type='text', name='telephone', placeholder='965-123-1010', required, pattern="\\d{10}")
                         small.error
                           |A valid 10 digit telephone number is required
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Fax:
                         input(type='text', name='fax', placeholder='965-123-1010')
-                div.columns.large-6
+                div.columns.small-6
                   .row.collapse
                     h4
                       | Your Address
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Company:
                         input(type='text', name='company', placeholder='abcd')
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Address*:
                         textarea(placeholder='abcd', name='address', required)
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | City*:
                         select(name='city', required)
                           option Kuwait
                           option Kuwait
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Country*:
                         select(name='country', required)
                           option Kuwait
                           option Kuwait
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Post Code*:
                         input(type='number', name='postal_code', placeholder='10023', required, pattern='\\d{5}')
                         small.error
                           |A valid 5 digit postal code is required
-                    .large-12.columns
+                    .small-12.columns
                       label(for='addressConfirmation')
                         input(type='checkbox', id='addressConfirmation')
                         | My delivery address and billing addresses are the same.
               hr.row
               footer.row
-                .large-6.columns.large-offset-6.text-right
+                .small-6.columns.small-offset-6.text-right
                   input.button.primary(type='submit', value='Continue')
         dd
           a(href='#panel3') Step 3: Delivery Details
           #panel3.content.deliveryDetails
             form.shippingAddress(data-abide='ajax')
               .row.dividerContainer.collapse
-                div.columns.large-5
+                div.columns.small-5
                   h4
                     label.existingAddress
                       input(type='checkbox', checked='checked', name='existingAddress')
@@ -165,38 +165,38 @@ block content
                       |Industrial Shuwaikh <br>
                       |Kuwait <br>
                       |+965 6990 9463
-                .large-2.columns.divider
-                div.columns.large-5
+                .small-2.columns.divider
+                div.columns.small-5
                   .row
                     h4
                       | Enter a new address
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Name*:
                         input(type='text', name='name', placeholder='abcd', required)
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Phone*:
                         input(type='text', name='phone', placeholder='000-000-0000', required, pattern="\\d{10}")
                         small.error
                           |A valid 10 digit phone number is required
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Address*:
                         textarea(placeholder='abcd', name='address', required)
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | City*:
                         select(name='city', required)
                           option Kuwait
                           option Kuwait
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Country*:
                         select(name='country', required)
                           option Kuwait
                           option Kuwait
-                    .large-12.columns
+                    .small-12.columns
                       label
                         | Post Code*:
                         select(name='postal_code', required)
@@ -205,13 +205,13 @@ block content
               footer
                 hr.row
                 .row
-                  .large-6.columns.large-offset-6.text-right
+                  .small-6.columns.small-offset-6.text-right
                     input.button.primary(type='submit', value='Continue')
         dd
           a(href='#panel4') Step 4: Payment Method
           #panel4.content
             .tabContainer.row.collapse
-              .columns.large-3
+              .columns.small-3
                 dl.tabs.vertical(data-tab='')
                   //- dd.active
                   //-   a(href='#panel1a') Credit Card
@@ -219,44 +219,44 @@ block content
                     a(href='#panel1a') KNET
                   //- dd
                   //-   a(href='#panel3a') Cash on Delivery
-              .columns.large-9
+              .columns.small-9
                 .tabs-content.vertical
                   #panel1a.content.active
                     h4
                       |Pay using your KNET Card
                     form.payment(data-abide='ajax')
                       .row.collapse
-                        .large-4.columns
+                        .small-4.columns
                           label
                             | Card Number:
-                        .large-7.columns.end
+                        .small-7.columns.end
                           input(type='text', required, pattern='card')
                           small.error
                             | Invalid card number
                       .row.collapse
-                        .large-4.columns
+                        .small-4.columns
                           label
                             | Name on Card:
-                        .large-7.columns.end
+                        .small-7.columns.end
                           input(type='text', required)
                           small.error
                             | Please enter card holder's name.
                       .row.collapse
-                        .large-4.columns
+                        .small-4.columns
                           label
                             | Expiry Date:
-                        .large-7.columns.end
+                        .small-7.columns.end
                           .row.collapse
-                            .large-6.columns
+                            .small-6.columns
                               select(required)
                                 option(value) Select Month
                                 each val in ["Janurary", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
                                   option(value=val)= val
                               small.error
                                 | Invalid Month
-                            .large-1.columns.separator
+                            .small-1.columns.separator
                               | /
-                            .large-5.columns
+                            .small-5.columns
                               select(required)
                                 option(value) Select Year
                                 each val in ["2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010"]
@@ -264,20 +264,20 @@ block content
                               small.error
                                 | Invalid Year
                       .row.collapse
-                        .large-4.columns
+                        .small-4.columns
                           label
                             | CVV Number:
-                        .large-7.columns.end
+                        .small-7.columns.end
                           .row.collapse
-                            .large-4.columns
+                            .small-4.columns
                               input(type='text', required, pattern='cvv')
                               small.error
                                 | Invalid
-                            .large-8.columns.cvv
+                            .small-8.columns.cvv
                               img(src="imgs/cvv.png", alt="CVV number")
                               span 3 digit CVV number
                       .row.collapse
-                        .large-7.columns.large-offset-4
+                        .small-7.columns.small-offset-4
                           span.price
                             |Amount Due: 305.000KD
                   #panel2a.content
@@ -287,49 +287,49 @@ block content
                     h4
                       |Pay by Cash on Delivery
             footer.row.collapse.payment
-              .large-9.large-offset-3
+              .small-9.small-offset-3
                 .row.collapse
-                  .large-8.columns.note
+                  .small-8.columns.note
                     strong Note:
                     |&nbsp; On clicking 'Make Payment' you will be redirected to the payment gateway.
                     | Please do not close the browser window or press back button.
-                  .large-4.columns.text-right
+                  .small-4.columns.text-right
                     input.button.primary.large(type='submit', value='Make Payment')
-      div.columns.large-3.cart-summary
+      div.columns.small-3.cart-summary
         .summaryBox
           h4 CART SUMMARY / 2 ITEM
           .rowContainer
             .row.collapse
-              .large-7.columns
+              .small-7.columns
                 a(href='contemporary-table.html')
                   |Traditional Side Table
                 span.sub
                   | Colour: Brown &nbsp; QTY:1
-              .large-5.columns
+              .small-5.columns
                 span 185.300KD
             .row.collapse
-              .large-7.columns
+              .small-7.columns
                 a(href='contemporary-table.html')
                  |Traditional Side Table
                 span.sub
                   | Colour: Brown &nbsp; QTY:1
-              .large-5.columns
+              .small-5.columns
                 span 185.300KD
             .row.collapse
               .row.collapse.attrs
-                .large-7.columns
+                .small-7.columns
                   span Sub-Total
-                .large-5.columns
+                .small-5.columns
                   span 370.600KD
               .row.collapse.attrs
-                .large-7.columns
+                .small-7.columns
                   span Shipping
-                .large-5.columns
+                .small-5.columns
                   span 10.000KD
             .row.collapse.total
-              .large-7.columns
+              .small-7.columns
                 span Grand Total
-              .large-5.columns
+              .small-5.columns
                 span 380.600KD
 
 block append scripts
