@@ -5,7 +5,7 @@
 
 /* Generic */
 .fixed-container {
-    width: 1024px;
+    width: $small-range;
     max-width: none;
     margin: 0 auto;
 }
@@ -286,7 +286,7 @@ section h1 {
         @extend .clearfix;
         margin-left: 0;
         line-height: 1.5;
-        li{
+        & > li{
             color: #666666;
             float: left;
             font-size: emCalc(12);
@@ -306,6 +306,11 @@ section h1 {
                 content: '';
                 display: none;
             }
+
+            strong {
+                position: relative;
+                top: -11px;
+            }
         }
 
         ul{
@@ -318,6 +323,7 @@ section h1 {
             &.social{
                 line-height: 2;
                 margin-left: 5px;
+                display: inline-block;
             }
         }
     }
